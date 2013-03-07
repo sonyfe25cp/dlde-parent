@@ -1,0 +1,765 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Sage-Stuffed, Prosciutto-Wrapped Pork Tenderloin over Lentil and Scallion Salad, Recipe Sage-Stuffed, Prosciutto-Wrapped Pork Tenderloin over Lentil and Scallion Salad</TITLE>
+				<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+		<script type="text/javascript" src="/js/valid_form.js"></script>
+		<script type="text/javascript" src="/js/sc/prototype.js"></script>
+		<script type="text/javascript" src="/js/sc/scriptaculous.js?load=effects"></script>
+				<script type="text/javascript" src="/js/form_validation/data_validation.js"></script>
+		<script type="text/javascript" src="/js/form_validation/form_validation.js"></script>
+		<script type="text/javascript" src="/js/popup_div/popup_div.js"></script>
+		<link rel="stylesheet" type="text/css" href="/js/popup_div/popup_div.css">
+        <link rel="stylesheet" type="text/css" href="/css/main_ptitchef.css">
+ 		<script type="text/javascript" src="/js/misc.js"></script>
+ 				<script type="text/javascript">
+window.google_analytics_uacct = "UA-52830-19";
+</script>
+	<script type="text/javascript">
+	
+	var refresh_ok = true;
+	
+	function logIn(usr_login,usr_password){
+		if((usr_login!='')&&(usr_password!='')){
+				$('log_container').update('<img src=/images/ajax_indicator.gif alt=loading>');
+					new  Ajax.Updater(
+					'log_container',
+					'index.php?obj=members&action=login_member&login='+usr_login+'&pass='+usr_password
+					);
+		} else { 
+			$('log_login').addClassName('log_err');
+			$('log_pass').addClassName('log_err');
+			alert("Please enter a login and password!"); 
+		}
+		return false;
+	}
+	
+	function logOut(){
+		$('log_container').update('<img src=/images/ajax_indicator.gif alt=loading>');
+			new  Ajax.Updater(
+			'log_container',
+			'index.php?obj=members&action=logout_member'
+			);
+		return true;
+	}
+	
+	function reload_page()
+	{
+		if (refresh_ok && ($('popup_div')==null || !$('popup_div').visible()))
+			window.location.reload(true);
+	}
+
+	function check(formid,method)
+	{
+	  $(formid).getInputs('checkbox').each(function(checkbox){checkbox.checked=method;});
+	}
+	function mainCheck(formid,ctrl){
+	  $(formid).getInputs('checkbox').each(function(checkbox){checkbox.checked=$(ctrl).checked;});
+	}
+	function IsChecked(el) {
+	    return $$('#' + el + ' input').find(
+	        function(e) {return e.checked;}); 
+	};
+	
+	</script>
+	</head>
+<body onLoad="
+		setInterval('reload_page()',300000);
+				if (!checkCookie('pc_nl')) new PopupDiv('/index.php?obj=front&action=nl');
+		">
+<div id="container">
+	<div id="banner">
+	  	<div id="logo"><a href="http://en.petitchef.com/"><img src="/images/n_logo.gif" alt="logo" /></a></div>
+		<div id="add_ban">
+										
+		</div>
+		<div class="clear"></div>
+	  <div id="menu">
+			<ul>
+				<li>
+									<a href="#"; 
+					onclick="new PopupDiv('/index.php?obj=members&action=member_form&redirect=%2F%3Fobj%3Dfront%26action%3Dsite_ajout_form');return false;">Add your blog-site</a>
+								</li>
+				<li>
+									<a href="#"; 
+					onclick="new PopupDiv('/index.php?obj=members&action=member_form&redirect=%2Findex.php%3Fobj%3Drecipe%26action%3Dadd_recipe_form');return false;">Add your recipes</a>
+								</li>
+								<li><a href="#" onclick="new PopupDiv('/index.php?obj=front&action=nl'); return false;">Receive daily menu</a></li>
+				
+				<li><a href="#"  onclick="new PopupDiv('/index.php?obj=front&action=contact_form'); return false;">Contact us</a></li>
+			</ul>
+      </div><!--//menu-->
+	</div><!--//banner-->
+	
+		<div id="nav">
+
+				<div id="dc">
+			<div class="dc_container">
+			<b>Petitchef</b> is a Website build around the pleasure of cooking and fine products.<br /><br />Receipes, tricks, fine products and cool websites are all just one-click away..<br />Petitchef is your gateway to the world of cooking wonders.<br /><br />Share our passion, share your passion for cooking with others and become a Ptichef...<br />
+			</div>
+		</div>
+
+		<div id="add">
+			<script type="text/javascript"><!--
+google_ad_client = "pub-5852466821056085";
+/* 300x250, date de crtion 02/05/08 */
+google_ad_slot = "2133614508";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+            
+
+            
+		</div><!--//ADD-->
+			
+		<div id="log_container">
+					    <!--<div class="log_title">
+          <p>Sign in</p>
+    </div>
+	//account_create_form-->
+	<div class="log_form">
+		<form action="/index.php?obj=members&action=login_member" name="log_form" id="log_form" method="post">
+			    <fieldset>
+			    <legend>Sign in</legend>
+			    <ul>
+			      <li>
+				      <label for="login">email* :</label>
+				      <input type="text" name="email" id="log_email" value="" size="20" maxlength="64">
+				      <div id="login_state"></div>
+			      </li>
+			      <li>
+				      <label for="pass">Password* :</label>
+				      <input type="password" name="pass" id="log_pass" value="" size="20" maxlength="64">
+				      <div id="pass_state"></div>
+			      </li>
+			    </ul>
+			      <li>
+					  <label for="sub_login">&nbsp;</label>
+					  <div id="button" class="button1" ><a href="javascript:void(0)"
+					  	onclick="if (log_form_valid.testForm(false))
+					  		ajaxSubmit('log_form', '/index.php?obj=members&action=login_member', 
+					  		function () {
+					  			window.location.reload(true);
+					  		});"
+					  	>Validate</a></div>
+	  				  <div id="loader" style="display: none" align="center"><img src="/images/ajax_loader.gif" alt="loader"></div>
+	
+			      </li>
+			      <li>
+					  <div id="register">
+					  	<a href="javascript:void(0)"  onclick="new PopupDiv('/index.php?obj=members&action=member_form')">Not yet a member</a><br>
+					  	<a href="javascript:void(0)" onclick="new PopupDiv('/index.php?obj=members&action=password_reminder')">Forgotten password ?</a>
+					  	</div>
+			      </li>	      
+			    </fieldset>
+		</form>
+	</div>
+	<script type="text/javascript">
+		log_form_valid = new FormValidation('log_form', "One or more fields are not properly filled");
+		log_form_valid.setRule('popup_log_email', { Filled: true, Email: true});
+		log_form_valid.setRule('popup_log_pass',{ Filled: true});		
+	</script>
+						</div><!--//login-->
+		<br>
+
+        <div id="ms">
+			<div class="lmm_head"><p>Daily Menu</p></div>
+  			<div style="margin-top:-20px; margin-left:20px; margin-right:20px; text-align:left" >
+					<ul>
+													<div align="center" style="margin-bottom:10px">
+							Starter
+					  							  		</div>
+							<div style="width:200px; height:60px; margin:0px 0px 10px 0px">
+	    <div class="cont_img" style="width:90px">
+		<a href="/recipes/truffled-langoustine-ravioli-and-frizzled-leeks-fid-217041"><img src="http://www.ptitchef.com/upload_data/feed_data_img/217041_1M.jpg" alt="Truffled Langoustine Ravioli and Frizzled Leeks" width="80" height="60" title="Truffled Langoustine Ravioli and Frizzled Leeks" border="0" style="border: 1px solid #000000;"/></a>
+	</div>
+  		<a href="/recipes/truffled-langoustine-ravioli-and-frizzled-leeks-fid-217041" style="font-size:11px"><b>Truffled Langoustine Ravioli and Frizzled...</b></a><br>
+		<img src="/images/note_recipe_small0.gif" style="margin-top:5px">
+	</div>
+<div class="clear"></div>							<hr style="height: 1px; color: #F0ECDF; background-color: #F0ECDF; width: 100%; border: none; margin-bottom:10px">
+													<div align="center" style="margin-bottom:10px">
+							Main Dish
+					  							  		</div>
+							<div style="width:200px; height:60px; margin:0px 0px 10px 0px">
+	    <div class="cont_img" style="width:90px">
+		<a href="/recipes/meat-balls-in-a-creamy-coriander-sauce-and-oven-fries-better-t-fid-218902"><img src="http://www.ptitchef.com/upload_data/feed_data_img/218902_1M.jpg" alt="Meat balls in a creamy coriander sauce and oven fries ( better t" width="80" height="60" title="Meat balls in a creamy coriander sauce and oven fries ( better t" border="0" style="border: 1px solid #000000;"/></a>
+	</div>
+  		<a href="/recipes/meat-balls-in-a-creamy-coriander-sauce-and-oven-fries-better-t-fid-218902" style="font-size:11px"><b>Meat balls in a creamy coriander sauce and...</b></a><br>
+		<img src="/images/note_recipe_small5.gif" style="margin-top:5px">
+	</div>
+<div class="clear"></div>							<hr style="height: 1px; color: #F0ECDF; background-color: #F0ECDF; width: 100%; border: none; margin-bottom:10px">
+													<div align="center" style="margin-bottom:10px">
+							Desert					  		</div>
+							<div style="width:200px; height:60px; margin:0px 0px 10px 0px">
+	    <div class="cont_img" style="width:90px">
+		<a href="/recipes/citrus-and-raspberry-terrine-fid-217712"><img src="http://www.ptitchef.com/upload_data/feed_data_img/217712_1M.jpg" alt="Citrus and Raspberry Terrine" width="80" height="60" title="Citrus and Raspberry Terrine" border="0" style="border: 1px solid #000000;"/></a>
+	</div>
+  		<a href="/recipes/citrus-and-raspberry-terrine-fid-217712" style="font-size:11px"><b>Citrus and Raspberry Terrine</b></a><br>
+		<img src="/images/note_recipe_small0.gif" style="margin-top:5px">
+	</div>
+<div class="clear"></div>							<hr style="height: 1px; color: #F0ECDF; background-color: #F0ECDF; width: 100%; border: none; margin-bottom:10px">
+											</ul>
+			</div>
+		</div>
+		
+        <div id="avr">
+          <div class="avr_head"><p><a href="/index.php?obj=recipe&action=add_recipe_form" style="color:#ffffff">Add your recipes</a></p></div>
+          <div class="avr_cont"></div>
+        </div><!--//AVR-->
+
+				<div id="tags">
+			<div class="tags_head"><p>Tags</p></div>
+				<ul>
+																		<a href="/tags/recipes/jacques-pepin" rel='tag' class="tag1"> Jacques Pepin</a>
+																								<a href="/tags/recipes/african-food" rel='tag' class="tag1">African Food</a>
+																								<a href="/tags/recipes/american-restaurants" rel='tag' class="tag1">American Restaurants</a>
+																								<a href="/tags/recipes/bbq-hamburger-recipe" rel='tag' class="tag1">Bbq Hamburger Recipe</a>
+																								<a href="/tags/recipes/beef-cutlet" rel='tag' class="tag1">Beef Cutlet</a>
+																								<a href="/tags/recipes/berry-cheesecake" rel='tag' class="tag1">Berry Cheesecake</a>
+																								<a href="/tags/recipes/best-pesto-pasta" rel='tag' class="tag1">Best Pesto Pasta</a>
+																								<a href="/tags/recipes/birthday-tart" rel='tag' class="tag1">Birthday Tart</a>
+																								<a href="/tags/recipes/breakfast-omelets" rel='tag' class="tag1">Breakfast Omelets</a>
+																								<a href="/tags/recipes/carolina" rel='tag' class="tag1">Carolina</a>
+																								<a href="/tags/recipes/chilli-pepper" rel='tag' class="tag1">Chilli Pepper</a>
+																								<a href="/tags/recipes/contessa" rel='tag' class="tag1">Contessa</a>
+																								<a href="/tags/recipes/cookies-sweet" rel='tag' class="tag1">Cookies  Sweet</a>
+																								<a href="/tags/recipes/cooking-show" rel='tag' class="tag1">Cooking Show</a>
+																								<a href="/tags/recipes/corn-chip-casserole" rel='tag' class="tag1">Corn Chip Casserole</a>
+																								<a href="/tags/recipes/culinary-trends-2009" rel='tag' class="tag1">Culinary Trends 2009</a>
+																								<a href="/tags/recipes/ebooks" rel='tag' class="tag1">Ebooks</a>
+																								<a href="/tags/recipes/eggbeater-breakfast" rel='tag' class="tag1">Eggbeater Breakfast</a>
+																								<a href="/tags/recipes/eggs-and-vegetables" rel='tag' class="tag1">Eggs And Vegetables</a>
+																								<a href="/tags/recipes/energy" rel='tag' class="tag1">Energy</a>
+																								<a href="/tags/recipes/flat-coffee-bean" rel='tag' class="tag1">Flat Coffee Bean</a>
+																								<a href="/tags/recipes/food-event" rel='tag' class="tag1">Food Event</a>
+																								<a href="/tags/recipes/free-cooler" rel='tag' class="tag1">Free Cooler</a>
+																								<a href="/tags/recipes/freezer" rel='tag' class="tag1">Freezer</a>
+																								<a href="/tags/recipes/gaucamole" rel='tag' class="tag1">Gaucamole</a>
+																								<a href="/tags/recipes/geants" rel='tag' class="tag1">Geants</a>
+																								<a href="/tags/recipes/granny-cookies" rel='tag' class="tag1">Granny Cookies</a>
+																								<a href="/tags/recipes/homemade-pizza" rel='tag' class="tag1">Homemade Pizza</a>
+																								<a href="/tags/recipes/italian-food" rel='tag' class="tag3">Italian Food</a>
+																								<a href="/tags/recipes/jerry-traunfeld" rel='tag' class="tag1">Jerry Traunfeld</a>
+																								<a href="/tags/recipes/kings" rel='tag' class="tag1">Kings</a>
+																								<a href="/tags/recipes/loco-moco" rel='tag' class="tag1">Loco Moco</a>
+																								<a href="/tags/recipes/long-walks" rel='tag' class="tag1">Long Walks</a>
+																								<a href="/tags/recipes/microwaved-squash" rel='tag' class="tag1">Microwaved Squash</a>
+																								<a href="/tags/recipes/rachael-ray" rel='tag' class="tag1">Rachael Ray</a>
+																								<a href="/tags/recipes/recipe-crepes" rel='tag' class="tag1">Recipe Crepes</a>
+																								<a href="/tags/recipes/recipe-prosciutto-appetizers" rel='tag' class="tag1">Recipe Prosciutto Appetizers</a>
+																								<a href="/tags/recipes/salsas-homemade" rel='tag' class="tag1">Salsas  Homemade</a>
+																								<a href="/tags/recipes/savory" rel='tag' class="tag3">Savory</a>
+																								<a href="/tags/recipes/simple-recipe" rel='tag' class="tag2">Simple Recipe</a>
+																								<a href="/tags/recipes/sweet-tart" rel='tag' class="tag1">Sweet Tart</a>
+																								<a href="/tags/recipes/tea-party" rel='tag' class="tag1">Tea Party</a>
+																								<a href="/tags/recipes/thanksgiving-recipes" rel='tag' class="tag1">Thanksgiving Recipes</a>
+																								<a href="/tags/recipes/the-simple-life" rel='tag' class="tag1">The Simple Life</a>
+																								<a href="/tags/recipes/tour" rel='tag' class="tag1">Tour</a>
+																								<a href="/tags/recipes/tv-shows" rel='tag' class="tag1">Tv Shows</a>
+																								<a href="/tags/recipes/two-michelin" rel='tag' class="tag2">Two Michelin</a>
+																								<a href="/tags/recipes/walnuts" rel='tag' class="tag1">Walnuts</a>
+															</ul>
+		</div>
+		<!--//TAGS-->
+
+
+        <div id="lmm">
+			<div class="lmm_head">
+			  <p>Top members</p>
+			</div>
+			<div align="center">
+						<div style="width:250px; height:60px; margin:0px 0px 10px 0px" align="left">
+							    <div class="cont_img" style="width:90px">
+					<img src="http://www.ptitchef.com/upload_data/member/5504_S.jpg" width="80" height="60" border="0" style="border: 1px solid #000000;"/>
+				</div>
+			  					<span style="font-size:11px"><b>rcandeias</b><br>
+				29 Recette(s)<br>
+				42 note(s)<br>
+				37 Comment(s)
+				</span>
+			</div>
+						<div style="width:250px; height:60px; margin:0px 0px 10px 0px" align="left">
+							    <div class="cont_img" style="width:90px">
+					<img src="http://www.petitchef.com/images/member_default.gif" width="80" height="60" border="0" style="border: 1px solid #000000;"/>
+				</div>
+			  					<span style="font-size:11px"><b>aggieskitchen</b><br>
+				7 Recette(s)<br>
+				2 note(s)<br>
+				0 Comment(s)
+				</span>
+			</div>
+						<div style="width:250px; height:60px; margin:0px 0px 10px 0px" align="left">
+							    <div class="cont_img" style="width:90px">
+					<img src="http://www.ptitchef.com/upload_data/member/4210_S.jpg" width="80" height="60" border="0" style="border: 1px solid #000000;"/>
+				</div>
+			  					<span style="font-size:11px"><b>AppleC</b><br>
+				6 Recette(s)<br>
+				0 note(s)<br>
+				0 Comment(s)
+				</span>
+			</div>
+						<div style="width:250px; height:60px; margin:0px 0px 10px 0px" align="left">
+							    <div class="cont_img" style="width:90px">
+					<img src="http://www.ptitchef.com/upload_data/member/7245_S.jpg" width="80" height="60" border="0" style="border: 1px solid #000000;"/>
+				</div>
+			  					<span style="font-size:11px"><b>ulkyvike</b><br>
+				4 Recette(s)<br>
+				0 note(s)<br>
+				0 Comment(s)
+				</span>
+			</div>
+						</div>
+		</div><!--//LMM-->
+		<table align="center" cellspacing="4" cellpadding="5">
+		<tr>
+			<td><a href="http://www.ptitchef.com"><img src="/images/country/fr.gif" border=0></a></td>
+			<td><a href="http://en.petitchef.com"><img src="/images/country/uk.gif" border=0></a></td>
+			<td><a href="http://pt.petitchef.com"><img src="/images/country/pt.gif" border=0></a></td>
+			<td><a href="http://es.petitchef.com"><img src="/images/country/es.gif" border=0></a></td>
+			<td><a href="http://it.petitchef.com"><img src="/images/country/it.gif" border=0></a></td>
+		</tr>
+	</table>
+		<!--//catalog-->
+	</div><!--//NAV-->
+	
+<div id="content">	
+						
+	<script>
+		isLogued = false;
+	</script>
+<script type="text/javascript" src="/js/note.js"></script>
+
+		<div id="pagehd">
+			<div class="red_container">
+			            <div id="search1">			
+				<form action="/index.php" method="get" name="ft_form1">
+								<input type="hidden" name="obj" value="feed">
+				<input type="hidden" name="action" value="list">
+				                <table width="100%" cellspacing="0">
+                    <tr>
+                        <td width="50%" >
+              				<div id="search1-title">Recipes search on Petitchef:</div>
+                            <input type="text" style="width:100%; "  onfocus="if (this.value == 'Enter your tags') this.value = ''"  value="Enter your tags" name="ft_term"/>
+                        </td>
+                        <td style="padding-left: 15px; vertical-align:bottom;">
+                            <div class="button2">
+                                <a href="javascript:void(document.ft_form1.submit())">Validate</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div align="center" style="margin-top:15px; margin-bottom:-5px">
+                <script type="text/javascript"><!--
+google_ad_client = "pub-5852466821056085";
+/* 468x15, date de crtion 28/10/08 */
+google_ad_slot = "3506748561";
+google_ad_width = 468;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+              </form>
+            </div>
+               				<div class="clear"></div>
+            	<br />
+			</div>
+			<div class="red_head"><!-- style="color:#E49D4D"-->
+            	<div class="red_title"><span><a href="/index.php?obj=front&action=redirect&feed_data_id=190855" target="_blank" style="color:#ffffff">Sage-Stuffed, Prosciutto-Wrapped Pork Tenderloin over...</a></span></div>
+          	</div>
+                     	
+		    <div class="hr1"><hr /></div>
+	        <div id="red_l" style="width:530px">
+	            <div class="site_list">
+ 
+					<p class="posted_by">Posted the  20/12/2008 14:00:00 
+					By 
+											<b><a href="/feed/cooking-books-uid-4185">Cooking Books</a></b> (<a href="/index.php?obj=front&action=redirect&step=1&url=http%3A%2F%2Fcooking-books.blogspot.com%2F" target="_blank">Visit website</a>)
+										</p>
+				
+					<br>
+					<br>
+										
+					<input type="hidden" id="note_recipe_id" value="190855">
+					<input type="hidden" id="note_recipe_ok" value="">
+					<input type="hidden" id="note_recipe_err" value="">
+					<script>rate_expl = new Array('Not good', 'so so', 'Good', 'Very good', 'Excellent !!!')</script>
+
+					<br><br>
+										
+					<p>
+																
+						<img "display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 266px;" src="http://4.bp.blogspot.com/_SHLjlZiBUSY/SUxV3DwJh7I/AAAAAAAAAyw/BbFl2W0R-2M/s400/Pork+tenderloin+stuffed+with+sage.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5281690867387172786" /><br />Stuffing is so much easier than wrapping. nd when it comes to pork tenderloin, I have a go-to method that always brings rave reviews. t involvesriedruit that thickens andweetensith roasting, and a little love from the skillet before being tossed into the oven. imple.<div "text-align: center;"><br /></div><div>This is a similar method, because you stuff the loin with sage rather than bothering about halving it,rappingt, and tying it, all needless effort in the end. lthough on second thought, there is some wrappingnvolved, but it's of the prosciutto variety, and is as much effort as an afterthought. esides, this time of year, you might be all wrapped out. nyway, a stuffed tenderloin is much like a gift, with that little something special hiding inside, flavoring the meat on the sly. /div><div><br /></div><div "text-align: center;"><img "display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 266px;" src="http://1.bp.blogspot.com/_SHLjlZiBUSY/SUxV3AxeqHI/AAAAAAAAAyo/6sntLcXwyCU/s400/Pork+tenderloin+wrapped+with+prosciutto.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5281690866587445362" /></div><div><br /></div><div>The recipe, from Fran Warde's Food for Friends, is meant to serve 8 and calls for 2 pork tenderloins. n this apartment, we only have two, so I halved the amount of meat.  did, however, make the original amount of lentils. he recipe, once the dressing is tossed with the lentils and red peppers, produces a delectable salad, just as good chilled as at room temperature, which I find provides a perfect light lunch after a morenvolved (but not too involved)inner. he recipe calls for brown lentils, but I used the French green lentils I had in the pantry. hey take a bit longer to cook, but not much, and they maintain more of their firmness. elow, you'll find the recipe as I made it. /div><div><br /></div><div><img "display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 299px;" src="http://3.bp.blogspot.com/_SHLjlZiBUSY/SUxV3W0PE6I/AAAAAAAAAy4/CsygKaPEyDo/s400/lentil+and+scallion+salad.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5281690872504587170" /></div><div><br /></div><div>Sage-Stuffed Pork Fillet with Lentils and Scallion Dressing</div><div><br /></div><div>1 pork tenderloin, about 14 oz.</div><div>Leaves from about 1 1/2 of those packages of sage, or from a large bunch</div><div>4 slices prosciutto</div><div>1 1/2 cups French green lentils</div><div>1 bunch of scallions, sliced</div><div>1 tablespoon olive oil/div><div>1 tablespoon red wine</div><div>1/2 cup sour cream (fat free, if you like)</div><div>1 lb can roasted bell peppers, drained and sliced (particularly good if they've been kept in a vinegary seasoning)</div><div>Bunch of chives, chopped</div><div>S/P</div><div><br /></div><div>Oven preheated to 350</div><div><br /></div><div>Trim the fat and the silver skin from your tenderloin. lice the tenderloin in half horizontally in the middle. ith a paring knife, pierce each tenderloin lengthwise through the middle, then rotate the knife 90 degrees and pierce again, making an x. nsert the handle of a wooden spoon into the slit and roll it around a little, opening up the pocket you've just made. nto this pocket, stuff the sage. o this on each piece of tenderloin.</div><div><br /></div><div>Season the tenderloin with salt and pepper, then wrap in the prosciutto slices, which will stick all on their own. n an oiled roasted pan, place the tenderloin and cook for 35 minutes. llow to rest for 5 minutes before cutting in.</div><div><br /></div><div>In the meantime, prepare the lentils. ook the lentils in simmering water for about 30 minutes (they'll maintain some of their bite), then drain. n a bowl, mix the scallions, oil, wine and sour cream. dd the bell peppers to the lentils. erve with the tenderloin plated on top of the lentils, a bit of scallion dressing spooned over the top, and a generous sprinkling of chives. lternately, you could mix the scallion dressing in with the lentils, which is what I suggest doing with any leftovers. njoy!</div><div><br /></div><img src="http://feeds.feedburner.com/~r/CookingBooks/~4/490550612" height="1" width="1"/>
+											
+					<br><br>
+					</p>
+
+															<div style="float:right;text-align:right">
+									<a href="/index.php?obj=front&action=redirect&feed_data_id=190855" target="_blank" style=" font-size: 18px; font-weight: bold ;color: #ce5d24">Read more ></a>
+								</div>
+							           			<div class="clr"></div>
+					<div id="feed_note">
+						<table>
+							<tr>
+								<td valign="top"><strong>Rate this recipe : </strong></td>
+								<td>
+									<div id="note_recipe" class="note_recipe">
+										<span id="vote_recipe1" title=""></span>
+										<span id="vote_recipe2" title=""></span>
+										<span id="vote_recipe3" title=""></span>
+										<span id="vote_recipe4" title=""></span>
+										<span id="vote_recipe5" title=""></span>
+									</div>
+								</td>
+								<td>
+									<a id="note_recipe_status" style="text-decoration:none; font-size:10px;display:inline"></a>
+								</td>
+							</tr>
+						</table>
+					</div>
+           			
+					<div id="feed_comment" style="display:none; width:500px">
+						<b>Votre commentaire :</b><br>
+							<div align="right">
+							<form  id="form_comment" onsubmit="return false;">
+							<input type="hidden" name="feed_data_id" value="190855">
+						<textarea name="feed_comment" style="width:500px; height:60px"></textarea><br>
+					
+						<input type="button" value="Validate" id="button" style="margin-top:5px"
+						onclick="
+							ajaxSubmit('form_comment', '/index.php?obj=feed&action=comment_post', function() {
+							alert('Votre commentaire a pris en compte');
+							$('feed_comment').hide();
+							$('feed_note').hide();
+							window.location.reload();
+							})"	>
+							<img src="/images/ajax_indicator.gif" alt="loading" style="display: none" id="loader">
+						</div>
+					</div>
+					<div align="center" style="margin:25px">
+						<script type="text/javascript"><!--
+						google_ad_client = "pub-5852466821056085";
+						/* 468x60, date de crtion 28/10/08 */
+						google_ad_slot = "4791536200";
+						google_ad_width = 468;
+						google_ad_height = 60;
+						//-->
+						</script>
+						<script type="text/javascript"
+						src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+						</script>		
+					</div> 
+							<div style="float:left;">
+							<table style="width:400px">
+								<tr>
+									<td align="center">
+										
+				     			 						     			 		<div id="add2cart_id_190855">
+				               				<a href="#"
+
+onclick="	
+	backup = $('add2cart_id_190855').innerHTML;
+	$('add2cart_id_190855').update('<img src=/images/ajax_indicator.gif alt=loading>');
+	new  Ajax.Request('/index.php?obj=members&action=addtocart&feed_data_id=190855',{ onComplete: function(reply){
+		
+		if (reply.responseText=='ok')
+		{
+		$('add2cart_id_190855').update('');showNotify('Recipe added');
+		}
+		else
+		{
+			$('add2cart_id_190855').update(backup);
+			new PopupDiv('/index.php?obj=members&action=member_form&member_source=CART&feed_data_id=190855');
+		}	
+		}}); return false;"								
+				               				style=" font-size: 10px; color: #000000"><img src="/images/icon_add_cart.gif" border="0"><br>Add to favorite</a>
+				               			</div>               			
+			            							            				</td>
+			            				<td align="center">
+											<a href="#" onclick="window.open('/index.php?obj=feed&action=print&feed_data_id=190855','feed_print','menubar=no, status=no, scrollbars=yes, menubar=no, width=600, height=600'); return false" style="font-size: 10px; color: #000000"><img src="/images/icon_print.gif" border=0><br>Imprimer cette page</a>
+										</td>
+										<td align="center">
+			                            	<a href="#" onclick="new PopupDiv('/index.php?obj=feed&action=send2friend&feed_data_id=190855'); return false;" style=" font-size: 10px ;color: #000000"><img src="/images/icon_send_friend.gif" border=0><br>Send this recipe to a friend</a>
+			                            </td>
+			                            			                            <td align="center">			                         
+			                            	<a href="#" onclick="new PopupDiv('/index.php?obj=feed&action=feed_data_msg&feed_data_id=190855'); return false;" style=" font-size: 10px ;color: #000000"><img src="/images/icon_ask.gif" border=0><br>Poser une question l'auteur</a>
+			                            </td>
+			                                   							</tr>
+							</table>
+							</div>
+							<br><br><br><br><br>
+           			            	</div>
+            	<br>
+	
+            	<div class="red_title">
+                    <span>Related recipes</span>
+                </div>
+                <div class="site_list">
+                    <ul>
+															<li>
+															<div class="cont_container">
+							                            <div class="cont_img" style="width:170px">
+								<a href="/recipes/country-style-ribs-255-fid-116602"><img src="http://www.ptitchef.com/upload_data/feed_data_img/116602_1M.jpg" alt="Country Style Ribs (255)" title="Country Style Ribs (255)" border="0" style="border: 1px solid #000000;"/></a>
+							</div>
+							<div class="cont_txt">
+                                                    		<a href="/recipes/country-style-ribs-255-fid-116602"><b>Country Style Ribs (255)</b></a>
+                    				               					<div class="add2cart" id="add2cart_id_116602"><a href="#"
+
+onclick="	
+	backup = $('add2cart_id_116602').innerHTML;
+	$('add2cart_id_116602').update('<img src=/images/ajax_indicator.gif alt=loading>');
+	new  Ajax.Request('/index.php?obj=members&action=addtocart&feed_data_id=116602',{ onComplete: function(reply){
+		
+		if (reply.responseText=='ok')
+		{
+		$('add2cart_id_116602').update('');showNotify('Recipe added');
+		}
+		else
+		{
+			$('add2cart_id_116602').update(backup);
+			new PopupDiv('/index.php?obj=members&action=member_form&member_source=CART&feed_data_id=116602');
+		}	
+		}}); return false;"		>
+	               					<img src="/images/icon_add_cart.gif" title="Add to favorite" alt="Add to favorite" /></a></div>
+	               				                          		<p class="date">Added 20/09/2008 01:40:03
+																</p>
+                           		<a href="/recipes/country-style-ribs-255-fid-116602"> As I mentioned the other day, I was trying to coerce Mr. Pikko into taking me for ramen. The mission was a success and I was able to curb my intense ramen-frenzied appetite with some Shabu Shabu Curry Ramen from Sumo Ramen. 
+   
+ I&#8217;ve learned[...]</a>
+                          		<p class="url"><span>http://feeds.feedburner.com/~r/AdventuresInBe...</span></p>
+                          		                          		<div align="left" class="vote_form">
+                            			                           </div>
+	                           	                           							</div>
+						</div>								</li>
+															<li>
+															<div class="cont_container">
+							                            <div class="cont_img" style="width:170px">
+								<a href="/recipes/stuffed-peppers-fid-166768"><img src="http://www.ptitchef.com/upload_data/feed_data_img/166768_1M.jpg" alt="Stuffed Peppers" title="Stuffed Peppers" border="0" style="border: 1px solid #000000;"/></a>
+							</div>
+							<div class="cont_txt">
+                                                    		<a href="/recipes/stuffed-peppers-fid-166768"><b>Stuffed Peppers</b></a>
+                    				               					<div class="add2cart" id="add2cart_id_166768"><a href="#"
+
+onclick="	
+	backup = $('add2cart_id_166768').innerHTML;
+	$('add2cart_id_166768').update('<img src=/images/ajax_indicator.gif alt=loading>');
+	new  Ajax.Request('/index.php?obj=members&action=addtocart&feed_data_id=166768',{ onComplete: function(reply){
+		
+		if (reply.responseText=='ok')
+		{
+		$('add2cart_id_166768').update('');showNotify('Recipe added');
+		}
+		else
+		{
+			$('add2cart_id_166768').update(backup);
+			new PopupDiv('/index.php?obj=members&action=member_form&member_source=CART&feed_data_id=166768');
+		}	
+		}}); return false;"		>
+	               					<img src="/images/icon_add_cart.gif" title="Add to favorite" alt="Add to favorite" /></a></div>
+	               				                          		<p class="date">Added 20/10/2008 01:13:00
+																</p>
+                           		<a href="/recipes/stuffed-peppers-fid-166768">    I don't feel like I've been doing a whole lot of cooking lately.  This past week has been a whirlwind...started the week recovering from vertigo and an inner ear infection, on Tuesday my daughter woke up with a fever and virus and on Thursday my[...]</a>
+                          		<p class="url"><span>http://aggieskitchen.blogspot.com/2008/10/stu...</span></p>
+                          		                          		<div align="left" class="vote_form">
+                            			                           </div>
+	                           	                           							</div>
+						</div>								</li>
+															<li>
+															<div class="cont_container">
+							                            <div class="cont_img" style="width:170px">
+								<a href="/recipes/goat-cheese-caramelised-onion-and-sun-dried-tomato-stuffed-pork-loin-fid-167180"><img src="http://www.ptitchef.com/upload_data/feed_data_img/167180_1M.jpg" alt="Goat cheese, Caramelised Onion and Sun dried Tomato stuffed Pork Loin" title="Goat cheese, Caramelised Onion and Sun dried Tomato stuffed Pork Loin" border="0" style="border: 1px solid #000000;"/></a>
+							</div>
+							<div class="cont_txt">
+                                                    		<a href="/recipes/goat-cheese-caramelised-onion-and-sun-dried-tomato-stuffed-pork-loin-fid-167180"><b>Goat cheese, Caramelised Onion and Sun dried Tomato stuffed Pork Loin</b></a>
+                    				               					<div class="add2cart" id="add2cart_id_167180"><a href="#"
+
+onclick="	
+	backup = $('add2cart_id_167180').innerHTML;
+	$('add2cart_id_167180').update('<img src=/images/ajax_indicator.gif alt=loading>');
+	new  Ajax.Request('/index.php?obj=members&action=addtocart&feed_data_id=167180',{ onComplete: function(reply){
+		
+		if (reply.responseText=='ok')
+		{
+		$('add2cart_id_167180').update('');showNotify('Recipe added');
+		}
+		else
+		{
+			$('add2cart_id_167180').update(backup);
+			new PopupDiv('/index.php?obj=members&action=member_form&member_source=CART&feed_data_id=167180');
+		}	
+		}}); return false;"		>
+	               					<img src="/images/icon_add_cart.gif" title="Add to favorite" alt="Add to favorite" /></a></div>
+	               				                          		<p class="date">Added 15/10/2008 03:27:00
+																</p>
+                           		<a href="/recipes/goat-cheese-caramelised-onion-and-sun-dried-tomato-stuffed-pork-loin-fid-167180">    Oh Sunday's . . . I love it when I am able to just chill with my hubby or take a Sunday afternoon nap, especially since it is turning cold out and we will be buried in snow before you know it! (Nothing like trudging across campus to class and[...]</a>
+                          		<p class="url"><span>http://theopenpantry.blogspot.com/2008/10/goa...</span></p>
+                          		                          		<div align="left" class="vote_form">
+                            			                           </div>
+	                           	                           							</div>
+						</div>								</li>
+															<li>
+															<div class="cont_container">
+							                            <div class="cont_img" style="width:170px">
+								<a href="/recipes/pork-chop-stuffed-with-ricotta-sundried-tomatoes-and-sage-fid-167580"><img src="http://www.ptitchef.com/upload_data/feed_data_img/167580_1M.jpg" alt="Pork Chop stuffed with Ricotta, sundried tomatoes and sage" title="Pork Chop stuffed with Ricotta, sundried tomatoes and sage" border="0" style="border: 1px solid #000000;"/></a>
+							</div>
+							<div class="cont_txt">
+                                                    		<a href="/recipes/pork-chop-stuffed-with-ricotta-sundried-tomatoes-and-sage-fid-167580"><b>Pork Chop stuffed with Ricotta, sundried tomatoes and sage</b></a>
+                    				               					<div class="add2cart" id="add2cart_id_167580"><a href="#"
+
+onclick="	
+	backup = $('add2cart_id_167580').innerHTML;
+	$('add2cart_id_167580').update('<img src=/images/ajax_indicator.gif alt=loading>');
+	new  Ajax.Request('/index.php?obj=members&action=addtocart&feed_data_id=167580',{ onComplete: function(reply){
+		
+		if (reply.responseText=='ok')
+		{
+		$('add2cart_id_167580').update('');showNotify('Recipe added');
+		}
+		else
+		{
+			$('add2cart_id_167580').update(backup);
+			new PopupDiv('/index.php?obj=members&action=member_form&member_source=CART&feed_data_id=167580');
+		}	
+		}}); return false;"		>
+	               					<img src="/images/icon_add_cart.gif" title="Add to favorite" alt="Add to favorite" /></a></div>
+	               				                          		<p class="date">Added 19/09/2008 07:50:00
+																</p>
+                           		<a href="/recipes/pork-chop-stuffed-with-ricotta-sundried-tomatoes-and-sage-fid-167580">     Everyone talks about a writers block, so I guess what I have experienced this week could be caused by a writers blog(block)!!!! I cooked with my friend and fellow blogger  Sophia  for a big corporate function on Wednesday and it took me the[...]</a>
+                          		<p class="url"><span>http://www.my-easy-cooking.com/2008/09/pork-c...</span></p>
+                          		                          		<div align="left" class="vote_form">
+                            			                           </div>
+	                           	                           							</div>
+						</div>								</li>
+															<li>
+															<div class="cont_container">
+							                            <div class="cont_img" style="width:170px">
+								<a href="/recipes/roast-pheasant-and-lentil-scallion-salad-courtesy-of-lisa-fid-168429"><img src="http://www.ptitchef.com/upload_data/feed_data_img/168429_1M.jpg" alt="Roast Pheasant and Lentil Scallion Salad, courtesy of Lisa" title="Roast Pheasant and Lentil Scallion Salad, courtesy of Lisa" border="0" style="border: 1px solid #000000;"/></a>
+							</div>
+							<div class="cont_txt">
+                                                    		<a href="/recipes/roast-pheasant-and-lentil-scallion-salad-courtesy-of-lisa-fid-168429"><b>Roast Pheasant and Lentil Scallion Salad, courtesy of Lisa</b></a>
+                    				               					<div class="add2cart" id="add2cart_id_168429"><a href="#"
+
+onclick="	
+	backup = $('add2cart_id_168429').innerHTML;
+	$('add2cart_id_168429').update('<img src=/images/ajax_indicator.gif alt=loading>');
+	new  Ajax.Request('/index.php?obj=members&action=addtocart&feed_data_id=168429',{ onComplete: function(reply){
+		
+		if (reply.responseText=='ok')
+		{
+		$('add2cart_id_168429').update('');showNotify('Recipe added');
+		}
+		else
+		{
+			$('add2cart_id_168429').update(backup);
+			new PopupDiv('/index.php?obj=members&action=member_form&member_source=CART&feed_data_id=168429');
+		}	
+		}}); return false;"		>
+	               					<img src="/images/icon_add_cart.gif" title="Add to favorite" alt="Add to favorite" /></a></div>
+	               				                          		<p class="date">Added 16/10/2008 14:16:00
+																</p>
+                           		<a href="/recipes/roast-pheasant-and-lentil-scallion-salad-courtesy-of-lisa-fid-168429">    Cooking Books readers, so nice to meet you all, I'm Lisa from  Lisa is Cooking . hank you so much, Andrea, for inviting me over for a guest post. ndrea and I both have an interest in cookbooks new and old, food writing, and food istory, so[...]</a>
+                          		<p class="url"><span>http://feeds.feedburner.com/~r/CookingBooks/~...</span></p>
+                          		                          		<div align="left" class="vote_form">
+                            			                           </div>
+	                           	                           							</div>
+						</div>								</li>
+							
+				</div>
+				
+
+
+	            	
+            </div>      
+            <div style="width=200px; overflow:hidden">
+<div id="shopping">
+<script type="text/javascript"><!--
+google_ad_client = "pub-5852466821056085";
+/* Ptitchef 120x600 */
+google_ad_slot = "0858116047";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	
+</div>
+<div style="margin-top:10px" id="shopping">
+    </div>
+</div>
+  <div class="clear"></div>
+                 <div class="clear"></div>
+             
+   </div>
+     
+
+		</div><!--//content-->
+		<div id="footer">
+		<div class="nav_footer">copyright <a href="http://www.madeinwork.com" target="_blank">Madeinwork.com</a></div>
+		<div class="content_footer">
+			<div class="cf_container">
+					<ul>
+						<li><a href="http://www.louer-pour-les-vacances.com/a-la-mer" target="_blank">Locations de vacances la montagne</a></li>
+						<li><a href="http://www.anuncioo.fr" target="_blank">Petites annonces gratuites</a></li>
+						<li><a href="http://fr.plazeo.com" target="_blank">Maison a vendre</a></li>
+						<li><a href="http://www.financioo.com" target="_blank" title="Finance">Finances</a></li>
+						<li><a href="http://www.creatiblogs.com" target="_blank" title="Loisirs crtifs">Loisirs crtifs</a></li>
+					</ul>
+			</div>
+		</div>
+	</div><!--//footer-->
+</div><!--//container-->
+				<br>
+				<div align="center"><!--1-->
+										
+					<a href="http://www.xiti.com/xiti.asp?s=401623" title="WebAnalytics" target="_top">
+					<script type="text/javascript">
+					<!--
+					Xt_param = 's=401623&p=';
+					try {Xt_r = top.document.referrer;}
+					catch(e) {Xt_r = document.referrer; }
+					Xt_h = new Date();
+					Xt_i = '<img width="39" height="25" border="0" alt="" ';
+					Xt_i += 'src="http://logv6.xiti.com/hit.xiti?'+Xt_param;
+					Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+					if(parseFloat(navigator.appVersion)>=4)
+					{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+					document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+					//-->
+					</script>
+					<noscript>
+					Mesure d'audience ROI statistique webanalytics par <img width="39" height="25" src="http://logv6.xiti.com/hit.xiti?s=401623&p=" alt="WebAnalytics" />
+					</noscript></a>
+					
+					<script type="text/javascript">
+					var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+					document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+					</script>
+					<script type="text/javascript">
+					var pageTracker = _gat._getTracker("UA-52830-19");
+					pageTracker._trackPageview();
+					</script>
+					<div style="display:none"><!--2-->
+						<script language="javascript">
+						document.write("<script language='javascript' src='http://1936.stats.stats.fr/stats/code.php?1139,0,"+document.referrer+"'><\/script>");
+						</script>
+						<noscript>
+						<a href="http://www.stats.fr" target="_top">
+						<img border=0 src="http://10.141.0.1/1936.stats.stats.frr/stats/logo.php?1139"></a>
+						</noscript>
+					</div><!--//2-->
+									</div><!--//1-->
+				<div id="notify" style="display:none">
+					<div id="notify_text" class="cl3 bold" style="margin-bottom:10px" align="center"></div>
+					<div><a href="javascript:void(hideNotify())" class="cl4 underline bold">Close</a></div>
+				</div>
+					</body>
+</html>
+

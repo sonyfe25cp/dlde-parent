@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+	<rule>
+		<type>news</type>
+		<uri>chinanews</uri>
+		<title>.//*[@id='cont_1_1_2']/h1</title>
+		<content>.//*[@id='cont_1_1_2']/div[5]</content>
+	</rule> 
+</rules>

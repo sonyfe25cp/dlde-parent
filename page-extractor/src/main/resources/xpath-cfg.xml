@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+	<rule>
+		<type>forum</type>
+		<uri>bitpt.org</uri>
+		<mainframe>.//*[@id]/tbody</mainframe>
+		<username>.//tr[1]/td[1]/div[1]/a/font</username>
+		<content>.//tr/td/div/div/div/table/tbody/tr/td</content>
+	</rule>
+	<rule>
+		<type>news</type>
+		<uri>sina</uri>
+		<title>.//*[@id='artibodyTitle']</title>
+		<content>.//*[@id='artibody']/p</content>
+	</rule> 
+</rules>

@@ -1,0 +1,38 @@
+推荐引擎要求：
+
+1.代码要求
+
+ 	1) 重要算法和类 要有注释，中文即可
+ 	2) 代码结构要清晰，
+ 		1> adapter包放重写duiner中的adapter
+ 		2> model包用于存放自定义的领域对象
+ 		3> utils用于存放工具类
+ 		4> 其他类型自己建包名
+ 	3) 测试代码要对应，每个重要类和方法都要有对应的test
+ 		1> 在命令行下 mvn test 必须通过
+ 		2> 测试类调用的文本文件等必须在test/resources中，禁止调用其他文件夹的测试数据(别人mvn test的时候就没法通过)
+ 		3> 可以通过mvn package打包
+ 	4) 接口清晰
+ 		目前就使用RecommenderEngine类的predict方法进行预测，参数以get/set的方法注入，结果以get方法取出.
+ 		对于不同的参数组合有不同的对应方式，注意代码的容错性。
+ 	5) 代码风格
+ 		1> Eclipse->Windows->Preferences->Java->Code Style->Code Templetes->Types 里面修改 @author为自己的名字,methods 里面添加$date
+ 		2> 包命名要符合功能，禁止以名字命名或者不符合edu.bit.dlde.xxxx规范
+ 		
+2.算法要求
+
+	1) 使用的算法要有根据，在说明文档中标出算法名称以及重要参考文献
+	2) 使用的公共测试数据要有格式说明
+ 		
+ 		
+==安装==
+1.数据库：mysql,用户名:duine,密码:duine,数据库表:duine_profile，编码:utf8
+	数据文件在test/resources/duine_profile.sql
+
+
+ 		
+安装duine额外依赖包：（其他依赖自行补充）
+
+mvn install:install-file -Dfile=jta-1_0_1B-classes.zip -DgroupId=javax.transaction -DartifactId=jta -Dversion=1.0.1B -Dpackaging=jar
+
+mvn install:install-file -Dfile=jdbc-stdext-2.0.jar -DgroupId=javax.sql -DartifactId=jdbc-stdext -Dversion=2.0 -Dpackaging=jar

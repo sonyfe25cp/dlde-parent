@@ -1,0 +1,9 @@
+SimpleHtmlExtractor 算法简单,利用密度计算
+BlockExtractor 密度+DOM,质量比Simple要好,速度略慢
+CombinedPreciseExtractor 基于规则的模板解析,质量最好,效率最低,人工写模板
+
+test里面有各种demo
+
+遗留bug:
+
+1.BlockExtractor 在某些特2b的网页有内嵌css时候会报错..resource里有相应类型的错误页面,但此类型页面比例很小,TREC clue09测试约1/1000. 

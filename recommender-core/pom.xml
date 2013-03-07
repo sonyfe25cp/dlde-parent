@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>edu.bit.dlde</groupId>
+		<artifactId>dlde-parent</artifactId>
+		<version>${parent.version}</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>recommender-core</artifactId>
+	<name>recommender</name>
+
+	<dependencies>
+		<!-- dlde-commons -->
+		<dependency>
+			<groupId>edu.bit.dlde</groupId>
+			<artifactId>dlde-commons</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+
+
+		<!-- hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>3.6.7.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>3.6.7.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
+			<version>3.6.7.Final</version>
+		</dependency>
+
+		<!-- SLF4J -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.14</version>
+		</dependency>
+
+		<!-- IKAnalyzer -->
+		<dependency>
+			<groupId>org.wltea.ik-analyzer</groupId>
+			<artifactId>ik-analyzer</artifactId>
+			<version>3.2.8</version>
+		</dependency>
+	</dependencies>
+</project>

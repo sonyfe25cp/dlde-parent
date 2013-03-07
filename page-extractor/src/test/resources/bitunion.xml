@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+	<rule>
+		<type>forum</type>
+		<uri>bitunion</uri>
+		<title>html/body/table/tbody/tr/td/table[7]/tbody/tr/td/table[2]/tbody/tr/td[5]/table/tbody/tr[1]/td/div</title>
+		<content>html/body/table/tbody/tr/td/table[7]/tbody/tr/td/table[2]/tbody/tr/td[5]/table/tbody/tr[4]/td</content>
+	</rule> 
+</rules>

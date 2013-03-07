@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+	<rule>
+		<type>forum</type>
+		<uri>bitpt</uri>
+		<mainframe>.//*[@id='postlist']</mainframe>
+		<username>.//*[@id='pid2438649']/tbody/tr[1]/td[1]/div[1]/div/a/font</username>
+		<content>.//tr/td/div/div/div/table/tbody/tr/td</content>
+	</rule>
+</rules>
