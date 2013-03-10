@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>edu.bit.dlde</groupId>
 		<artifactId>dlde-parent</artifactId>
-		<version>${parent.version}</version>
+		<version>1.0</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>dlde-tools</artifactId>
@@ -39,7 +39,6 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.16</version>
 		</dependency>
 		<dependency>
 			<groupId>org.wltea.ik-analyzer</groupId>

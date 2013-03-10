@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>edu.bit.dlde</groupId>
 		<artifactId>dlde-parent</artifactId>
-		<version>${parent.version}</version>
+		<version>1.0</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>recommender-core</artifactId>
@@ -16,7 +16,6 @@
 			<artifactId>dlde-commons</artifactId>
 			<version>${parent.version}</version>
 		</dependency>
-
 
 		<!-- hibernate -->
 		<dependency>
@@ -39,29 +38,24 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.5.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.5.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>jcl-over-slf4j</artifactId>
-			<version>1.5.2</version>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.14</version>
 		</dependency>
 
 		<!-- IKAnalyzer -->
 		<dependency>
 			<groupId>org.wltea.ik-analyzer</groupId>
 			<artifactId>ik-analyzer</artifactId>
-			<version>3.2.8</version>
 		</dependency>
 	</dependencies>
 </project>

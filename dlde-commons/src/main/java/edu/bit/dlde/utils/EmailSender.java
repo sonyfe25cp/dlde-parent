@@ -16,7 +16,7 @@ import javax.mail.internet.MimeMessage;
  * 发送普通邮件，接受普通邮件 发送带有附件的邮件，接收带有附件的邮件 发送html形式的邮件，接受html形式的邮件 发送带有图片的邮件等做了一个总结。
  */
 public class EmailSender {
-	private DLDELogger logger=new DLDELogger();
+	DLDELogger logger = new DLDELogger();
 	// 邮箱服务器
 	private String host = "smtp.163.com";
 	// 这个是你的邮箱用户名
@@ -36,13 +36,12 @@ public class EmailSender {
 
 	private String mail_body = "this is the mail_body of this test mail";
 
-	//显示在发件人那地方的名字
+	// 显示在发件人那地方的名字
 	private String personalName = "我的邮件";
 
 	public EmailSender() {
-		
+
 	}
-	
 
 	public EmailSender(String host, String username, String password) {
 		this();
@@ -50,7 +49,7 @@ public class EmailSender {
 		this.username = username;
 		this.password = password;
 	}
-	
+
 	public EmailSender(String username, String password) {
 		this();
 		logger.info("默认使用@163.com邮件服务器");
@@ -58,17 +57,15 @@ public class EmailSender {
 		this.password = password;
 	}
 
-
-	//邮件发送前的信息检查
-	private void check(){
-		if(username.length()==0||password.length()==0){
+	// 邮件发送前的信息检查
+	private void check() {
+		if (username.length() == 0 || password.length() == 0) {
 			logger.error("用户名密码为空");
 		}
-		if(mail_to.length()==0||mail_from.length()==0){
+		if (mail_to.length() == 0 || mail_from.length() == 0) {
 			logger.error("发件人or收件人为空");
 		}
 	}
-
 
 	/**
 	 * 此段代码用来发送普通电子邮件
@@ -98,8 +95,9 @@ public class EmailSender {
 			throw new Exception(ex.getMessage());
 		}
 	}
-	class CheckException extends Exception{
-		
+
+	class CheckException extends Exception {
+
 	}
 
 	/**

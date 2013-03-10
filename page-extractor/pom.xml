@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>edu.bit.dlde</groupId>
 		<artifactId>dlde-parent</artifactId>
-		<version>${parent.version}</version>
+		<version>1.0</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>page-extractor</artifactId>
@@ -15,7 +15,12 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
+	<repositories>
+		<repository>
+			<id>morphia-google-code-repo</id>
+			<url>http://morphia.googlecode.com/svn/mavenrepo/</url>
+		</repository>
+	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>edu.bit.dlde</groupId>
@@ -25,13 +30,8 @@
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.1</version>
 		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.1</version>
-		</dependency>
+
 		<!-- <dependency> -->
 		<!-- <groupId>org.mongodb</groupId> -->
 		<!-- <artifactId>mongo-java-driver</artifactId> -->
@@ -45,7 +45,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.google.code</groupId>
+			<groupId>com.google.code.morphia</groupId>
 			<artifactId>morphia</artifactId>
 			<version>0.99</version>
 		</dependency>
@@ -59,41 +59,10 @@
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
 		</dependency>
-		<!-- <dependency> -->
-		<!-- <groupId>mysql</groupId> -->
-		<!-- <artifactId>mysql-connector-java</artifactId> -->
-		<!-- <version>5.1.17</version> -->
-		<!-- </dependency> -->
-		<!-- junit -->
-		<!-- commons-lang -->
 		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.6</version>
-		</dependency>
-
-		<!-- log4j -->
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.5.2</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.5.2</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>jcl-over-slf4j</artifactId>
-			<version>1.5.2</version>
-		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.14</version>
 		</dependency>
 
 		<dependency>

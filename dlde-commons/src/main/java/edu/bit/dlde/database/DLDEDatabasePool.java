@@ -3,8 +3,6 @@
 //import java.sql.Connection;
 //import java.sql.SQLException;
 //
-//import com.jolbox.bonecp.BoneCPDataSource;
-//
 //import edu.bit.dlde.utils.DLDEConfiguration;
 //import edu.bit.dlde.utils.DLDELogger;
 //
