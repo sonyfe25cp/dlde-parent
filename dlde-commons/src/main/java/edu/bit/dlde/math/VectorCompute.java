@@ -39,6 +39,8 @@ public class VectorCompute {
 				res[i] = vector[i];
 			}else if(i > k){
 				res[i] = vector[i+1];
+			}else{
+				res[i] = vector[i+1];
 			}
 		}
 		return res;

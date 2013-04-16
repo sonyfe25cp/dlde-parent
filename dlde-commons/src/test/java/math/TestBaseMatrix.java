@@ -26,6 +26,10 @@ public class TestBaseMatrix extends TestCase{
 //		assertEquals(0,value);
 		System.out.println(value);
 	}
+	@Test
+	public void testToMatlab(){
+		System.out.println(matrix.toMatlab());
+	}
 	public TestBaseMatrix(){
 		init();
 	}

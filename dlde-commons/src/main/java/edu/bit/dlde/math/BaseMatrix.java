@@ -137,7 +137,22 @@ public class BaseMatrix {
 			matrix[i]=array[i];
 		}
 	}
-	
+	public String toMatlab(){
+		StringBuilder sb=new StringBuilder();
+		for(int x=0;x<rows;x++){
+			int i =0;
+			for(int y=0;y<cols;y++){
+				if(i == cols-1){
+					sb.append(getValue(x,y));	
+				}else{
+					sb.append(getValue(x,y)+",");
+				}
+				i ++;
+			}
+			sb.append(";\n");
+		}
+		return sb.toString();
+	}
 	public String toString(){
 		StringBuilder sb=new StringBuilder();
 		for(int x=0;x<rows;x++){
