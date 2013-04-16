@@ -50,7 +50,6 @@ public class VectorCompute {
 		}
 		return res;
 	}
-	
 	/**
 	 * 返回向量中最大的数
 	 * @param vector
