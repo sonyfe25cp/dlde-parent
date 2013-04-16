@@ -32,23 +32,24 @@ public class BaseMatrix {
 		this.rows = rows;
 		this.cols = cols;
 		
-		matrix=new Double[rows*cols];
+		matrix=new double[rows*cols];
 	}
 	
-	private Double[] matrix;
+	private double[] matrix;
 	
 	/**
-	 * 输入第x行,y列的数值
+	 * 输入第x行,y列的数值 , 从0开始计数
 	 * @param x
 	 * @param y
 	 * Apr 24, 2012
 	 */
 	public void setValue(int x, int y,double value){
-		int pos=(x-1)*cols+y;
+		int pos=x*cols+y;
 		if(pos<0||pos>matrix.length){
-			logger.error("can't set the value,beacuse wrong positon of matrix.");
+			logger.error("can't set the value,beacuse wrong positon of matrix. pos:"+pos+",matrix.length:"+matrix.length);
+			logger.error("x:"+x+",y:"+y+",value:"+value);
 		}
-		matrix[pos-1]=value;
+		matrix[pos]=value;
 	}
 	
 	/**
@@ -60,7 +61,7 @@ public class BaseMatrix {
 	public double[] getRow(int x){
 		double[] row_value=new double[cols];
 		for(int i=0;i<cols;i++){
-			row_value[i]=getValue(x,i+1);
+			row_value[i]=getValue(x,i);
 		}
 		return row_value;
 	}
@@ -88,7 +89,7 @@ public class BaseMatrix {
 	public double[] getCol(int x){
 		double[] col_value=new double[rows];
 		for(int i=0;i<rows;i++){
-			col_value[i]=getValue(i+1,x);
+			col_value[i]=getValue(i,x);
 		}
 		return col_value;
 	}
@@ -101,23 +102,13 @@ public class BaseMatrix {
 	 * Apr 24, 2012
 	 */
 	public double getValue(int x ,int y){
-		return getObject(x,y);
-	}
-	/**
-	 * 
-	 * @param x
-	 * @param y
-	 * @return
-	 * Jul 19, 2012
-	 */
-	public Double getObject(int x ,int y){
-		int pos=(x-1)*cols+y;
+		int pos=x*cols+y;
 		if(pos<0||pos>matrix.length){
 			logger.error("can't get the value,beacuse wrong positon of matrix. x:"+x+" ,y:"+y+" ,pos:"+pos);
 		}
-		return matrix[pos-1];
+//		logger.info("x:"+x+" ,y:"+y+" ,pos:"+pos+",matrix[pos]:"+matrix[pos]);
+		return matrix[pos];
 	}
-	
 	/**
 	 * 从数组中直接复制矩阵
 	 * @param array
@@ -132,12 +123,26 @@ public class BaseMatrix {
 			matrix[i]=array.get(i);
 		}
 	}
+	/**
+	 * 从数组中直接复制矩阵
+	 * @param array
+	 * Apr 24, 2012
+	 */
+	public void colon(double[] array){
+		if(array.length != matrix.length){
+			logger.error("can't init the matrix with this array,beacuse the size does not match");
+			return;
+		}
+		for(int i=0;i<array.length ;i++){
+			matrix[i]=array[i];
+		}
+	}
 	
 	public String toString(){
 		StringBuilder sb=new StringBuilder();
-		for(int x=1;x<=rows;x++){
+		for(int x=0;x<rows;x++){
 			sb.append(printYi(cols)+"\n");
-			for(int y=1;y<=cols;y++){
+			for(int y=0;y<cols;y++){
 				sb.append(getValue(x,y)+" ");
 			}
 			sb.append("\n");
@@ -160,9 +165,9 @@ public class BaseMatrix {
 	 * Apr 25, 2012
 	 */
 	public void swapRows(int x ,int y){
-		for(int i =1;i<=cols;i++){
-			Double x_i=getObject(x,i);
-			Double y_i=getObject(y,i);
+		for(int i=0;i<cols;i++){
+			Double x_i=getValue(x,i);
+			Double y_i=getValue(y,i);
 			Double temp=x_i;
 			setValue(x,i,y_i);
 			setValue(y,i,temp);
@@ -221,7 +226,7 @@ public class BaseMatrix {
 		 * 转化为阶梯形 
 		 */
 		Map<Integer,Boolean> checkMap=new HashMap<Integer,Boolean>();
-		for(int i=1;i<=rows;i++){
+		for(int i=0;i<rows;i++){
 			double value=getValue(i,1);
 			if(value==0){
 				checkMap.put(i, false);
@@ -233,7 +238,7 @@ public class BaseMatrix {
 		if(!map_flag){//无首元为0||首元都是0
 			return;
 		}
-		for(int i=1;i<=rows;i++){
+		for(int i=0;i<rows;i++){
 			if(checkMap.size()<1){
 				break;
 			}

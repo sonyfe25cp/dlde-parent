@@ -46,8 +46,8 @@ public class MatrixCompute {
 		int rows=matrix.getRows();
 		int cols=matrix.getCols();
 		BaseMatrix newMatrix=new BaseMatrix(cols,rows);
-		for(int x=1;x<=rows;x++){
-			for(int y=1;y<=cols;y++){
+		for(int x=0;x<rows;x++){
+			for(int y=0;y<cols;y++){
 				double value=matrix.getValue(x,y);
 				newMatrix.setValue(y, x, value);
 			}
@@ -72,8 +72,8 @@ public class MatrixCompute {
 			return null;
 		}
 		BaseMatrix resMatrix=new BaseMatrix(rowsA,colsB);
-		for(int x=1;x<=rowsA;x++){//第一行
-			for(int y=1;y<=colsB;y++){//第一列
+		for(int x=0;x<rowsA;x++){//第一行
+			for(int y=0;y<colsB;y++){//第一列
 				double value=0;
 				
 				double[] valueA=matrixA.getRow(x);
@@ -97,8 +97,8 @@ public class MatrixCompute {
 		int rows=matrix.getRows();
 		int cols=matrix.getCols();
 		BaseMatrix resMatrix=new BaseMatrix(cols,rows);
-		for(int i=1;i<=rows;i++){
-			for(int j=1;j<=cols;j++){
+		for(int i=0;i<rows;i++){
+			for(int j=0;j<cols;j++){
 				double value=matrix.getValue(i, j);
 				resMatrix.setValue(j, i, value);
 			}
@@ -114,7 +114,7 @@ public class MatrixCompute {
 	 */
 	public static BaseMatrix simplex(BaseMatrix matrix){
 		
-		for(int i=1;i<=matrix.getRows();i++){
+		for(int i=0;i<matrix.getRows();i++){
 			double[] row=matrix.getRow(i);
 			double x_1=row[0];
 		}
@@ -138,8 +138,8 @@ public class MatrixCompute {
 		}
 		BaseMatrix newMatrix=new BaseMatrix(rows-1,cols);
 		boolean flag=false;
-		for(int j = 1 ; j<=rows-1;j++){
-			for(int i = 1 ; i<=cols;i++){
+		for(int j = 0 ; j< rows;j++){
+			for(int i = 0 ; i<cols;i++){
 				int row=j;
 				if(rowNum==j){
 					flag=true;
