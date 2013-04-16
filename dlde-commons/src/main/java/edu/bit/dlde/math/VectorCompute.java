@@ -9,6 +9,72 @@ import edu.bit.dlde.utils.DLDELogger;
  */
 public class VectorCompute {
 	private static DLDELogger logger=new DLDELogger();
+	
+	/**
+	 * 简单的plus，只支持两向量同长度
+	 * @param vector1
+	 * @param vector2
+	 * @return
+	 * Apr 15, 2013
+	 */
+	public static double[] plus(double[] vector1, double[] vector2){
+		double[] res = new double[vector1.length];
+		for(int i = 0 ; i < vector1.length; i ++){
+			res[i] = vector1[i] + vector2[i];
+		}
+		return res;
+	}
+	
+	/**
+	 * 去掉vector中第k个位置的数字，从0开始数
+	 * @param vector
+	 * @param k
+	 * @return
+	 * Apr 15, 2013
+	 */
+	public static double[] except(double[] vector, int k ){
+		double[] res = new double[vector.length-1];
+		for(int i = 0 ; i < res.length; i ++){
+			if(i < k ){
+				res[i] = vector[i];
+			}else if(i > k){
+				res[i] = vector[i+1];
+			}
+		}
+		return res;
+	}
+	
+	/**
+	 * 返回向量中最大的数
+	 * @param vector
+	 * @return
+	 * Apr 15, 2013
+	 */
+	public static double max(double[] vector){
+		double max = Double.MIN_VALUE;
+		for(int i = 0 ; i < vector.length; i ++){
+			if(vector[i] > max){
+				max = vector[i];
+			}
+		}
+		return max;
+	}
+	/**
+	 * 返回向量中最小的数字
+	 * @param vector
+	 * @return
+	 * Apr 15, 2013
+	 */
+	public static double min(double[] vector){
+		double min = Double.MAX_VALUE;
+		for(int i = 0 ; i < vector.length; i ++){
+			if(vector[i] < min){
+				min = vector[i];
+			}
+		}
+		return min;
+	}
+	
 	/**
 	 * 平方
 	 * @param vector

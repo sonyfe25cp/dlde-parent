@@ -32,10 +32,10 @@ public class BaseMatrix {
 		this.rows = rows;
 		this.cols = cols;
 		
-		matrix=new MathObject[rows*cols];
+		matrix=new Double[rows*cols];
 	}
 	
-	private MathObject[] matrix;
+	private Double[] matrix;
 	
 	/**
 	 * 输入第x行,y列的数值
@@ -48,15 +48,7 @@ public class BaseMatrix {
 		if(pos<0||pos>matrix.length){
 			logger.error("can't set the value,beacuse wrong positon of matrix.");
 		}
-		matrix[pos-1].setValue(value);
-	}
-	
-	public void setObject(int x, int y,MathObject object){
-		int pos=(x-1)*cols+y;
-		if(pos<0||pos>matrix.length){
-			logger.error("can't set the value,beacuse wrong positon of matrix.");
-		}
-		matrix[pos-1]=object;
+		matrix[pos-1]=value;
 	}
 	
 	/**
@@ -72,6 +64,21 @@ public class BaseMatrix {
 		}
 		return row_value;
 	}
+	/**
+	 * 点乘
+	 * @param x
+	 * Apr 15, 2013
+	 */
+	public BaseMatrix dot(double x){
+		for(int row = 0; row < rows; row ++){
+			for(int col = 0; col < cols; col ++){
+				this.setValue(row, col, getValue(row, col) * x);
+			}
+		}
+		return this;
+	}
+	
+	
 	/**
 	 * 获得第x列
 	 * @param x
@@ -94,7 +101,7 @@ public class BaseMatrix {
 	 * Apr 24, 2012
 	 */
 	public double getValue(int x ,int y){
-		return getObject(x,y).getValue();
+		return getObject(x,y);
 	}
 	/**
 	 * 
@@ -103,7 +110,7 @@ public class BaseMatrix {
 	 * @return
 	 * Jul 19, 2012
 	 */
-	public MathObject getObject(int x ,int y){
+	public Double getObject(int x ,int y){
 		int pos=(x-1)*cols+y;
 		if(pos<0||pos>matrix.length){
 			logger.error("can't get the value,beacuse wrong positon of matrix. x:"+x+" ,y:"+y+" ,pos:"+pos);
@@ -116,7 +123,7 @@ public class BaseMatrix {
 	 * @param array
 	 * Apr 24, 2012
 	 */
-	public void colon(List<MathObject> array){
+	public void colon(List<Double> array){
 		if(array.size()!=matrix.length){
 			logger.error("can't init the matrix with this array,beacuse the size does not match");
 			return;
@@ -154,11 +161,11 @@ public class BaseMatrix {
 	 */
 	public void swapRows(int x ,int y){
 		for(int i =1;i<=cols;i++){
-			MathObject x_i=getObject(x,i);
-			MathObject y_i=getObject(y,i);
-			MathObject temp=x_i;
-			setObject(x,i,y_i);
-			setObject(y,i,temp);
+			Double x_i=getObject(x,i);
+			Double y_i=getObject(y,i);
+			Double temp=x_i;
+			setValue(x,i,y_i);
+			setValue(y,i,temp);
 		}
 	}
 	/**

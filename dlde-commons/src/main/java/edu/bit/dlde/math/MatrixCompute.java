@@ -19,6 +19,26 @@ public class MatrixCompute {
 	}
 	
 	/**
+	 * 简单加法，目前仅适用于 matrixA 与 matrixB 是相同大小的矩阵
+	 * @param matrixA
+	 * @param matrixB
+	 * @return
+	 * Apr 15, 2013
+	 */
+	public static BaseMatrix plus(BaseMatrix matrixA, BaseMatrix matrixB){
+		int rows = matrixA.getRows();
+		int cols = matrixA.getCols();
+
+		BaseMatrix matrix = new BaseMatrix(rows, cols);
+		for(int row = 0 ; row < rows; row ++){
+			for(int col = 0; col < cols; col ++){
+				matrix.setValue(row, col, matrixA.getValue(row, col) + matrixB.getValue(row, col));
+			}
+		}
+		return matrix;
+	}
+	
+	/**
 	 * 伴随矩阵
 	 * Apr 25, 2012
 	 */
