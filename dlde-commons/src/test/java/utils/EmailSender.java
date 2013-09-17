@@ -1,16 +1,30 @@
 package utils;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Properties;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
+import javax.activation.DataHandler;
 import javax.mail.Address;
 import javax.mail.Authenticator;
+import javax.mail.BodyPart;
 import javax.mail.Message;
+import javax.mail.Multipart;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 
 import org.apache.log4j.Logger;
 
@@ -24,9 +38,9 @@ public class EmailSender {
 	// 你的邮箱密码
 	private String password = "";
 
-	private String mail_head_name = "this is head of this mail";
+	private String mail_head_name = "文件头";
 
-	private String mail_head_value = "this is head value of this mail";
+	private String mail_head_value = "文件头值";
 
 	private String mail_to = "";
 
@@ -37,13 +51,34 @@ public class EmailSender {
 	private String mail_body = "this is the mail_body of this test mail";
 
 	// 显示在发件人那地方的名字
-	private String personalName = "北理工NoPrinter.cn打印铺";
+	private String personalName = "北理工NoPrinter打印铺";
 
 	public EmailSender() {
-//		this.username="admin@noprinter.cn";
-//		this.password="85136894";
 		this.username="40711087@bit.edu.cn";
 		this.password="nvidia7600";
+	}
+	public EmailSender(String server){
+		if(server.equals("126")){
+			this.username = "noprinter@126.com";
+			this.password = "omartech@406";
+			this.host = "smtp.126.com";
+			this.mail_from ="noprinter@126.com";
+		}else if(server.equals("bit")){
+			this.username="40711087@bit.edu.cn";
+			this.password="nvidia7600";	
+			this.host = "mail.bit.edu.cn";
+			this.mail_from ="40711087@bit.edu.cn";
+		}else if(server.equals("noprinter")){
+			this.username = "admin@noprinter.cn";
+			this.password = "85136984";
+			this.host = "smtp.noprinter.cn";
+			this.mail_from = "admin@noprinter.cn";
+		}else if(server.equals("qq")){
+			this.username = "2536151131@qq.com";
+			this.password = "omartech@406";
+			this.host = "smtp.qq.com";
+			this.mail_from = "2536151131@qq.com";
+		}
 	}
 
 	public void sendEmail(String mailTo, String title, String body){
@@ -56,16 +91,131 @@ public class EmailSender {
 			e.printStackTrace();
 		}
 	}
-	public static void main(String[] args) {
-		EmailSender sendmail = new EmailSender();
+//	public static String folderPath = "/home/coder/git/dlde-parent/dlde-commons/src/test/resources/";
+	public static String folderPath = "/home/coder/Desktop/shareToWindows/noprinter/";
+	public static void main(String[] args) throws Exception {
+//		creatEmail(folderPath);
+//		testEmails();
+		groupSend();
+		
+//		testEmail();
+		
+	
+	}
+	public static void groupSend() throws Exception{
+		EmailSender sendmail = new EmailSender("qq");
+		File folder = new File(folderPath);
+		File[] files = folder.listFiles();
+		for(File file : files){
+			String fileName = file.getName();
+			if(!fileName.endsWith(".number")){
+				continue;
+			}
+			List<String> emails = getEmails(file);
+			for(String email : emails){
+				System.out.println(email);
+				String mail_title = "NoPrinter在北理工有实体店啦！！职消超市2楼C6！！";
+				String mail_body = makeContent();
+				sendmail.sendEmail(email, mail_title, mail_body);
+//				Thread.sleep(500);
+			}
+		}
+	}
+	
+	public static void testEmail(){
+		EmailSender sendmail = new EmailSender("qq");
 		try {
-			//String mail_to = "284198757@qq.com";
-			String mail_to = "3120100382@bit.edu.cn";
-			String mail_title = "test";
-			String mail_body = "body";
+//			String mail_to = "sonyfe25cp@gmail.com";
+			String mail_to = "284198757@qq.com";
+//			String mail_to = "3120100382@bit.edu.cn";
+			String mail_title = "NoPrinter在北理工有实体店啦！！职消超市2楼C6！！";
+			String mail_body = makeContent();
+//			System.out.println("1:"+mail_body);
 			sendmail.sendEmail(mail_to, mail_title, mail_body);
 		} catch (Exception ex) {
 		}
+	}
+	public static void testEmails() throws Exception{
+		String folderPath = "/home/coder/git/dlde-parent/dlde-commons/src/test/resources/";
+		File folder = new File(folderPath);
+		File[] files = folder.listFiles();
+		for(File file : files){
+			String fileName = file.getName();
+			if(!fileName.endsWith(".number")){
+				continue;
+			}
+			List<String> emails = getEmails(file);
+			for(String email : emails){
+				System.out.println(email);
+			}
+		}
+	}
+	public static List<String> getEmails(File file) throws Exception{
+		BufferedReader br = new BufferedReader(new FileReader(file));
+		List<String> emails = new ArrayList<String>();
+		String line = br.readLine();
+		while(line!=null){
+			emails.add(line);
+			line = br.readLine();
+		}
+		br.close();
+		return emails;
+	}
+	
+	public static void creatEmail(String folderPath) throws IOException{
+		File folder = new File(folderPath);
+		File[] files = folder.listFiles();
+		for(File file : files){
+			String fileName = file.getName();
+			if(!fileName.startsWith("qq-")){
+				continue;
+			}
+			System.out.println(fileName+" is ok");
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			String line = br.readLine();
+			String str ="";
+			while(line!=null){
+				str += line;
+				line = br.readLine();
+			}
+			br.close();
+			
+			String regex = "nameCard_[0-9]+";  
+		    Pattern p = Pattern.compile(regex);  
+		    Matcher m = p.matcher(str);
+		    List<String> emails = new ArrayList<String>();
+		    while (m.find()){
+		        String val = m.group();
+		        String qq = val.substring(9);
+		        String mail = qq+"@qq.com";
+		        emails.add(mail);
+//		        System.out.println(mail);
+		    }
+		    String newFileName = fileName+".number";
+		    if(emails.size() == 0 ){
+		    	continue;
+		    }
+		    FileWriter fw = new FileWriter(new File(folderPath+newFileName));
+		    for(String email:emails){
+		    	fw.write(email);
+		    	fw.write("\n");
+		    }
+		    fw.flush();
+		    fw.close();
+		}
+	}
+	
+	
+	public static String makeContent() throws Exception{
+		BufferedReader br = new BufferedReader(new FileReader(new File("/home/coder/git/dlde-parent/dlde-commons/src/test/resources/market.html")));
+		String line = br.readLine();
+		String str ="";
+		while(line!=null){
+			str += line;
+			line = br.readLine();
+		}
+		br.close();
+		return str;
 	}
 	
 	/**
@@ -80,15 +230,23 @@ public class EmailSender {
 			Session session = Session.getDefaultInstance(props, auth);
 			// 设置session,和邮件服务器进行通讯。
 			MimeMessage message = new MimeMessage(session);
-			// message.setContent("foobar, "application/x-foobar"); // 设置邮件格式
+			
+
 			message.setSubject(mail_subject); // 设置邮件主题
-			message.setText(mail_body); // 设置邮件正文
 			message.setHeader(mail_head_name, mail_head_value); // 设置邮件标题
 			message.setSentDate(new Date()); // 设置邮件发送日期
 			Address address = new InternetAddress(mail_from, personalName);
 			message.setFrom(address); // 设置邮件发送者的地址
 			Address toAddress = new InternetAddress(mail_to); // 设置邮件接收方的地址
 			message.addRecipient(Message.RecipientType.TO, toAddress);
+
+			Multipart mp = new MimeMultipart("related");// related意味着可以发送html格式的邮件
+			BodyPart bodyPart = new MimeBodyPart();// 正文
+			bodyPart.setDataHandler(new DataHandler(mail_body,"text/html;charset=utf8"));// 网页格式
+			mp.addBodyPart(bodyPart);
+			message.setContent(mp, "text/html;charset = gbk");  
+			message.saveChanges();  
+			
 			Transport.send(message); // 发送邮件
 			System.out.println("send email to "+mail_to+" ok!");
 		} catch (Exception ex) {

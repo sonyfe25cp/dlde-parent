@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://127.0.0.1:3000/market -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>  <![endif]-->
+    <!-- = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js" -->
+    <!-- = stylesheet_link_tag "user", :media => "all" -->
+    <style>
+      /* line 20, ../../app/assets/stylesheets/user.css.scss */
+      .text-error {
+        color: #b94a48 !important;
+      }
+      
+      /* line 24, ../../app/assets/stylesheets/user.css.scss */
+      body {
+        background-color: #1585AB;
+        background-image: url("http://noprinter.cn/assets/bg_main_x.png");
+        background-repeat: repeat-x;
+        background-position: 0 33px;
+      }
+      h3 {
+        display: block;
+        border-left: 10px solid #08C;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        font-size: 24px;
+        background: #FAFAFA;
+      }
+      /* line 30, ../../app/assets/stylesheets/user.css.scss */
+      body > .container {
+        margin-top: 60px;
+        padding: 50px;
+        background-color: white;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+      }
+      
+      /* line 38, ../../app/assets/stylesheets/user.css.scss */
+      .jiathis_txt {
+        font-size: 22px;
+      }
+      
+      /* line 43, ../../app/assets/stylesheets/user.css.scss */
+      .table a {
+        cursor: pointer;
+      }
+      
+      /* line 48, ../../app/assets/stylesheets/user.css.scss */
+      div.print-option {
+        float: left;
+        margin-right: 10px !important;
+      }
+      /* line 51, ../../app/assets/stylesheets/user.css.scss */
+      div.print-option select {
+        width: 200px;
+      }
+      
+      /* line 54, ../../app/assets/stylesheets/user.css.scss */
+      .header {
+        margin: 24px auto;
+        width: 1060px;
+        padding: 20px 0px 12px 0px;
+      }
+      /* line 59, ../../app/assets/stylesheets/user.css.scss */
+      .header div.logo {
+        float: left;
+        width: 320px;
+      }
+      /* line 64, ../../app/assets/stylesheets/user.css.scss */
+      .header div.sub-title {
+        float: left;
+        color: #005585;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        padding: 2px 8px;
+        background-color: yellow;
+      }
+      /* line 72, ../../app/assets/stylesheets/user.css.scss */
+      .header div.sharing {
+        color: white;
+        margin-top: 19px;
+      }
+      
+      /* line 78, ../../app/assets/stylesheets/user.css.scss */
+      .main {
+        margin-left: 250px;
+        width: 960px;
+        padding: 36px 50px !important;
+      }
+      
+      /* line 83, ../../app/assets/stylesheets/user.css.scss */
+      #ad-carousel {
+        border: 1px solid #eeeeee;
+        padding: 5px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+      }
+      
+      /* line 90, ../../app/assets/stylesheets/user.css.scss */
+      .services {
+        margin: 0px auto;
+        width: 991px;
+      }
+      /* line 93, ../../app/assets/stylesheets/user.css.scss */
+      .services .row-fluid {
+        margin-bottom: 42px;
+        margin-left: 15px;
+      }
+      /* line 96, ../../app/assets/stylesheets/user.css.scss */
+      .services .row-fluid .span4 {
+        width: 275px !important;
+        margin: 0px 52px 0px 0px !important;
+      }
+      /* line 101, ../../app/assets/stylesheets/user.css.scss */
+      .services .row-fluid div.img-wrapper {
+        float: left;
+        /* important */
+        position: relative;
+        /* important(so we can absolutely position the description div */
+      }
+      /* line 106, ../../app/assets/stylesheets/user.css.scss */
+      .services .row-fluid div.desc {
+        position: absolute;
+        /* absolute position (so we can position it where wheree want)*/
+        bottom: 0px;
+        /* position will be on bottom */
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        /* styling bellow */
+        background-color: black;
+        font-family: 'blacktahoma';
+        font-size: 15px;
+        color: white;
+        opacity: 0.6;
+                                /* transparency *white/
+      filter:alpha(opacity=60); /* IE transparency */
+        cursor: pointer;
+      }
+      /* line 122, ../../app/assets/stylesheets/user.css.scss */
+      .services .row-fluid p.desc-content {
+        padding: 50px;
+        margin: 0px;
+        font-size: 32px;
+        line-height: 50px;
+        font-weight: bold;
+        text-align: center;
+      }
+      /* line 130, ../../app/assets/stylesheets/user.css.scss */
+      .services .row-fluid p.desc-content a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      /* line 138, ../../app/assets/stylesheets/user.css.scss */
+      .ad-banner {
+        margin-bottom: 26px;
+      }
+      
+      /* line 142, ../../app/assets/stylesheets/user.css.scss */
+      .baidu-tongji {
+        display: none;
+      }
+      body{
+        background-color: #005585
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".price-sidebar">
+    <div class="container main">
+      
+      <h3>
+        NoPrinter.cn入住北理工校内啦！！！
+      </h3>
+      <p>
+        地址：职消超市收银台右侧楼梯上二楼，左手边那家粉粉的店(C6号)～
+      </p>
+      <p>
+        QQ：2536151131
+      </p>
+      <p>
+        座机：68948513
+      </p>
+      <h3>
+        开学优惠活动
+      </h3>
+      <p>
+        复印教材，4分/每面。
+      </p>
+      <p>
+        关注微博：
+        <a href="http://weibo.com/noprinter">NoPrinter打印铺</a>
+        获得最新的优惠活动和不定期赠送优惠卷活动～
+      </p>
+      <p>
+        校内论坛顶帖，满10楼送优惠券活动。地址：
+        <a href="http://www.bitunion.org/thread-10534806-1-1.html">http://www.bitunion.org/thread-10534806-1-1.html</a>
+      </p>
+      <h3>
+        新功能
+      </h3>
+      <p>
+        现在也支持用北理工学号登录啦～～
+      </p>
+      <h3>
+        觉得还不错就快告诉你的小伙伴们吧～～我们在职消超市2楼粉粉的打印铺等你！
+      </h3>
+    </div>
+  
+
+</body></html>
