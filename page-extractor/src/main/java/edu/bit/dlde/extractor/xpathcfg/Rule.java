@@ -18,7 +18,7 @@ public class Rule {
 	public String _siteType;
 	public String _uriRegex;
 	public boolean _enabled=true;//默认启用
-
+	public static String MAINFRAME = "mainframe";
 	public boolean isEnabled() {
 		return _enabled;
 	}
@@ -43,6 +43,16 @@ public class Rule {
 
 	public String getExprName(int i) {
 		return _exprs.get(i).name;
+	}
+	
+	public String getExprByName(String name){
+		String expression = "";
+		for(Expression expr : _exprs){
+			if(name.equalsIgnoreCase(expr.getName())){
+				expression = expr.getExpression();
+			}
+		}
+		return expression;
 	}
 
 	public int getExprsSize() {

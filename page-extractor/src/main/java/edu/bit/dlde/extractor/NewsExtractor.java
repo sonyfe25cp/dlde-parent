@@ -48,14 +48,10 @@ public class NewsExtractor extends PreciseExtractor {
 				String value = rule.getExprValue(i);
 				Object[] nodes = root.evaluateXPath(value);
 
-				//int id = 0;//艹..这特么是干啥的！！
 				for (Object node : nodes) {
 					TagNode n = (TagNode) node;
 					String content = n.getText().toString().trim();
-//					c2v.put(id + "-" + name, content);//艹..这特么是干啥的！！
 					c2v.put(name, content);
-//					logger.info("Extract result: " + name + ":" + content);
-//					id++;
 				}
 			}
 		} catch (IOException e) {
