@@ -18,9 +18,9 @@ public class Utils4GetBlock {
 			"pre", "address", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote",
 			"ul", "ol", "dir", "menu", "dl", "dt", "dd");
 
-	public static Element getBlock(Element e) {
+	public static Element getBlock(org.jdom2.Element element) {
 		blocks = new Element("blocks");
-		Iterator itr = e.getChildren().iterator();
+		Iterator itr = element.getChildren().iterator();
 		while (itr.hasNext()) {
 			findBlock((Element) itr.next());
 		}

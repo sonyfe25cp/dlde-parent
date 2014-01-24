@@ -133,7 +133,7 @@ public class CustomizedCleaner {
 	 * @return 
 	 * 			一个JDOM对象
 	 */
-	public Document cleanHtml2Doc(String file) {
+	public org.jdom2.Document cleanHtml2Doc(String file) {
 		CleanerProperties props = cleaner.getProperties();
 		props.setNamespacesAware(false);
 
@@ -223,7 +223,7 @@ public class CustomizedCleaner {
 		}
 	}
 
-	public Document cleanHtml2Doc(Reader reader) {
+	public org.jdom2.Document cleanHtml2Doc(Reader reader) {
 		CleanerProperties props = cleaner.getProperties();
 		props.setNamespacesAware(false);
 //		props.setRecognizeUnicodeChars(true);

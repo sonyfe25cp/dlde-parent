@@ -15,37 +15,37 @@ public class CombinedPreciseExtractorTest extends TestCase {
 //		/*
 //		 * case 1
 //		 */
-//		cpe.configWith(new File("src/test/resources/gn-news.xml"));
-//		cpe.setResource(new FileReader(new File(
-//				"src/test/resources/gn-news.html")), "chinanews");
-//		System.out.println(cpe.extract());
-//
-//		/*
-//		 * case 2
-//		 */
-//		File xml2 = new File("src/test/resources/bit.xml");
-//		cpe.configWith(xml2);
-//		cpe.setResource(
-//				new FileReader(new File("src/test/resources/bit.html")), "bit");
-//		System.out.println(cpe.extract());
-//
-//		/*
-//		 * case 3
-//		 */
-//		File xml3 = new File("src/test/resources/fenghuang.xml");
-//		cpe.configWith(xml3);
-//		cpe.setResource(new FileReader(new File(
-//				"src/test/resources/fenghuang.html")), "fenghuang");
-//		System.out.println(cpe.extract());
-//		
-//		/*
-//		 * case 4
-//		 */
-//		File xml4 = new File("src/test/resources/gn-news-qq.xml");
-//		cpe.configWith(xml4);
-//		cpe.setResource(new FileReader(new File(
-//				"src/test/resources/gn-news-qq.html")), "gn-news-qq");
-//		System.out.println(cpe.extract());
+		cpe.configWith(new File("src/test/resources/gn-news.xml"));
+		cpe.setResource(new FileReader(new File(
+				"src/test/resources/gn-news.html")), "chinanews");
+		System.out.println(cpe.extract());
+
+		/*
+		 * case 2
+		 */
+		File xml2 = new File("src/test/resources/bit.xml");
+		cpe.configWith(xml2);
+		cpe.setResource(
+				new FileReader(new File("src/test/resources/bit.html")), "bit");
+		System.out.println(cpe.extract());
+
+		/*
+		 * case 3
+		 */
+		File xml3 = new File("src/test/resources/fenghuang.xml");
+		cpe.configWith(xml3);
+		cpe.setResource(new FileReader(new File(
+				"src/test/resources/fenghuang.html")), "fenghuang");
+		System.out.println(cpe.extract());
+		
+		/*
+		 * case 4
+		 */
+		File xml4 = new File("src/test/resources/gn-news-qq.xml");
+		cpe.configWith(xml4);
+		cpe.setResource(new FileReader(new File(
+				"src/test/resources/gn-news-qq.html")), "gn-news-qq");
+		System.out.println(cpe.extract());
 		
 		/*
 		 * case 5
@@ -60,11 +60,11 @@ public class CombinedPreciseExtractorTest extends TestCase {
 		/*
 		 * case 6
 		 */
-//		File xml6 = new File("src/test/resources/bitpt.xml");
-//		cpe.configWith(xml6);
-//		cpe.setResource(new FileReader(new File(
-//				"src/test/resources/bitpt.html")), "bitpt");
-//		System.out.println(cpe.extract());
+		File xml6 = new File("src/test/resources/bitpt.xml");
+		cpe.configWith(xml6);
+		cpe.setResource(new FileReader(new File(
+				"src/test/resources/bitpt.html")), "bitpt");
+		System.out.println(cpe.extract());
 		
 		/*
 		 * case 7
