@@ -3,13 +3,12 @@
 	<rule>
 		<type>forum</type>
 		<uri>zhilian</uri>
-		<mainframe>html/body/div[3]/div[5]/form/div[2]/div[2]/table</mainframe>
-		<!-- <mainframe>html/body/div[3]/div[5]/form/div[2]/div[2]/table</mainframe> -->
-		<jobName>.//tbody/tr[1]/td[1]/a</jobName>
-		<company>.//tbody/tr[1]/td[2]/a</company>
-		<address>.//tbody/tr[1]/td[3]</address>
-		<date>.//tbody/tr[1]/td[4]</date>
-		<desc>.//tbody/tr[2]/td/table/tbody/tr/td[1]/span</desc>
-		<info>.//tbody/tr[2]/td/table/tbody/tr/td[1]/p</info>
+		<mainframe>html/body/div[3]/div[5]/form/div[2]/div[2]/table/tbody</mainframe>
+		<jobName>.//tr[1]/td[1]/a</jobName>
+		<company>.//tr[1]/td[2]/a</company>
+		<address>.//tr[1]/td[3]</address>
+		<date>.//tr[1]/td[4]</date>
+		<desc>.//tr[2]/td/table/tbody/tr/td[1]/span</desc>
+		<info>.//tr[2]/td/table/tbody/tr/td[1]/p</info>
 	</rule>
 </rules>

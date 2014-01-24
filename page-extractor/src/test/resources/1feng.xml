@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+	<rule>
+		<type>forum</type>
+		<uri>1feng</uri>
+		<mainframe>.//*[@id='mainWrap']/div[1]/div[4]/div</mainframe>
+		<name>.//h3/a</name>
+	</rule>
+</rules>

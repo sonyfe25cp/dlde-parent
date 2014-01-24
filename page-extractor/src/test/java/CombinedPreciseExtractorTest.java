@@ -83,6 +83,15 @@ public class CombinedPreciseExtractorTest extends TestCase {
 //		cpe.setResource(new FileReader(new File(
 //				"src/test/resources/bitu")), "bitu");
 //		System.out.println(cpe.extract());
+		
+		/*
+		 * case 9
+		 */
+		File xml9 = new File("src/test/resources/1feng.xml");
+		cpe.configWith(xml9);
+		cpe.setResource(new FileReader(new File(
+				"src/test/resources/1feng.html")), "1feng");
+		System.out.println(cpe.extract());
 	}
 
 }
