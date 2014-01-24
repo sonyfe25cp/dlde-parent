@@ -124,7 +124,6 @@ public class FixHtmlErrorHandler implements IPreTreatment {
 	 * 读到string
 	 */
 	public String readFromReader(Reader reader) {
-		String str = "";
 		BufferedReader br = (BufferedReader) reader;
 		String line;
 		StringBuffer sb = new StringBuffer();
