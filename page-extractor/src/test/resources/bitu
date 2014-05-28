@@ -1,0 +1,1164 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+<meta name="MSSmartTagsPreventParsing" content="TRUE">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<title>北理 FTP 联盟 - 灌水乐园 - 我觉得这个车，真是又萌又帅气 - BitUnion.org</title>
+<link rel="stylesheet" href="bitu_files/a.css" type="text/css">
+<link rel="stylesheet" href="bitu_files/common.css" type="text/css">
+<link rel="stylesheet" href="bitu_files/hilight.css" type="text/css">
+<link rel="shortcut icon" href="http://out.bitunion.org/favicon.ico" type="image/x-icon">
+<script src="bitu_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+var bu_board = "http://out.bitunion.org/";
+var bu_username = "sonyfe25cp";
+var bu_uid = "76754";
+</script>
+<script type="text/javascript" src="bitu_files/jquery_002.js"></script>
+<script type="text/javascript" src="bitu_files/jquery.js"></script>
+<script type="text/javascript" src="bitu_files/ZeroClipboard.js"></script>
+<script type="text/javascript" src="bitu_files/common.js"></script><style type="text/css" id="defaultPopStyle">.cPopText { font-family: Tahoma, Verdana; background-color: #FFFFCC; border: 1px #000000 solid; font-size: 12px; padding-right: 4px; padding-left: 4px; padding-top: 2px; padding-bottom: 2px; visibility: hidden; filter: Alpha(Opacity=80)}</style></head><body><div id="popLayer" style="position: absolute; z-index: 1000; visibility: hidden; left: 721px; top: 487px;" class="cPopText">点击查看全图</div>
+<script type="text/javascript" src="bitu_files/rc.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19777831-1']);
+  _gaq.push(['_setDomainName', '.bitunion.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<script type="text/javascript">
+$('#ddmenu').ready(function() {
+if($.browser.msie){$('#ddmenu > li').each(function(){$(this).hover(function(){$(this).addClass('over')}, function(){$(this).removeClass('over')})});}
+});
+$(document).ready(function(){
+$("input[type='text'], input[type='password'], input[type='file'], textarea").focus(function(){$(this).css({background:"#FFFFF2"})}).blur(function(){$(this).css({background:"transparent"})});
+//	$("input[@type='text'], input[@type='password'], input[@type='file'], textarea").focus(function(){$(this).css({background:"#FFFFF2"})}).blur(function(){$(this).css({background:"transparent"})});
+
+<!-- 修复翻页跳转 -->
+  $('input[name=custompage]').each(function() {
+//  $('input[@name=custompage]').each(function() {
+    $(this).unbind().keydown(function(ev) {
+      var e = ev ? ev : (window.event ? window.event : null);
+      if (e.keyCode == 13) {
+        if (self.location.href.indexOf('thread') >= 0) {
+          window.location.href = 'thread-10554750-' + $(this).val() + '-1.html';
+        } else if (self.location.href.indexOf('forum') >= 0) {
+          window.location.href = 'forum-14-' + $(this).val() + '.html';
+        } else if (self.location.href.indexOf('pm.php?folder=') >= 0) {
+          var folder = getUrlParam('folder');
+          window.location.href = 'pm.php?folder=' + folder + '&page=' + $(this).val();
+        }
+        return false;
+      }
+    });
+  });
+
+})
+</script>
+<table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr>
+<td background="bitu_files/topbg.gif" width="100%">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+<tbody><tr>
+<td rowspan="2" width="8"><img src="bitu_files/spacer.gif" height="0" width="0"></td>
+<td rowspan="2" valign="top"><a href="http://out.bitunion.org/index.php"><img src="bitu_files/logo.gif" alt="返回首页" border="0"></a></td><td align="center" height="80">..:: 做有争议的联盟 :: 做有争议的人 ::..</td>
+</tr>
+<tr>
+<td align="center">
+<!-- 导航菜单 begin -->
+<ul id="ddmenu">
+<li>
+<a href="http://out.bitunion.org/">sonyfe25cp</a>
+<ul>
+<li><a href="http://out.bitunion.org/logging.php?action=logout" onclick="return confirm('是否确定注销？')">注销登录
+
+</a></li>
+</ul>
+</li>
+<li><a href="http://out.bitunion.org/pm.php">短消息</a>
+<ul>
+<li><a href="http://out.bitunion.org/pm.php?action=send">发送短消息</a></li>
+<li><a href="http://out.bitunion.org/pm.php">收件箱</a></li>
+<li><a href="http://out.bitunion.org/pm.php?folder=track">消息跟踪</a></li>
+</ul>
+</li>
+<li>备忘录
+<ul>
+<li><a href="http://out.bitunion.org/memo.php?folder=notebook">记事本</a></li>
+<li><a href="http://out.bitunion.org/memo.php?folder=address">通讯录</a></li>
+<li><a href="http://out.bitunion.org/memo.php?folder=collections">网址夹</a></li>
+</ul>
+</li>
+<li><a href="http://out.bitunion.org/memcp.php">控制面板</a>
+<ul>
+<li><a href="http://out.bitunion.org/memcp.php?action=profile">编辑个人资料</a></li>
+<li><a href="http://out.bitunion.org/memcp.php?action=boards">隐藏版面</a></li>
+<li><a href="http://out.bitunion.org/memcp.php?action=subscriptions">订阅列表</a></li>
+<li><a href="http://out.bitunion.org/memcp.php?action=favorites">收藏夹</a></li>
+<li><a href="http://out.bitunion.org/sphinxsearch.php?u=76754&amp;t=mt">我的主题</a></li>
+<li><a href="http://out.bitunion.org/sphinxsearch.php?u=76754&amp;t=mp">我的回帖</a></li>
+</ul>
+</li>
+<li>论坛功能
+<ul>
+<li><a href="http://out.bitunion.org/family.php">江湖门派</a></li>
+<li><a href="http://out.bitunion.org/bank.php">社区银行</a></li>
+<li><a href="http://out.bitunion.org/z_cup.php">体育博彩</a></li>
+</ul>
+</li>
+<li>娱乐游戏
+<ul>
+<li><a href="http://out.bitunion.org/games/HardestGame.swf" target="_blank">最难游戏</a></li>
+<li><a href="http://out.bitunion.org/games/llk.swf" target="_blank">在线连连看</a></li>
+<li><a href="http://out.bitunion.org/games/miner.swf" target="_blank">掘金者</a></li>
+<li><a href="http://out.bitunion.org/games/jieli.swf" target="_blank">毒中送炭</a></li>
+<li><a href="http://out.bitunion.org/games/light.swf" target="_blank">镜中缘</a></li>
+<li><a href="http://out.bitunion.org/games/egg.swf" target="_blank">与魔争蛋</a></li>
+<li><a href="http://out.bitunion.org/games/FlashElementTD.swf" target="_blank">草原争霸</a></li>
+<li><a href="http://out.bitunion.org/games/msnmine.swf" target="_blank">仿 MSN 扫雷</a></li>
+<li><a href="http://out.bitunion.org/games/neondisk.swf" target="_blank">NeonDisk</a></li>
+<li><a href="http://out.bitunion.org/games/Avalanche.swf" target="_blank">Avalanche!</a></li>
+<li><a href="http://out.bitunion.org/games/superstacker2.swf" target="_blank">superstacker2</a></li>
+<li><a href="http://out.bitunion.org/games/avalancher_v1.swf" target="_blank">雪崩避难</a></li>
+<li><a href="http://out.bitunion.org/games/boxcleverb.swf" target="_blank">Boxclever</a></li>
+<li><a href="http://out.bitunion.org/games/3dlogic.swf" target="_blank">3DLogic</a></li>
+<li><a href="http://out.bitunion.org/games/manufactoria.swf" target="_blank">Manufactoria</a></li>
+<li><a href="http://out.bitunion.org/games/light-bot.swf" target="_blank">Light Bot</a></li>
+
+</ul>
+</li>
+<li>联盟服务
+<ul><li><a href="http://www.bitren.com/">北理人网上导航</a></li>
+<li><a href="http://mirror.bitunion.org/">自由软件镜像</a></li>
+<li><a href="http://php.bitunion.org/docs.php">PHP 在线手册</a></li>
+<li><a href="http://out.bitunion.org/thread-10076285-1-1.html">动态DNS服务</a></li>
+<!--注释 by mylangtao 2013.09.24-->
+<li><a href="http://out.bitunion.org/thread-10392667-1-1.html">nod32病毒库更新(校内)</a></li>
+<li><a href="http://out.bitunion.org/thread-10442489-1-1.html">毕业生工作群</a></li>
+<li><a href="http://out.bitunion.org/thread-10480744-1-1.html">找工作群</a></li>
+<li><a href="http://out.bitunion.org/thread-10287865-1-1.html">出国留学</a></li>
+<li><a href="http://out.bitunion.org/thread-10534784-1-1.html">校园网使用</a></li>
+<!--<li><a href="/thread-10094118-1-1.html">校内虚拟主机</a></li>
+<li><a href="/thread-10090920-1-1.html">155 0Day搜索</a></li>
+<li><a href="/thread-10098744-1-1.html" style="color:red;font-weight:bold;">FTP 搜索</a></li>
+-->
+</ul>
+</li>
+<li>开放联盟
+<ul>
+<li><a href="http://out.bitunion.org/thread-10471436-1-1.html">API开放计划</a></li>
+<li><a href="http://out.bitunion.org/thread-10525682-1-1.html">联盟iOS客户端</a></li>
+<li><a href="http://out.bitunion.org/thread-10474940-1-1.html">联盟Android客户端</a></li>
+<li><a href="http://out.bitunion.org/thread-10548923-1-1.html">联盟WP8客户端</a></li>
+</ul>
+</li>
+<li>信息服务
+<ul>
+<li><a href="https://www.nic.edu.cn/cgi-bin/reg/Qfreeip" target="_blank">免费 IP 查询</a></li>
+<li><a href="http://www.ip.cn/" target="_blank">IP 地理位置查询</a></li>
+<li><a href="http://out.bitunion.org/ipdata/10.txt" target="_blank">校内IP分配表</a></li>
+</ul>
+</li>
+<li><a href="http://out.bitunion.org/search.php">论坛搜索</a></li>
+<li>论坛信息
+<ul>
+<li><a href="http://out.bitunion.org/member.php?action=list">会员列表</a></li>
+<li><a href="http://out.bitunion.org/stats.php">统计信息</a></li>
+<li><a href="http://out.bitunion.org/faq.php">使用帮助</a></li>
+<li><a href="http://out.bitunion.org/thread-334630-1-1.html">新手指南</a></li>
+</ul>
+</li>
+<li><a href="http://out.bitunion.org/home.php">返回首页</a></li>
+</ul>
+</td></tr>
+
+</tbody></table>
+</td></tr></tbody></table>
+<table align="center" bgcolor="#FFFFFF" border="0" cellpadding="8" cellspacing="0" width="97%">
+<tbody><tr><td><br><script type="text/javascript">
+var ppp='';
+var tid=10554750;
+var fid=14;
+var fpage=1;
+var nextpage=2;
+var prevpage=1;
+var convertATStatus='off';
+var convertATnames = new Array();
+var convertATsrc = "/images/standard/bb_at_off.png";
+var convertATalt = "引用@:关";
+</script>
+
+<table style="table-layout: fixed" align="center" border="0" cellpadding="0" cellspacing="0" width="97%"> 
+<tbody><tr><td class="nav" nowrap="nowrap" width="80%">&nbsp;<a href="http://out.bitunion.org/index.php">北理 FTP 联盟</a> &#187; <a href="http://out.bitunion.org/forum-14-1.html"> 灌水乐园</a> [<a href="http://out.bitunion.org/forum-14-1.html">第 1 页</a>] &#187; <a href="http://out.bitunion.org/forumdisplay.php?fid=14&amp;tag=221" style="font-weight:bold;">[原创]</a> 我觉得这个车，真是又萌又帅气</td>
+<td align="right" width="20%">
+<a href="#bottom"><img src="bitu_files/arrow_dw.gif" align="absmiddle" border="0"></a>
+</td>        
+</tr></tbody></table><br>
+<script type="text/javascript">
+function jump(E, obj) {
+if (E.keyCode == 13) {
+window.location = 'viewthread.php?tid=10554750&action=floor&floor=' + obj.attr("value");
+return false;
+} else {
+return true;
+}
+}
+$(function() {
+$("#jump1").keydown(function(E) {
+return jump(E, $(this));
+});
+$("#jump2").keydown(function(E) {
+return jump(E, $(this));
+});
+});
+render_zeroclipboard();
+function convertAT() {
+convertATnames = document.getElementsByName("convertATid");
+if (convertATStatus == 'off') {
+convertATStatus = 'on';
+convertATsrc = "/images/standard/bb_at_on.png";
+convertATalt = "引用@:开";
+} else {
+convertATStatus = 'off';
+convertATsrc = "/images/standard/bb_at_off.png";
+convertATalt = "引用@:关";
+}
+for (var i = 0; i < convertATnames.length; i++) {
+convertATnames[i].src = convertATsrc;
+convertATnames[i].alt = convertATalt;
+}
+}
+</script>
+<table align="center" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr><td> </td><td>跳转到 <input id="jump1" size="4" style="border: 1px solid #698CC3" type="text"> 楼
+</td><td align="right"><a href="http://out.bitunion.org/post.php?action=newthread&amp;fid=14&amp;fpage=1"><img src="bitu_files/newtopic.gif" border="0"></a>
+&nbsp;<a href="http://out.bitunion.org/post.php?action=newthread&amp;fid=14&amp;fpage=1&amp;poll=yes"><img src="bitu_files/poll.gif" border="0"></a>
+&nbsp;<a href="http://out.bitunion.org/post.php?action=reply&amp;fid=14&amp;tid=10554750&amp;fpage=1"><img src="bitu_files/reply.gif" border="0"></a>
+</td></tr></tbody></table>
+
+<table class="tableborder" align="center" border="0" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr><td>
+<table border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr><td colspan="2" class="header">
+
+<table class="smalltxt" style="table-layout: fixed; word-wrap: break-word" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr style="color: #ffffff"><td class="bold" nowrap="nowrap"><div class="t_smallfont">标题: 我觉得这个车，真是又萌又帅气</div></td>
+<td align="right" nowrap="nowrap">
+[<a href="http://out.bitunion.org/misc.php?action=whoreplied&amp;tid=10554750" style="color: #ffffff;font-weight: normal">查看回帖统计</a>]
+[<a href="http://out.bitunion.org/sphinxsearch.php?q=*&amp;t=p&amp;df=0&amp;ds=2014-01-24&amp;de=2014-01-24&amp;tid=10554750&amp;a=1&amp;m=1" style="color: #ffffff;font-weight: normal" target="_blank">搜索附件帖</a>]
+[<a href="http://out.bitunion.org/athread-10554750-87331-1-1.html" style="color: #ffffff;font-weight: normal">只看楼主</a>]
+[<a id="largefont" onclick="tToggleTextSize();" class="hand">大字体</a>]&nbsp;&nbsp;
+<a href="http://out.bitunion.org/redirect.php?fid=14&amp;tid=10554750&amp;goto=nextoldset" style="color: #ffffff;font-weight: normal">上一主题</a> | 
+<a href="http://out.bitunion.org/redirect.php?fid=14&amp;tid=10554750&amp;goto=nextnewset" style="color: #ffffff;font-weight: normal">下一主题</a></td>
+</tr></tbody></table></td>
+</tr></tbody></table></td></tr></tbody></table>
+<a name="pid14186924"><table class="tableborder" align="center" border="0" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr><td>
+<table style="table-layout: fixed; word-wrap: break-word" border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#F8F8F8">
+<td class="tablerow" align="center" valign="top" width="21%">
+<fieldset style="padding: 5px; width: 175" align="center"> 
+<legend> 
+<font color="#000066"><nobr><b>flying1day</b></nobr></font>
+</legend>
+<center>
+<table style="table-layout: fixed" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr><td align="center">
+<img src="bitu_files/attachment.jpg" border="0"><br>
+初级会员<br>
+<img src="bitu_files/star_level2.gif"></td></tr></tbody></table>
+</center>
+
+<table border="0" cellpadding="2" cellspacing="1" width="95%">
+  <tbody><tr> 
+<td><img src="bitu_files/dot.gif"> 发帖: <font color="blue"><b>719</b></font> 篇</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 积分: <font color="blue"><b>1</b></font> 分</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 现金: <font color="blue"><b>284880</b></font> 珊瑚币</td> 
+  </tr>
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 注册: <font color="#008080">2008-10-19</font></td>  
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 来自: <font color="#990000">山东</font></td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif">
+状态:<span style=" font-weight:bold;"> 离线</span>
+</td> 
+  </tr> 
+</tbody></table>
+</fieldset>
+
+</td>
+<td style="vertical-align:top;" height="100%">
+<table style="table-layout: fixed;word-wrap: break-word" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tbody><tr><td valign="top">
+<table width="100%">
+<tbody><tr>
+<td>
+<span class="bold"><div class="t_smallfont">我觉得这个车，真是又萌又帅气<br><br></div></span>
+</td>
+<td align="center" valign="middle" width="80">
+<a href="http://out.bitunion.org/athread-10554750-87331-1-1.html">只看此用户</a>
+</td>
+<td align="center" valign="middle" width="60">
+<a onclick="pToggleTextSize(14186924, this)" class="hand">大字体</a>
+</td>
+<td tid="10554750" pid="14186924" name="td_cplinks[]" align="center" height="32" valign="middle" width="60">
+<div id="d_clip_container_14186924" style="position:relative">
+   <div id="d_clip_button_14186924"><a id="cplink_p_14186924" style="cursor:pointer; color:blue;" title="复制本楼 URL">楼主 </a></div>
+<div style="position: absolute; left: 0px; top: 0px; width: 60px; height: 16px; z-index: 99;"><embed id="ZeroClipboardMovie_1" src="bitu_files/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="ZeroClipboardMovie_1" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=60&amp;height=16" wmode="transparent" align="middle" height="16" width="60"></div></div>
+</td>
+</tr>
+</tbody></table>
+<div id="pm_14186924" class="t_smallfont">我觉得这个车，真是又萌又帅气，你觉得呢？<br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+</div>
+<br><br>本帖包含图片附件: <br><br><a href="http://out.bitunion.org/attachment.php?aid=1176710" target="_blank"><img src="bitu_files/Wklz_Mw.jpg" alt="" onload="javascript:if(this.width>screen.width-333) this.width=screen.width-333" border="0"></a>
+ 
+
+</td></tr><tr>
+<td valign="bottom"><br><br>
+<!--Added 20131021-->
+<table align="center" bgcolor="#F8F8F8" border="0" cellpadding="4" cellspacing="1" width="60%">
+<tbody><tr>
+<td bgcolor="#F8F8F8">
+ 
+ <div> 
+ 
+ 
+ 
+ </div></td>
+</tr>
+</tbody></table>
+<font style="background-color: #CEFFCE">&nbsp;灌水背单词: <a href="http://dict.bitunion.org/xdict.php?word=mainland"><font color="#FF4848">mainland</font></a>&nbsp;[<font color="#408080" face="Kingsoft Phonetic Plain">`meInlEnd,-lAnd</font>]&nbsp;&nbsp;n.&nbsp;<font color="blue">大陆</font>&nbsp;</font>
+论坛建议:有人求助时，如果您知道如何解决，请尽量提供帮助
+<br><img src="bitu_files/sigline.gif"><br><img src="bitu_files/110.gif" border="0"> <img src="bitu_files/109.gif" border="0"> <img src="bitu_files/108.gif" border="0"> <img src="bitu_files/79.gif" border="0"> </td></tr></tbody></table>
+</td></tr>
+<tr bgcolor="#F8F8F8"><td class="smalltxt" valign="middle">
+<a href="http://out.bitunion.org/athread-10554750-87331-1-1.html">
+<img src="bitu_files/lastpost.gif" align="absmiddle" border="0">
+</a>
+2014-1-24 01:11 PM<a href="http://out.bitunion.org/viewip.php?fid=14&amp;tid=10554750&amp;pid=14186924"><img src="bitu_files/ip.gif" alt="查看 IP" border="0"></a>
+</td>
+<td valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="smalltxt"><td align="left">
+<a href="http://out.bitunion.org/profile-uid-87331.html"><img src="bitu_files/profile.gif" alt="查看资料" border="0"></a>&nbsp;
+<a href="mailto:wangchongxiu@126.com"><img src="bitu_files/email.gif" alt="发送邮件" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/sphinxsearch.php?u=87331"><img src="bitu_files/find.gif" alt="搜索该用户的全部帖子" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/pm.php?action=send&amp;username=flying1day" target="_blank"><img src="bitu_files/pm.gif" alt="发短消息" border="0"></a>&nbsp;
+</td>
+<td align="center"><a href="http://out.bitunion.org/thread-10545153-1-1.html"><font color="red">十一周年庆版衫设计征集</font></a>&nbsp;&nbsp;联盟外网：<a href="http://out.bitunion.org/">out.bitunion.org</a></td>
+<td align="right">
+&nbsp;<a href="http://out.bitunion.org/post.php?action=edit&amp;fid=14&amp;tid=10554750&amp;pid=14186924&amp;no=%C2%A5%D6%F7&amp;auid=87331&amp;page=1"><img src="bitu_files/edit.gif" alt="编辑帖子" border="0"></a>
+<a href="javascript:convertAT()"><img name="convertATid" src="bitu_files/bb_at_off.png" alt="引用@:关" border="0"></a>
+<a href="javascript:window.location='post.php?action=reply&amp;fid=14&amp;tid=10554750&amp;repquote=14186924&amp;convertATStatus='+convertATStatus"><img src="bitu_files/quote.gif" alt="引用回复" border="0"></a>
+&nbsp;<a href="http://out.bitunion.org/misc.php?action=report&amp;fid=14&amp;tid=10554750&amp;pid=14186924&amp;pfloor=1"><img src="bitu_files/report.gif" alt="向版主反应这个帖子" border="0"></a>
+<a href="javascript:scroll(0,0);"><img src="bitu_files/p_up.gif" border="0"></a>
+</td></tr></tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+ 
+ <div> 
+<center> 
+
+</center>
+</div> 
+ 
+ 
+</a><a name="pid14186928"><table class="tableborder" align="center" border="0" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr><td>
+<table style="table-layout: fixed; word-wrap: break-word" border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#FFFFFF">
+<td class="tablerow" align="center" valign="top" width="21%">
+<fieldset style="padding: 5px; width: 175" align="center"> 
+<legend> 
+<font color="#000066"><nobr><b>耗子药</b></nobr></font>
+</legend>
+<center>
+<table style="table-layout: fixed" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr><td align="center">
+<img src="bitu_files/111936.jpg" border="0"><br>
+版主<br>
+<img src="bitu_files/star_level3.gif"><img src="bitu_files/star_level3.gif"><img src="bitu_files/star_level1.gif"></td></tr></tbody></table>
+</center>
+
+<table border="0" cellpadding="2" cellspacing="1" width="95%">
+  <tbody><tr> 
+<td><img src="bitu_files/dot.gif"> 发帖: <font color="blue"><b>10476</b></font> 篇</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 积分: <font color="blue"><b>21</b></font> 分</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 现金: <font color="blue"><b>3709595</b></font> 珊瑚币</td> 
+  </tr>
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 注册: <font color="#008080">2010-12-24</font></td>  
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif">
+状态: <span style="color:orange; font-weight:bold;">发呆</span>
+</td> 
+  </tr> 
+</tbody></table>
+</fieldset>
+
+</td>
+<td style="vertical-align:top;" height="100%">
+<table style="table-layout: fixed;word-wrap: break-word" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tbody><tr><td valign="top">
+<table width="100%">
+<tbody><tr>
+<td>
+<span class="bold"><div class="t_smallfont"></div></span>
+</td>
+<td align="center" valign="middle" width="80">
+<a href="http://out.bitunion.org/athread-10554750-111936-1-1.html">只看此用户</a>
+</td>
+<td align="center" valign="middle" width="60">
+<a onclick="pToggleTextSize(14186928, this)" class="hand">大字体</a>
+</td>
+<td tid="10554750" pid="14186928" name="td_cplinks[]" align="center" height="32" valign="middle" width="60">
+<div id="d_clip_container_14186928" style="position:relative">
+   <div id="d_clip_button_14186928"><a id="cplink_p_14186928" style="cursor:pointer; color:blue;" title="复制本楼 URL">2 楼 </a></div>
+<div style="position: absolute; left: 0px; top: 0px; width: 60px; height: 16px; z-index: 99;"><embed id="ZeroClipboardMovie_2" src="bitu_files/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="ZeroClipboardMovie_2" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=2&amp;width=60&amp;height=16" wmode="transparent" align="middle" height="16" width="60"></div></div>
+</td>
+</tr>
+</tbody></table>
+<div id="pm_14186928" class="t_smallfont">觉得贵……</div>
+ 
+
+</td></tr><tr>
+<td valign="bottom"><br><br>
+<!--Added 20131021-->
+<font style="background-color: #CEFFCE">&nbsp;灌水背单词: <a href="http://dict.bitunion.org/xdict.php?word=undo"><font color="#FF4848">undo</font></a>&nbsp;[<font color="#408080" face="Kingsoft Phonetic Plain">5Qn5du:</font>]&nbsp;&nbsp;vt.&nbsp;<font color="blue">解开, 松开</font>&nbsp;v.&nbsp;<font color="blue">取消</font><font color="blue">撤消</font>&nbsp;</font>
+<br><img src="bitu_files/sigline.gif"><br><font size="5"><font color="Red"><a href="http://out.bitunion.org/thread-10513995-1-1.html" target="_blank">后勤吐槽贴 猛击进入</a></font></font>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<br>
+<br>
+<font color="Red"><font size="5"><a href="http://page.renren.com/601650241?id=601650241" target="_blank">猛击—&gt;北京理工至诚内家拳社</a>公共主页开通啦&nbsp;&nbsp;新学期训练开始啦 在校生报名有优惠 欢迎咨询交流 详情请PM </font></font></td></tr></tbody></table>
+</td></tr>
+<tr bgcolor="#FFFFFF"><td class="smalltxt" valign="middle">
+<a href="http://out.bitunion.org/athread-10554750-111936-1-1.html">
+<img src="bitu_files/lastpost.gif" align="absmiddle" border="0">
+</a>
+2014-1-24 01:29 PM<a href="http://out.bitunion.org/viewip.php?fid=14&amp;tid=10554750&amp;pid=14186928"><img src="bitu_files/ip.gif" alt="查看 IP" border="0"></a>
+</td>
+<td valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="smalltxt"><td align="left">
+<a href="http://out.bitunion.org/profile-uid-111936.html"><img src="bitu_files/profile.gif" alt="查看资料" border="0"></a>&nbsp;
+<a href="mailto:%E8%80%97%E5%AD%90%E8%8D%AF"><img src="bitu_files/email.gif" alt="发送邮件" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/sphinxsearch.php?u=111936"><img src="bitu_files/find.gif" alt="搜索该用户的全部帖子" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/pm.php?action=send&amp;username=%BA%C4%D7%D3%D2%A9" target="_blank"><img src="bitu_files/pm.gif" alt="发短消息" border="0"></a>&nbsp;
+</td>
+<td align="center"><a href="http://out.bitunion.org/thread-10520941-1-1.html"><font color="red">论坛版主招新</font></a>&nbsp;&nbsp;<a href="http://out.bitunion.org/thread-10543512-1-1.html"><font color="blue">良乡专版讨论</font></a></td>
+<td align="right">
+&nbsp;<a href="http://out.bitunion.org/post.php?action=edit&amp;fid=14&amp;tid=10554750&amp;pid=14186928&amp;no=2%20%C2%A5&amp;auid=111936&amp;page=1"><img src="bitu_files/edit.gif" alt="编辑帖子" border="0"></a>
+<a href="javascript:convertAT()"><img name="convertATid" src="bitu_files/bb_at_off.png" alt="引用@:关" border="0"></a>
+<a href="javascript:window.location='post.php?action=reply&amp;fid=14&amp;tid=10554750&amp;repquote=14186928&amp;convertATStatus='+convertATStatus"><img src="bitu_files/quote.gif" alt="引用回复" border="0"></a>
+&nbsp;<a href="http://out.bitunion.org/misc.php?action=report&amp;fid=14&amp;tid=10554750&amp;pid=14186928&amp;pfloor=2"><img src="bitu_files/report.gif" alt="向版主反应这个帖子" border="0"></a>
+<a href="javascript:scroll(0,0);"><img src="bitu_files/p_up.gif" border="0"></a>
+</td></tr></tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+ 
+</a><a name="pid14186929"><table class="tableborder" align="center" border="0" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr><td>
+<table style="table-layout: fixed; word-wrap: break-word" border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#F8F8F8">
+<td class="tablerow" align="center" valign="top" width="21%">
+<fieldset style="padding: 5px; width: 175" align="center"> 
+<legend> 
+<font color="#000066"><nobr><b>crux</b></nobr></font>
+</legend>
+<center>
+<table style="table-layout: fixed" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr><td align="center">
+<img src="bitu_files/68217.jpg" border="0"><br>
+版主<br>
+<img src="bitu_files/star_level3.gif"><img src="bitu_files/star_level3.gif"><img src="bitu_files/star_level1.gif"></td></tr></tbody></table>
+</center>
+
+<table border="0" cellpadding="2" cellspacing="1" width="95%">
+  <tbody><tr> 
+<td><img src="bitu_files/dot.gif"> 发帖: <font color="blue"><b>9914</b></font> 篇</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 积分: <font color="blue"><b>55</b></font> 分</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 现金: <font color="blue"><b>4880</b></font> 珊瑚币</td> 
+  </tr>
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 注册: <font color="#008080">2006-12-20</font></td>  
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 来自: <font color="#990000">首堵北京</font></td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 门派: <font color="#990000">硬件数码控</font></td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif">
+状态: <span style="color:brown; font-weight:bold;">打盹</span>
+</td> 
+  </tr> 
+</tbody></table>
+</fieldset>
+
+</td>
+<td style="vertical-align:top;" height="100%">
+<table style="table-layout: fixed;word-wrap: break-word" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tbody><tr><td valign="top">
+<table width="100%">
+<tbody><tr>
+<td>
+<span class="bold"><div class="t_smallfont"></div></span>
+</td>
+<td align="center" valign="middle" width="80">
+<a href="http://out.bitunion.org/athread-10554750-68217-1-1.html">只看此用户</a>
+</td>
+<td align="center" valign="middle" width="60">
+<a onclick="pToggleTextSize(14186929, this)" class="hand">大字体</a>
+</td>
+<td tid="10554750" pid="14186929" name="td_cplinks[]" align="center" height="32" valign="middle" width="60">
+<div id="d_clip_container_14186929" style="position:relative">
+   <div id="d_clip_button_14186929"><a id="cplink_p_14186929" style="cursor:pointer; color:blue;" title="复制本楼 URL">3 楼 </a></div>
+<div style="position: absolute; left: 0px; top: 0px; width: 60px; height: 16px; z-index: 99;"><embed id="ZeroClipboardMovie_3" src="bitu_files/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="ZeroClipboardMovie_3" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=3&amp;width=60&amp;height=16" wmode="transparent" align="middle" height="16" width="60"></div></div>
+</td>
+</tr>
+</tbody></table>
+<div id="pm_14186929" class="t_smallfont">这已经不是最新款了……</div>
+ 
+
+</td></tr><tr>
+<td valign="bottom"><br><br>
+<!--Added 20131021-->
+<font style="background-color: #CEFFCE">&nbsp;灌水背单词: <a href="http://dict.bitunion.org/xdict.php?word=content"><font color="#FF4848">content</font></a>&nbsp;[<font color="#408080" face="Kingsoft Phonetic Plain">kEn5tent</font>]&nbsp;&nbsp;n.&nbsp;<font color="blue">内容, 容量, 目录, 满足</font>&nbsp;adj.&nbsp;<font color="blue">满足的, 满意的, 愿意</font>&nbsp;vt.&nbsp;<font color="blue">使满足</font>&nbsp;</font>
+<br><img src="bitu_files/sigline.gif"><br>Never refuse any posibility.<br>
+<a href="http://out.bitunion.org/thread-10554532-1-1.html" target="_blank"><font color="orange"><font size="6">启德教育 美国留学专家</font></font></a><a href="http://out.bitunion.org/thread-10365183-1-1.html" target="_blank"><font color="Red">车版群请点此加入</font></a><br>
+<img src="bitu_files/943dc6f2gw1e2u93czureg.gif" onload="if(this.width>screen.width-333) {this.width=screen.width-333;this.alt='Click Here to Open New Window';}" onmouseover="if(this.alt) this.style.cursor='hand';" onclick="if(this.alt) window.open('http://ww1.sinaimg.cn/mw600/943dc6f2gw1e2u93czureg.gif');" border="0"></td></tr></tbody></table>
+</td></tr>
+<tr bgcolor="#F8F8F8"><td class="smalltxt" valign="middle">
+<a href="http://out.bitunion.org/athread-10554750-68217-1-1.html">
+<img src="bitu_files/lastpost.gif" align="absmiddle" border="0">
+</a>
+2014-1-24 01:30 PM<a href="http://out.bitunion.org/viewip.php?fid=14&amp;tid=10554750&amp;pid=14186929"><img src="bitu_files/ip.gif" alt="查看 IP" border="0"></a>
+</td>
+<td valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="smalltxt"><td align="left">
+<a href="http://out.bitunion.org/profile-uid-68217.html"><img src="bitu_files/profile.gif" alt="查看资料" border="0"></a>&nbsp;
+<a href="mailto:shenjz778899@gmail.com"><img src="bitu_files/email.gif" alt="发送邮件" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/sphinxsearch.php?u=68217"><img src="bitu_files/find.gif" alt="搜索该用户的全部帖子" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/pm.php?action=send&amp;username=crux" target="_blank"><img src="bitu_files/pm.gif" alt="发短消息" border="0"></a>&nbsp;
+</td>
+<td align="right">
+&nbsp;<a href="http://out.bitunion.org/post.php?action=edit&amp;fid=14&amp;tid=10554750&amp;pid=14186929&amp;no=3%20%C2%A5&amp;auid=68217&amp;page=1"><img src="bitu_files/edit.gif" alt="编辑帖子" border="0"></a>
+<a href="javascript:convertAT()"><img name="convertATid" src="bitu_files/bb_at_off.png" alt="引用@:关" border="0"></a>
+<a href="javascript:window.location='post.php?action=reply&amp;fid=14&amp;tid=10554750&amp;repquote=14186929&amp;convertATStatus='+convertATStatus"><img src="bitu_files/quote.gif" alt="引用回复" border="0"></a>
+&nbsp;<a href="http://out.bitunion.org/misc.php?action=report&amp;fid=14&amp;tid=10554750&amp;pid=14186929&amp;pfloor=3"><img src="bitu_files/report.gif" alt="向版主反应这个帖子" border="0"></a>
+<a href="javascript:scroll(0,0);"><img src="bitu_files/p_up.gif" border="0"></a>
+</td></tr></tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+ 
+</a><a name="pid14186935"><table class="tableborder" align="center" border="0" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr><td>
+<table style="table-layout: fixed; word-wrap: break-word" border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#FFFFFF">
+<td class="tablerow" align="center" valign="top" width="21%">
+<fieldset style="padding: 5px; width: 175" align="center"> 
+<legend> 
+<font color="#000066"><nobr><b>sbsfeng</b></nobr></font>
+</legend>
+<center>
+<table style="table-layout: fixed" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr><td align="center">
+<img src="bitu_files/noavatar.gif"><br>
+初级会员<br>
+<img src="bitu_files/star_level2.gif"></td></tr></tbody></table>
+</center>
+
+<table border="0" cellpadding="2" cellspacing="1" width="95%">
+  <tbody><tr> 
+<td><img src="bitu_files/dot.gif"> 发帖: <font color="blue"><b>6220</b></font> 篇</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 积分: <font color="blue"><b>3</b></font> 分</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 现金: <font color="blue"><b>1060</b></font> 珊瑚币</td> 
+  </tr>
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 注册: <font color="#008080">2009-6-20</font></td>  
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 门派: <font color="#990000">硬件数码控</font></td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif">
+状态:<span style=" font-weight:bold;"> 离线</span>
+</td> 
+  </tr> 
+</tbody></table>
+</fieldset>
+
+</td>
+<td style="vertical-align:top;" height="100%">
+<table style="table-layout: fixed;word-wrap: break-word" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tbody><tr><td valign="top">
+<table width="100%">
+<tbody><tr>
+<td>
+<span class="bold"><div class="t_smallfont"></div></span>
+</td>
+<td align="center" valign="middle" width="80">
+<a href="http://out.bitunion.org/athread-10554750-95915-1-1.html">只看此用户</a>
+</td>
+<td align="center" valign="middle" width="60">
+<a onclick="pToggleTextSize(14186935, this)" class="hand">大字体</a>
+</td>
+<td tid="10554750" pid="14186935" name="td_cplinks[]" align="center" height="32" valign="middle" width="60">
+<div id="d_clip_container_14186935" style="position:relative">
+   <div id="d_clip_button_14186935"><a id="cplink_p_14186935" style="cursor:pointer; color:blue;" title="复制本楼 URL">4 楼 </a></div>
+<div style="position: absolute; left: 0px; top: 0px; width: 60px; height: 16px; z-index: 99;"><embed id="ZeroClipboardMovie_4" src="bitu_files/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="ZeroClipboardMovie_4" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=4&amp;width=60&amp;height=16" wmode="transparent" align="middle" height="16" width="60"></div></div>
+</td>
+</tr>
+</tbody></table>
+<div id="pm_14186935" class="t_smallfont"><img src="bitu_files/normal.jpg" onload="if(this.width>screen.width-333) {this.width=screen.width-333;this.alt='Click Here to Open New Window';}" onmouseover="if(this.alt) this.style.cursor='hand';" onclick="if(this.alt) window.open('http://files1.porsche.com/filestore.aspx/normal.jpg?pool=multimedia&amp;type=image&amp;id=exclusive-911-c4scab-brown1&amp;lang=none&amp;filetype=normal&amp;version=ea3bf879-8e7a-4efd-9e60-691bed863f5d');" border="0"></div>
+ 
+
+</td></tr><tr>
+<td valign="bottom"><br><br>
+<!--Added 20131021-->
+<font style="background-color: #CEFFCE">&nbsp;灌水背单词: <a href="http://dict.bitunion.org/xdict.php?word=approximate"><font color="#FF4848">approximate</font></a>&nbsp;[<font color="#408080" face="Kingsoft Phonetic Plain">E5prCksimeit</font>]&nbsp;&nbsp;adj.&nbsp;<font color="blue">近似的, 大约的</font>&nbsp;v.&nbsp;<font color="blue">近似, 接近, 接近, 约计</font>&nbsp;</font>
+<br><img src="bitu_files/sigline.gif"><br><font size="4">码农何苦为难码农</font></td></tr></tbody></table>
+</td></tr>
+<tr bgcolor="#FFFFFF"><td class="smalltxt" valign="middle">
+<a href="http://out.bitunion.org/athread-10554750-95915-1-1.html">
+<img src="bitu_files/lastpost.gif" align="absmiddle" border="0">
+</a>
+2014-1-24 02:12 PM<a href="http://out.bitunion.org/viewip.php?fid=14&amp;tid=10554750&amp;pid=14186935"><img src="bitu_files/ip.gif" alt="查看 IP" border="0"></a>
+</td>
+<td valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="smalltxt"><td align="left">
+<a href="http://out.bitunion.org/profile-uid-95915.html"><img src="bitu_files/profile.gif" alt="查看资料" border="0"></a>&nbsp;
+<a href="mailto:"><img src="bitu_files/email.gif" alt="发送邮件" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/sphinxsearch.php?u=95915"><img src="bitu_files/find.gif" alt="搜索该用户的全部帖子" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/pm.php?action=send&amp;username=sbsfeng" target="_blank"><img src="bitu_files/pm.gif" alt="发短消息" border="0"></a>&nbsp;
+</td>
+<td align="right">
+&nbsp;<a href="http://out.bitunion.org/post.php?action=edit&amp;fid=14&amp;tid=10554750&amp;pid=14186935&amp;no=4%20%C2%A5&amp;auid=95915&amp;page=1"><img src="bitu_files/edit.gif" alt="编辑帖子" border="0"></a>
+<a href="javascript:convertAT()"><img name="convertATid" src="bitu_files/bb_at_off.png" alt="引用@:关" border="0"></a>
+<a href="javascript:window.location='post.php?action=reply&amp;fid=14&amp;tid=10554750&amp;repquote=14186935&amp;convertATStatus='+convertATStatus"><img src="bitu_files/quote.gif" alt="引用回复" border="0"></a>
+&nbsp;<a href="http://out.bitunion.org/misc.php?action=report&amp;fid=14&amp;tid=10554750&amp;pid=14186935&amp;pfloor=4"><img src="bitu_files/report.gif" alt="向版主反应这个帖子" border="0"></a>
+<a href="javascript:scroll(0,0);"><img src="bitu_files/p_up.gif" border="0"></a>
+</td></tr></tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+ 
+</a><a name="pid14186940"><table class="tableborder" align="center" border="0" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr><td>
+<table style="table-layout: fixed; word-wrap: break-word" border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#F8F8F8">
+<td class="tablerow" align="center" valign="top" width="21%">
+<fieldset style="padding: 5px; width: 175" align="center"> 
+<legend> 
+<font color="#000066"><nobr><b>flying1day</b></nobr></font>
+</legend>
+<center>
+<table style="table-layout: fixed" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr><td align="center">
+<img src="bitu_files/attachment.jpg" border="0"><br>
+初级会员<br>
+<img src="bitu_files/star_level2.gif"></td></tr></tbody></table>
+</center>
+
+<table border="0" cellpadding="2" cellspacing="1" width="95%">
+  <tbody><tr> 
+<td><img src="bitu_files/dot.gif"> 发帖: <font color="blue"><b>719</b></font> 篇</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 积分: <font color="blue"><b>1</b></font> 分</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 现金: <font color="blue"><b>284880</b></font> 珊瑚币</td> 
+  </tr>
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 注册: <font color="#008080">2008-10-19</font></td>  
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 来自: <font color="#990000">山东</font></td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif">
+状态:<span style=" font-weight:bold;"> 离线</span>
+</td> 
+  </tr> 
+</tbody></table>
+</fieldset>
+
+</td>
+<td style="vertical-align:top;" height="100%">
+<table style="table-layout: fixed;word-wrap: break-word" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tbody><tr><td valign="top">
+<table width="100%">
+<tbody><tr>
+<td>
+<span class="bold"><div class="t_smallfont"></div></span>
+</td>
+<td align="center" valign="middle" width="80">
+<a href="http://out.bitunion.org/athread-10554750-87331-1-1.html">只看此用户</a>
+</td>
+<td align="center" valign="middle" width="60">
+<a onclick="pToggleTextSize(14186940, this)" class="hand">大字体</a>
+</td>
+<td tid="10554750" pid="14186940" name="td_cplinks[]" align="center" height="32" valign="middle" width="60">
+<div id="d_clip_container_14186940" style="position:relative">
+   <div id="d_clip_button_14186940"><a id="cplink_p_14186940" style="cursor:pointer; color:blue;" title="复制本楼 URL">5 楼 </a></div>
+<div style="position: absolute; left: 0px; top: 0px; width: 60px; height: 16px; z-index: 99;"><embed id="ZeroClipboardMovie_5" src="bitu_files/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="ZeroClipboardMovie_5" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=5&amp;width=60&amp;height=16" wmode="transparent" align="middle" height="16" width="60"></div></div>
+</td>
+</tr>
+</tbody></table>
+<div id="pm_14186940" class="t_smallfont"><br><br><center><table border="0" cellpadding="0" cellspacing="0" width="95%"><tbody><tr><td>&nbsp;&nbsp;引用[<a href="http://out.bitunion.org/redirect.php?goto=findpost&amp;pid=14186935">查看原帖</a>]:</td></tr><tr><td><table bgcolor="#698CC3" border="0" cellpadding="0" cellspacing="1" width="100%"><tbody><tr><td style="padding: 5px 0 5px 10px" bgcolor="#FFFFFF" width="100%"><b>sbsfeng</b> 2014-1-24 14:12<br>
+ </td></tr></tbody></table></td></tr></tbody></table></center><br>哇~~</div>
+ 
+
+</td></tr><tr>
+<td valign="bottom"><br><br>
+<!--Added 20131021-->
+<font style="background-color: #CEFFCE">&nbsp;灌水背单词: <a href="http://dict.bitunion.org/xdict.php?word=scout"><font color="#FF4848">scout</font></a>&nbsp;[<font color="#408080" face="Kingsoft Phonetic Plain">skaut</font>]&nbsp;&nbsp;n.&nbsp;<font color="blue">侦察, 搜索, 侦察员, 侦察机</font>&nbsp;vi.&nbsp;<font color="blue">守候, 侦察, 巡视, 嘲笑</font>&nbsp;vt.&nbsp;<font color="blue">侦察, 跟踪, 觅得, 监视, 轻蔑地拒绝(建议,意见等)</font>&nbsp;</font>
+<br><img src="bitu_files/sigline.gif"><br><img src="bitu_files/110.gif" border="0"> <img src="bitu_files/109.gif" border="0"> <img src="bitu_files/108.gif" border="0"> <img src="bitu_files/79.gif" border="0"> </td></tr></tbody></table>
+</td></tr>
+<tr bgcolor="#F8F8F8"><td class="smalltxt" valign="middle">
+<a href="http://out.bitunion.org/athread-10554750-87331-1-1.html">
+<img src="bitu_files/lastpost.gif" align="absmiddle" border="0">
+</a>
+2014-1-24 02:27 PM<a href="http://out.bitunion.org/viewip.php?fid=14&amp;tid=10554750&amp;pid=14186940"><img src="bitu_files/ip.gif" alt="查看 IP" border="0"></a>
+</td>
+<td valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="smalltxt"><td align="left">
+<a href="http://out.bitunion.org/profile-uid-87331.html"><img src="bitu_files/profile.gif" alt="查看资料" border="0"></a>&nbsp;
+<a href="mailto:wangchongxiu@126.com"><img src="bitu_files/email.gif" alt="发送邮件" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/sphinxsearch.php?u=87331"><img src="bitu_files/find.gif" alt="搜索该用户的全部帖子" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/pm.php?action=send&amp;username=flying1day" target="_blank"><img src="bitu_files/pm.gif" alt="发短消息" border="0"></a>&nbsp;
+</td>
+<td align="right">
+&nbsp;<a href="http://out.bitunion.org/post.php?action=edit&amp;fid=14&amp;tid=10554750&amp;pid=14186940&amp;no=5%20%C2%A5&amp;auid=87331&amp;page=1"><img src="bitu_files/edit.gif" alt="编辑帖子" border="0"></a>
+<a href="javascript:convertAT()"><img name="convertATid" src="bitu_files/bb_at_off.png" alt="引用@:关" border="0"></a>
+<a href="javascript:window.location='post.php?action=reply&amp;fid=14&amp;tid=10554750&amp;repquote=14186940&amp;convertATStatus='+convertATStatus"><img src="bitu_files/quote.gif" alt="引用回复" border="0"></a>
+&nbsp;<a href="http://out.bitunion.org/misc.php?action=report&amp;fid=14&amp;tid=10554750&amp;pid=14186940&amp;pfloor=5"><img src="bitu_files/report.gif" alt="向版主反应这个帖子" border="0"></a>
+<a href="javascript:scroll(0,0);"><img src="bitu_files/p_up.gif" border="0"></a>
+</td></tr></tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+ 
+</a><a name="pid14186965"><table class="tableborder" align="center" border="0" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr><td>
+<table style="table-layout: fixed; word-wrap: break-word" border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#FFFFFF">
+<td class="tablerow" align="center" valign="top" width="21%">
+<fieldset style="padding: 5px; width: 175" align="center"> 
+<legend> 
+<font color="#000066"><nobr><b>happysundayok</b></nobr></font>
+</legend>
+<center>
+<table style="table-layout: fixed" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr><td align="center">
+<img src="bitu_files/21924.jpg" border="0"><br>
+新手上路<br>
+<img src="bitu_files/star_level1.gif"></td></tr></tbody></table>
+</center>
+
+<table border="0" cellpadding="2" cellspacing="1" width="95%">
+  <tbody><tr> 
+<td><img src="bitu_files/dot.gif"> 发帖: <font color="blue"><b>1173</b></font> 篇</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 积分: <font color="blue"><b>0</b></font> 分</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 现金: <font color="blue"><b>324545</b></font> 珊瑚币</td> 
+  </tr>
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 注册: <font color="#008080">2004-8-12</font></td>  
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif">
+状态:<span style=" font-weight:bold;"> 离线</span>
+</td> 
+  </tr> 
+</tbody></table>
+</fieldset>
+
+</td>
+<td style="vertical-align:top;" height="100%">
+<table style="table-layout: fixed;word-wrap: break-word" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tbody><tr><td valign="top">
+<table width="100%">
+<tbody><tr>
+<td>
+<span class="bold"><div class="t_smallfont"></div></span>
+</td>
+<td align="center" valign="middle" width="80">
+<a href="http://out.bitunion.org/athread-10554750-21924-1-1.html">只看此用户</a>
+</td>
+<td align="center" valign="middle" width="60">
+<a onclick="pToggleTextSize(14186965, this)" class="hand">大字体</a>
+</td>
+<td tid="10554750" pid="14186965" name="td_cplinks[]" align="center" height="32" valign="middle" width="60">
+<div id="d_clip_container_14186965" style="position:relative">
+   <div id="d_clip_button_14186965"><a id="cplink_p_14186965" style="cursor:pointer; color:blue;" title="复制本楼 URL">6 楼 </a></div>
+<div style="position: absolute; left: 0px; top: 0px; width: 60px; height: 16px; z-index: 99;"><embed id="ZeroClipboardMovie_6" src="bitu_files/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="ZeroClipboardMovie_6" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=6&amp;width=60&amp;height=16" wmode="transparent" align="middle" height="16" width="60"></div></div>
+</td>
+</tr>
+</tbody></table>
+<div id="pm_14186965" class="t_smallfont">我是Jack Campbell，我是这楼里最有钱的人。</div>
+ 
+
+</td></tr><tr>
+<td valign="bottom"><br><br>
+<!--Added 20131021-->
+<font style="background-color: #CEFFCE">&nbsp;灌水背单词: <a href="http://dict.bitunion.org/xdict.php?word=intensive"><font color="#FF4848">intensive</font></a>&nbsp;[<font color="#408080" face="Kingsoft Phonetic Plain">in5tensiv</font>]&nbsp;&nbsp;adj.&nbsp;<font color="blue">强烈的, 精深的, 透彻的, [语法]加强语气的</font>&nbsp;n.&nbsp;<font color="blue">加强器</font>&nbsp;</font>
+ 
+</td></tr></tbody></table>
+</td></tr>
+<tr bgcolor="#FFFFFF"><td class="smalltxt" valign="middle">
+<a href="http://out.bitunion.org/athread-10554750-21924-1-1.html">
+<img src="bitu_files/lastpost.gif" align="absmiddle" border="0">
+</a>
+2014-1-24 03:43 PM<a href="http://out.bitunion.org/viewip.php?fid=14&amp;tid=10554750&amp;pid=14186965"><img src="bitu_files/ip.gif" alt="查看 IP" border="0"></a>
+</td>
+<td valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="smalltxt"><td align="left">
+<a href="http://out.bitunion.org/profile-uid-21924.html"><img src="bitu_files/profile.gif" alt="查看资料" border="0"></a>&nbsp;
+<a href="mailto:happysundayok@sina.com.cn"><img src="bitu_files/email.gif" alt="发送邮件" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/sphinxsearch.php?u=21924"><img src="bitu_files/find.gif" alt="搜索该用户的全部帖子" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/pm.php?action=send&amp;username=happysundayok" target="_blank"><img src="bitu_files/pm.gif" alt="发短消息" border="0"></a>&nbsp;
+</td>
+<td align="right">
+&nbsp;<a href="http://out.bitunion.org/post.php?action=edit&amp;fid=14&amp;tid=10554750&amp;pid=14186965&amp;no=6%20%C2%A5&amp;auid=21924&amp;page=1"><img src="bitu_files/edit.gif" alt="编辑帖子" border="0"></a>
+<a href="javascript:convertAT()"><img name="convertATid" src="bitu_files/bb_at_off.png" alt="引用@:关" border="0"></a>
+<a href="javascript:window.location='post.php?action=reply&amp;fid=14&amp;tid=10554750&amp;repquote=14186965&amp;convertATStatus='+convertATStatus"><img src="bitu_files/quote.gif" alt="引用回复" border="0"></a>
+&nbsp;<a href="http://out.bitunion.org/misc.php?action=report&amp;fid=14&amp;tid=10554750&amp;pid=14186965&amp;pfloor=6"><img src="bitu_files/report.gif" alt="向版主反应这个帖子" border="0"></a>
+<a href="javascript:scroll(0,0);"><img src="bitu_files/p_up.gif" border="0"></a>
+</td></tr></tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+ 
+</a><a name="pid14186967"><table class="tableborder" align="center" border="0" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr><td>
+<table style="table-layout: fixed; word-wrap: break-word" border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#F8F8F8">
+<td class="tablerow" align="center" valign="top" width="21%">
+<fieldset style="padding: 5px; width: 175" align="center"> 
+<legend> 
+<font color="#000066"><nobr><b>相遇的过程</b></nobr></font>
+</legend>
+<center>
+<table style="table-layout: fixed" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr><td align="center">
+<img src="bitu_files/attachment.gif" border="0"><br>
+壕作朋捡肥皂<br>
+<img src="bitu_files/star_level3.gif"><img src="bitu_files/star_level3.gif"></td></tr></tbody></table>
+</center>
+
+<table border="0" cellpadding="2" cellspacing="1" width="95%">
+  <tbody><tr> 
+<td><img src="bitu_files/dot.gif"> 发帖: <font color="blue"><b>23103</b></font> 篇</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 积分: <font color="blue"><b>51</b></font> 分</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 现金: <font color="blue"><b>2010440</b></font> 珊瑚币</td> 
+  </tr>
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 注册: <font color="#008080">2007-5-31</font></td>  
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 来自: <font color="#990000">蔷薇十字骑士团</font></td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 门派: <font color="#990000">基佬救世界 烧死异性恋</font></td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif">
+状态: <span style="color:brown; font-weight:bold;">打盹</span>
+</td> 
+  </tr> 
+</tbody></table>
+</fieldset>
+
+</td>
+<td style="vertical-align:top;" height="100%">
+<table style="table-layout: fixed;word-wrap: break-word" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tbody><tr><td valign="top">
+<table width="100%">
+<tbody><tr>
+<td>
+<span class="bold"><div class="t_smallfont"></div></span>
+</td>
+<td align="center" valign="middle" width="80">
+<a href="http://out.bitunion.org/athread-10554750-74410-1-1.html">只看此用户</a>
+</td>
+<td align="center" valign="middle" width="60">
+<a onclick="pToggleTextSize(14186967, this)" class="hand">大字体</a>
+</td>
+<td tid="10554750" pid="14186967" name="td_cplinks[]" align="center" height="32" valign="middle" width="60">
+<div id="d_clip_container_14186967" style="position:relative">
+   <div id="d_clip_button_14186967"><a id="cplink_p_14186967" style="cursor:pointer; color:blue;" title="复制本楼 URL">7 楼 </a></div>
+<div style="position: absolute; left: 0px; top: 0px; width: 60px; height: 16px; z-index: 99;"><embed id="ZeroClipboardMovie_7" src="bitu_files/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="ZeroClipboardMovie_7" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=7&amp;width=60&amp;height=16" wmode="transparent" align="middle" height="16" width="60"></div></div>
+</td>
+</tr>
+</tbody></table>
+<div id="pm_14186967" class="t_smallfont">吃藕,附上QMD表情</div>
+ 
+
+</td></tr><tr>
+<td valign="bottom"><br><br>
+<!--Added 20131021-->
+<font style="background-color: #CEFFCE">&nbsp;灌水背单词: <a href="http://dict.bitunion.org/xdict.php?word=symphony"><font color="#FF4848">symphony</font></a>&nbsp;[<font color="#408080" face="Kingsoft Phonetic Plain">5simfEni</font>]&nbsp;&nbsp;n.&nbsp;<font color="blue">交响乐, 交响曲</font>&nbsp;</font>
+<br><img src="bitu_files/sigline.gif"><br><img src="bitu_files/attachment_002.jpg" onload="if(this.width>screen.width-333) {this.width=screen.width-333;this.alt='Click Here to Open New Window';}" onmouseover="if(this.alt) this.style.cursor='hand';" onclick="if(this.alt) window.open('http://out.bitunion.org/attachment.php?aid=1169615');" border="0"></td></tr></tbody></table>
+</td></tr>
+<tr bgcolor="#F8F8F8"><td class="smalltxt" valign="middle">
+<a href="http://out.bitunion.org/athread-10554750-74410-1-1.html">
+<img src="bitu_files/lastpost.gif" align="absmiddle" border="0">
+</a>
+2014-1-24 03:47 PM<a href="http://out.bitunion.org/viewip.php?fid=14&amp;tid=10554750&amp;pid=14186967"><img src="bitu_files/ip.gif" alt="查看 IP" border="0"></a>
+</td>
+<td valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="smalltxt"><td align="left">
+<a href="http://out.bitunion.org/profile-uid-74410.html"><img src="bitu_files/profile.gif" alt="查看资料" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/sphinxsearch.php?u=74410"><img src="bitu_files/find.gif" alt="搜索该用户的全部帖子" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/pm.php?action=send&amp;username=%CF%E0%D3%F6%B5%C4%B9%FD%B3%CC" target="_blank"><img src="bitu_files/pm.gif" alt="发短消息" border="0"></a>&nbsp;
+</td>
+<td align="right">
+&nbsp;<a href="http://out.bitunion.org/post.php?action=edit&amp;fid=14&amp;tid=10554750&amp;pid=14186967&amp;no=7%20%C2%A5&amp;auid=74410&amp;page=1"><img src="bitu_files/edit.gif" alt="编辑帖子" border="0"></a>
+<a href="javascript:convertAT()"><img name="convertATid" src="bitu_files/bb_at_off.png" alt="引用@:关" border="0"></a>
+<a href="javascript:window.location='post.php?action=reply&amp;fid=14&amp;tid=10554750&amp;repquote=14186967&amp;convertATStatus='+convertATStatus"><img src="bitu_files/quote.gif" alt="引用回复" border="0"></a>
+&nbsp;<a href="http://out.bitunion.org/misc.php?action=report&amp;fid=14&amp;tid=10554750&amp;pid=14186967&amp;pfloor=7"><img src="bitu_files/report.gif" alt="向版主反应这个帖子" border="0"></a>
+<a href="javascript:scroll(0,0);"><img src="bitu_files/p_up.gif" border="0"></a>
+</td></tr></tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+ 
+</a><a name="pid14186978"><table class="tableborder" align="center" border="0" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr><td>
+<table style="table-layout: fixed; word-wrap: break-word" border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#FFFFFF">
+<td class="tablerow" align="center" valign="top" width="21%">
+<fieldset style="padding: 5px; width: 175" align="center"> 
+<legend> 
+<font color="#000066"><nobr><b>愚钝的小强</b></nobr></font>
+</legend>
+<center>
+<table style="table-layout: fixed" border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr><td align="center">
+<img src="bitu_files/93064.gif" border="0"><br>
+新手上路<br>
+<img src="bitu_files/star_level1.gif"></td></tr></tbody></table>
+</center>
+
+<table border="0" cellpadding="2" cellspacing="1" width="95%">
+  <tbody><tr> 
+<td><img src="bitu_files/dot.gif"> 发帖: <font color="blue"><b>1154</b></font> 篇</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 积分: <font color="blue"><b>0</b></font> 分</td> 
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 现金: <font color="blue"><b>720</b></font> 珊瑚币</td> 
+  </tr>
+  <tr> 
+<td><img src="bitu_files/dot.gif"> 注册: <font color="#008080">2009-4-11</font></td>  
+  </tr> 
+  <tr> 
+<td><img src="bitu_files/dot.gif">
+状态: <span style="color:orange; font-weight:bold;">发呆</span>
+</td> 
+  </tr> 
+</tbody></table>
+</fieldset>
+
+</td>
+<td style="vertical-align:top;" height="100%">
+<table style="table-layout: fixed;word-wrap: break-word" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tbody><tr><td valign="top">
+<table width="100%">
+<tbody><tr>
+<td>
+<span class="bold"><div class="t_smallfont"></div></span>
+</td>
+<td align="center" valign="middle" width="80">
+<a href="http://out.bitunion.org/athread-10554750-93064-1-1.html">只看此用户</a>
+</td>
+<td align="center" valign="middle" width="60">
+<a onclick="pToggleTextSize(14186978, this)" class="hand">大字体</a>
+</td>
+<td tid="10554750" pid="14186978" name="td_cplinks[]" align="center" height="32" valign="middle" width="60">
+<div id="d_clip_container_14186978" style="position:relative">
+   <div id="d_clip_button_14186978"><a id="cplink_p_14186978" style="cursor:pointer; color:blue;" title="复制本楼 URL">8 楼 </a></div>
+<div style="position: absolute; left: 0px; top: 0px; width: 60px; height: 16px; z-index: 99;"><embed id="ZeroClipboardMovie_8" src="bitu_files/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="ZeroClipboardMovie_8" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=8&amp;width=60&amp;height=16" wmode="transparent" align="middle" height="16" width="60"></div></div>
+</td>
+</tr>
+</tbody></table>
+<div id="pm_14186978" class="t_smallfont"><br><br><center><table border="0" cellpadding="0" cellspacing="0" width="95%"><tbody><tr><td>&nbsp;&nbsp;引用[<a href="http://out.bitunion.org/redirect.php?goto=findpost&amp;pid=14186928">查看原帖</a>]:</td></tr><tr><td><table bgcolor="#698CC3" border="0" cellpadding="0" cellspacing="1" width="100%"><tbody><tr><td style="padding: 5px 0 5px 10px" bgcolor="#FFFFFF" width="100%"><b>耗子药</b> 2014-1-24 13:29<br>
+觉得贵…… </td></tr></tbody></table></td></tr></tbody></table></center><br></div>
+ 
+
+</td></tr><tr>
+<td valign="bottom"><br><br>
+<!--Added 20131021-->
+<font style="background-color: #CEFFCE">&nbsp;灌水背单词: <a href="http://dict.bitunion.org/xdict.php?word=remark"><font color="#FF4848">remark</font></a>&nbsp;[<font color="#408080" face="Kingsoft Phonetic Plain">ri5mB:k</font>]&nbsp;&nbsp;n.&nbsp;<font color="blue">备注, 评论, 注意, 注释</font>&nbsp;vt.&nbsp;<font color="blue">评论, 注意, 谈及</font>&nbsp;vi.&nbsp;<font color="blue">谈论</font>&nbsp;</font>
+<br><img src="bitu_files/sigline.gif"><br><a href="http://weibo.com/u/2633742842?s=6uyXnP" target="_blank"><img src="bitu_files/1.png" onload="if(this.width>screen.width-333) {this.width=screen.width-333;this.alt='Click Here to Open New Window';}" onmouseover="if(this.alt) this.style.cursor='hand';" onclick="if(this.alt) window.open('http://service.t.sina.com.cn/widget/qmd/2633742842/80884619/1.png');" border="0"></a></td></tr></tbody></table>
+</td></tr>
+<tr bgcolor="#FFFFFF"><td class="smalltxt" valign="middle">
+<a href="http://out.bitunion.org/athread-10554750-93064-1-1.html">
+<img src="bitu_files/lastpost.gif" align="absmiddle" border="0">
+</a>
+2014-1-24 04:29 PM<a href="http://out.bitunion.org/viewip.php?fid=14&amp;tid=10554750&amp;pid=14186978"><img src="bitu_files/ip.gif" alt="查看 IP" border="0"></a>
+</td>
+<td valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="smalltxt"><td align="left">
+<a href="http://out.bitunion.org/profile-uid-93064.html"><img src="bitu_files/profile.gif" alt="查看资料" border="0"></a>&nbsp;
+<a href="mailto:ll5452858@126.com"><img src="bitu_files/email.gif" alt="发送邮件" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/sphinxsearch.php?u=93064"><img src="bitu_files/find.gif" alt="搜索该用户的全部帖子" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/pm.php?action=send&amp;username=%D3%DE%B6%DB%B5%C4%D0%A1%C7%BF" target="_blank"><img src="bitu_files/pm.gif" alt="发短消息" border="0"></a>&nbsp;
+</td>
+<td align="right">
+&nbsp;<a href="http://out.bitunion.org/post.php?action=edit&amp;fid=14&amp;tid=10554750&amp;pid=14186978&amp;no=8%20%C2%A5&amp;auid=93064&amp;page=1"><img src="bitu_files/edit.gif" alt="编辑帖子" border="0"></a>
+<a href="javascript:convertAT()"><img name="convertATid" src="bitu_files/bb_at_off.png" alt="引用@:关" border="0"></a>
+<a href="javascript:window.location='post.php?action=reply&amp;fid=14&amp;tid=10554750&amp;repquote=14186978&amp;convertATStatus='+convertATStatus"><img src="bitu_files/quote.gif" alt="引用回复" border="0"></a>
+&nbsp;<a href="http://out.bitunion.org/misc.php?action=report&amp;fid=14&amp;tid=10554750&amp;pid=14186978&amp;pfloor=8"><img src="bitu_files/report.gif" alt="向版主反应这个帖子" border="0"></a>
+<a href="javascript:scroll(0,0);"><img src="bitu_files/p_up.gif" border="0"></a>
+</td></tr></tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+ 
+<table align="center" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr>
+<td class="multi" valign="top"></td><td>跳转到 <input id="jump2" size="4" style="border: 1px solid #698CC3" type="text"> 楼</td><td align="right"><br>
+<a href="http://out.bitunion.org/post.php?action=newthread&amp;fid=14&amp;fpage=1"><img src="bitu_files/newtopic.gif" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/post.php?action=newthread&amp;fid=14&amp;fpage=1&amp;poll=yes"><img src="bitu_files/poll.gif" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/thread-10547904-1-1.html"><img src="bitu_files/g9DL_Zm9ycHM.gif" border="0"></a>&nbsp;
+<a href="http://out.bitunion.org/post.php?action=reply&amp;fid=14&amp;tid=10554750&amp;fpage=1"><img src="bitu_files/reply.gif" border="0"></a>
+</td></tr></tbody></table>
+<br><table align="center" cellpadding="0" cellspacing="0" width="410">
+<tbody><tr><td align="center" bgcolor="#698CC3" width="30%">
+<table border="0" cellspacing="1" width="100%">
+<tbody><tr><td class="smalltxt" align="center" bgcolor="#FFFFFF" nowrap="nowrap">
+<a href="http://out.bitunion.org/viewthread.php?fid=14&amp;tid=10554750&amp;wordsonly=1">文字版</a> | 
+<a href="http://out.bitunion.org/viewthread.php?fid=14&amp;tid=10554750&amp;action=printable" target="_blank">可打印版本</a> | 
+<a href="http://out.bitunion.org/memcp.php?action=subscriptions&amp;subadd=10554750">订阅主题</a> | 
+<a href="http://out.bitunion.org/memcp.php?action=favorites&amp;favadd=10554750">收藏主题</a>
+</td></tr></tbody></table></td></tr></tbody></table><br>
+
+<table style="table-layout: fixed" align="center" border="0" cellpadding="0" cellspacing="0" width="97%"> 
+<tbody><tr><td class="nav" nowrap="nowrap" width="80%">&nbsp;<a href="http://out.bitunion.org/index.php">北理 FTP 联盟</a> &#187; <a href="http://out.bitunion.org/forum-14-1.html"> 灌水乐园</a> [<a href="http://out.bitunion.org/forum-14-1.html">第 1 页</a>] &#187; <a href="http://out.bitunion.org/forumdisplay.php?fid=14&amp;tag=221" style="font-weight:bold;">[原创]</a> 我觉得这个车，真是又萌又帅气</td>
+<td align="right" width="20%"><a href="http://out.bitunion.org/home.php">返回 北理 FTP 联盟</a></td>
+</tr></tbody></table>
+<script language="JavaScript">
+var postmaxchars = 10000;
+var isadmin = 0;
+function validate(theform) {
+if (theform.replypost.disabled) return false;
+if (theform.message.value == "" && theform.subject.value == "") {
+alert("请完成标题或内容栏。");
+return false; }
+if (postmaxchars != 0 && isadmin != 1) {
+if (theform.message.value.length > 10000) {
+alert("您的帖子长度超过限制\n\n当前长度: "+theform.message.value.length+" 字节\n系统允许: 10000 字节");
+return false;
+}
+}
+theform.replypost.disabled = true;
+return true;
+}
+</script>
+<form method="post" name="input" action="post.php?action=reply&amp;fid=14&amp;tid=10554750" enctype="multipart/form-data" onsubmit="return validate(this)">
+<input name="replysubmit" value="submit" type="hidden">
+<input name="fpage" value="1" type="hidden">
+<table class="tableborder" align="center" bgcolor="#698CC3" border="0" cellpadding="0" cellspacing="0" width="97%"><tbody><tr><td>
+<table border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr><td colspan="2" class="header">快速回复主题</td></tr>
+<tr>
+<td bgcolor="#F8F8F8" width="18%">标题:</td>
+<td class="smalltxt" bgcolor="#FFFFFF" width="82%"><input name="subject" size="80" tabindex="1" style="width:80%;" type="text"> &nbsp; (可选)</td>
+</tr>
+<tr>
+<td bgcolor="#F8F8F8" valign="top" width="18%">选项:<br><span class="smalltxt">
+<label><input name="parseurloff" value="1" type="checkbox"> 禁用 URL 识别<br>
+<input name="smileyoff" value="1" type="checkbox"> 禁用 <a href="http://out.bitunion.org/faq.php?page=messages#6" target="_blank">Smilies</a><br>
+<input name="bbcodeoff" value="1" type="checkbox"> 禁用 <a href="http://out.bitunion.org/faq.php?page=misc#1" target="_blank">Discuz! 代码</a><br>
+<input name="usesig" value="1" checked="checked" type="checkbox"> 使用个人签名<br>
+<input name="emailnotify" value="1" type="checkbox"> 接收新回复邮件通知</label></span>
+</td>
+<td class="smalltxt" bgcolor="#FFFFFF" width="82%"><textarea rows="7" cols="90" name="message" onkeydown="ctlent(event);" tabindex="2" style="width:80%;"></textarea><br>
+<input name="replypost" value="发表帖子" tabindex="3" class="blue_button" type="submit">&nbsp;&nbsp;&nbsp;
+<input name="previewpost" value="预览帖子" tabindex="4" class="blue_button" type="submit">&nbsp;&nbsp;&nbsp;
+<input value="插入表情" tabindex="5" class="blue_button" onclick="javascript:window.open('smilies.php', 'smilies', 'toolbar=no, scrollbars=yes, resizable=yes, height=600, width=790')" type="button">&nbsp; &nbsp;
+<input name="topicsreset" value="清空内容" tabindex="6" class="blue_button" type="reset">&nbsp; &nbsp;[完成后可按 Ctrl+Enter 发布]</td>
+</tr>
+<tr>
+<td bgcolor="#F8F8F8" width="18%">上传附件[或贴图]:</td>
+<td class="smalltxt" bgcolor="#FFFFFF" width="82%"><input name="attach" size="20" type="file"> &nbsp; (可选) 限制积分: <input name="attachperm" value="0" size="5" type="text">(0为不限制)<br>
+<font color="blue">友情提醒：要上传的文件名请用“字母、数字或中文”等字符命名，使用其他字符的，其他人将无法下载。</font><br>
+<font color="red">注意: 严禁上传与主题无关的附件，情节严重者将被扣分。</font></td>
+</tr>
+</tbody></table></td></tr></tbody></table></form>
+<br><table align="center" cellpadding="0" cellspacing="0" width="97%">
+<tbody><tr class="mediumtxt"><td class="smalltxt" align="left">
+<span class="bold">论坛跳转:</span>
+<select onchange="if(this.options[this.selectedIndex].value != '') {
+window.location=('forumdisplay.php?fid='+this.options[this.selectedIndex].value+'&amp;') }">
+<option selected="selected" value="">系统管理区</option><option value="3">&nbsp; &gt; 联盟公告版</option><option value="4">&nbsp; &gt; 联盟意见箱</option><option value="121">&nbsp; &nbsp; &nbsp; &gt; 处罚通告</option><option value="92">&nbsp; &gt; 新手交流区</option><option value="120">&nbsp; &nbsp; &nbsp; &gt; 积分恢复申请</option><option value="">&nbsp;</option><option value="">直通理工区</option><option value="108">&nbsp; &gt; 校园求助热线</option><option value="59">&nbsp; &gt; 叫卖场</option><option value="114">&nbsp; &nbsp; &nbsp; &gt; 联盟旺铺</option><option value="145">&nbsp; &nbsp; &nbsp; &gt; 团购专区</option><option value="93">&nbsp; &nbsp; &nbsp; &gt; 已完成交易记录</option><option value="83">&nbsp; &gt; 前程似锦</option><option value="117">&nbsp; &nbsp; &nbsp; &gt; 考研兄弟连</option><option value="153">&nbsp; &nbsp; &nbsp; &gt; 兼职信息</option><option value="150">&nbsp; &gt; 海外BITer</option><option value="89">&nbsp; &gt; 外语园地</option><option value="151">&nbsp; &gt; 知识海报</option><option value="">&nbsp;</option><option value="">时尚生活区</option><option value="167">&nbsp; &gt; 购前咨询</option><option value="80">&nbsp; &gt; 硬件与数码时尚</option><option value="168">&nbsp; &gt; 驴游四海</option><option value="116">&nbsp; &gt; 摄影与艺术</option><option value="140">&nbsp; &gt; 车行天下</option><option value="96">&nbsp; &gt; 生活会馆</option><option value="">&nbsp;</option><option value="">技术讨论区</option><option value="10">&nbsp; &gt; 网络技术与信息</option><option value="84">&nbsp; &gt; GNU/Linux 交流区</option><option value="101">&nbsp; &gt; 嵌入式开发技术</option><option value="113">&nbsp; &nbsp; &nbsp; &gt; 嵌入式 LiNUX 开发</option><option value="32">&nbsp; &gt; 程序员集中营</option><option value="21">&nbsp; &gt; 软件使用与交流</option><option value="107">&nbsp; &nbsp; &nbsp; &gt; 新软交流区</option><option value="">&nbsp;</option><option value="">苦中作乐区</option><option value="22">&nbsp; &gt; 游戏人生</option><option value="23">&nbsp; &gt; 影视天地</option><option value="25">&nbsp; &gt; 音乐殿堂</option><option value="14">&nbsp; &gt; 灌水乐园</option><option value="65">&nbsp; &nbsp; &nbsp; &gt; 站庆专版</option><option value="106">&nbsp; &nbsp; &nbsp; &gt; 个人展示区</option><option value="122">&nbsp; &nbsp; &nbsp; &gt; 教工之家</option><option value="66">&nbsp; &nbsp; &nbsp; &gt; 原创文学</option><option value="24">&nbsp; &gt; 贴图欣赏</option><option value="27">&nbsp; &gt; 动漫天空</option><option value="63">&nbsp; &nbsp; &nbsp; &gt; 动漫美图</option><option value="110">&nbsp; &nbsp; &nbsp; &gt; 日语学习交流版</option><option value="115">&nbsp; &gt; 体坛风云</option><option value="143">&nbsp; &nbsp; &nbsp; &gt; 菠菜组内部版面</option><option value="124">&nbsp; &gt; 职场生涯</option><option value="">&nbsp;</option><option value="">联盟交流区</option><option value="78">&nbsp; &gt; 新手 FTP 交流</option><option value="17">&nbsp; &nbsp; &nbsp; &gt; FTP 技术讨论</option><option value="">&nbsp;</option></select>
+</td><td class="smalltxt" align="right">
+</td>
+</tr></tbody></table><br><br>
+
+<script type="text/javascript">
+keys_viewthread();
+</script>
+
+<br></a></td></tr></tbody></table>
+<br><center><a href="http://tieba.baidu.com/f?kw=%B1%B1%C0%EDftp%C1%AA%C3%CB" target="‘_blank’"><img src="bitu_files/gj5o_ZmF2aWNvbl90Yg.png" alt="官方贴吧" border="0"></a>
+<a href="http://weibo.com/bitunion/" target="‘_blank’"><img src="bitu_files/BPAN_ZmF2aWNvbl93Yg.png" alt="官方微博" border="0"></a>
+<a href="http://page.renren.com/600992618" target="‘_blank’"><img src="bitu_files/aKsw_ZmF2aWNvbl9ycg.png" alt="官方公共主页" border="0"></a><span class="smalltxt"><br>当前时刻: 2014年01月24日 16:33:56 癸巳(蛇)年十二月廿四 星期五</span>
+<br><span class="footertext">
+Powered by <a href="http://www.discuz.net/" target="_blank"><b>Discuz!</b> 2.0</a>
+&#169; 2003-2014, <a href="http://www.soff.net/" target="_blank">珊瑚虫工作室[Coral Studio]</a>
+<br>Processed in 32.2261 ms, 8 queries, <a href="http://out.bitunion.org/thread-10104915-1-1.html">Powered by LAMP</a>
+</span></center><a id="bottom"></a>
+</body></html>

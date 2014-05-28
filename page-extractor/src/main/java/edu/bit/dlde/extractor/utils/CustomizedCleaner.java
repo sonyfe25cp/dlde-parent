@@ -8,7 +8,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 
-
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.htmlcleaner.CleanerProperties;
@@ -21,7 +20,6 @@ import org.htmlcleaner.HtmlNode;
 import org.htmlcleaner.JDomSerializer;
 import org.htmlcleaner.TagNode;
 import org.htmlcleaner.TagNodeVisitor;
-import org.jdom.Document;
 
 public class CustomizedCleaner {
 	static Logger _logger = Logger.getLogger(CustomizedCleaner.class);
@@ -133,7 +131,7 @@ public class CustomizedCleaner {
 	 * @return 
 	 * 			一个JDOM对象
 	 */
-	public Document cleanHtml2Doc(String file) {
+	public org.jdom2.Document cleanHtml2Doc(String file) {
 		CleanerProperties props = cleaner.getProperties();
 		props.setNamespacesAware(false);
 
@@ -223,12 +221,9 @@ public class CustomizedCleaner {
 		}
 	}
 
-	public Document cleanHtml2Doc(Reader reader) {
+	public org.jdom2.Document cleanHtml2Doc(Reader reader) {
 		CleanerProperties props = cleaner.getProperties();
 		props.setNamespacesAware(false);
-//		props.setRecognizeUnicodeChars(true);
-//		System.out.println(props.isUseEmptyElementTags());
-//		props.setOmitDeprecatedTags(true);
 		TagNode node = null;
 		JDomSerializer s = null;
 		try {

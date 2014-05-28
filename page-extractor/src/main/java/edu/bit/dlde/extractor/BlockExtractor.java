@@ -11,9 +11,9 @@ import java.util.LinkedHashMap;
 import java.util.List;
 
 import org.jdom.Content;
-import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.Text;
+import org.jdom2.Document;
 
 import edu.bit.dlde.extractor.skeleton.ImpreciseExtractor;
 import edu.bit.dlde.extractor.skeleton.PageExtractor;

@@ -1,5 +1,6 @@
 package edu.bit.dlde.extractor.handler;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
@@ -8,7 +9,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.lang.StringUtils;
-import org.apache.tools.ant.util.FileUtils;
 
 import edu.bit.dlde.utils.DLDELogger;
 
@@ -124,36 +124,27 @@ public class FixHtmlErrorHandler implements IPreTreatment {
 	 * 读到string
 	 */
 	public String readFromReader(Reader reader) {
-		String str = "";
+		BufferedReader br = (BufferedReader) reader;
+		String line;
+		StringBuffer sb = new StringBuffer();
 		try {
-			str = FileUtils.readFully(reader);
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+			line = br.readLine();
+			while (line != null) {
+				sb.append(line + "\n");
+				line = br.readLine();
+			}
+		} catch (Exception e) {
+			log.error("读取错误，检查传入数据源");
+		} finally {
+			try {
+				br.close();
+				reader.close();
+			} catch (IOException e) {
+				log.error("关闭reader错误");
+			}
 		}
-		return str;
-		// BufferedReader br=(BufferedReader)reader;
-		// String line;
-		// StringBuffer sb=new StringBuffer();
-		// try {
-		// line = br.readLine();
-		//
-		// while(line!=null){
-		// sb.append(line+"\n");
-		// line=br.readLine();
-		// }
-		// }catch(Exception e){
-		// log.error("读取错误，检查传入数据源");
-		// }finally{
-		// try {
-		// br.close();
-		// reader.close();
-		// } catch (IOException e) {
-		// log.error("关闭reader错误");
-		// }
-		// }
-		//
-		// return sb.toString();
+
+		return sb.toString();
 	}
 
 	public String extractTitle(String html) {

@@ -47,25 +47,51 @@ public class CombinedPreciseExtractorTest extends TestCase {
 //				"src/test/resources/gn-news-qq.html")), "gn-news-qq");
 //		System.out.println(cpe.extract());
 		
-		/*
-		 * case 5
-		 */
-		File xml5 = new File("src/test/resources/gn-news-qq-new.xml");
-		cpe.configWith(xml5);
-		cpe.setResource(new FileReader(new File(
-				"src/test/resources/004222.html")), "gn-news-qq");
-//		cpe.extract();
-		System.out.println(cpe.extract());
-//		System.out.println(result);
 		
 		/**
+		 * case 5 
+		 */
+		//File xml5 = new File("src/test/resources/zh1.xml");
+		//cpe.configWith(xml5);
+		//cpe.setResource(new FileReader(new File(
+		//		"src/test/resources/zh1.html")), "zh1");
+		//System.out.println(cpe.extract());
+		
+		
+		/*
 		 * case 6
 		 */
-		File xml6 = new File("src/test/resources/gn-news-qq-new.xml");
-		cpe.configWith(xml6);
+//		File xml6 = new File("src/test/resources/bitpt.xml");
+//		cpe.configWith(xml6);
+//		cpe.setResource(new FileReader(new File(
+//				"src/test/resources/bitpt.html")), "bitpt");
+//		System.out.println(cpe.extract());
+		
+		/*
+		 * case 7
+		 */
+//		File xml7 = new File("src/test/resources/zhilian.xml");
+//		cpe.configWith(xml7);
+//		cpe.setResource(new FileReader(new File(
+//				"src/test/resources/fenghuang.html")), "zhilian");
+//		System.out.println(cpe.extract());
+		
+		/*
+		 * case 8
+		 */
+//		File xml8 = new File("src/test/resources/bitu.xml");
+//		cpe.configWith(xml8);
+//		cpe.setResource(new FileReader(new File(
+//				"src/test/resources/bitu")), "bitu");
+//		System.out.println(cpe.extract());
+		
+		/*
+		 * case 9
+		 */
+		File xml9 = new File("src/test/resources/1feng.xml");
+		cpe.configWith(xml9);
 		cpe.setResource(new FileReader(new File(
-				"src/test/resources/003700.html")), "gn-news-qq");
-//		cpe.extract();
+				"src/test/resources/1feng.html")), "1feng");
 		System.out.println(cpe.extract());
 	}
 

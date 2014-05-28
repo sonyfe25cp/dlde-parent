@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+	<rule>
+		<type>forum</type>
+		<uri>bitu</uri>
+		<mainframe>html/body/table[2]/tbody/tr/td/a/table</mainframe>
+		<name>.//table[1]/tbody/tr/td/table/tbody/tr[1]/td[1]/fieldset/legend/font/nobr/b</name>
+		<company>.//tbody/tr[1]/td[2]/a</company>
+		<address>.//tbody/tr[1]/td[3]</address>
+		<date>.//tbody/tr[1]/td[4]</date>
+		<desc>.//tbody/tr[2]/td/table/tbody/tr/td[1]/span</desc>
+		<info>.//tbody/tr[2]/td/table/tbody/tr/td[1]/p</info>
+	</rule>
+</rules>

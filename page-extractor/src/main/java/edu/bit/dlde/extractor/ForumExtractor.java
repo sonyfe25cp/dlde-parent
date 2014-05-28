@@ -4,10 +4,18 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+
 import org.apache.log4j.Logger;
 import org.htmlcleaner.CleanerProperties;
+import org.htmlcleaner.DomSerializer;
 import org.htmlcleaner.TagNode;
 import org.htmlcleaner.XPatherException;
+import org.w3c.dom.Node;
 
 import edu.bit.dlde.extractor.skeleton.PreciseExtractor;
 import edu.bit.dlde.extractor.xpathcfg.Rule;
@@ -35,39 +43,45 @@ public class ForumExtractor extends PreciseExtractor {
 		if (rule == null || !rule.isEnabled())
 			return null;
 
-		long id = 0;
 		LinkedHashMap<String, String> c2v = new LinkedHashMap<String, String>();
 		try {
 			CleanerProperties props = cleaner.getProperties();
 			props.setNamespacesAware(false);
+			props.setOmitComments(true);
 			TagNode root = cleaner.clean(_reader);
-
-			Object[] title = root.evaluateXPath(rule.getExprValue(0));
-			int j = 0;
-			for (Object t : title) {
-				TagNode n = (TagNode) t;
-				String content = n.getText().toString();
-				c2v.put(j + "-" + rule.getExprName(0), content);
-				j++;
-			}
+			
+//			org.w3c.dom.Document doc = null;
+//			try {
+//				doc = new DomSerializer(props).createDOM(root);
+//				XPath xpath = XPathFactory.newInstance().newXPath();
+//				Node nodeset  = (Node) xpath.evaluate(Rule.MAINFRAME, doc, XPathConstants.NODE);
+//			} catch (ParserConfigurationException e) {
+//				e.printStackTrace();
+//			}catch (XPathExpressionException e) {
+//				e.printStackTrace();
+//			}
+			
 			// get frame nodes
-			String frameExpr = rule.getExprValue(1);
+			String frameExpr = rule.getExprByName(Rule.MAINFRAME);
 			Object[] frames = root.evaluateXPath(frameExpr);
-
+			logger.info("frame expr: "+ frameExpr +" -- frames.length:"+ frames.length);
 			// iterate into each frame node
+			int id = 0;
 			for (Object frame : frames) {
-				// System.out.println("12819281937");
 				TagNode fNode = (TagNode) frame;
-				for (int i = 2; i < rule.getExprsSize(); i++) {
+				for (int i = 0; i < rule.getExprsSize(); i++) {
 					String name = rule.getExprName(i);
+					if(name.equalsIgnoreCase(Rule.MAINFRAME)){//不需要存frame
+						continue;
+					}
 					String value = rule.getExprValue(i);
 					Object[] nodes = fNode.evaluateXPath(value);
-
+					System.out.println("nodes.length:"+nodes.length);
 					for (Object node : nodes) {
 						TagNode n = (TagNode) node;
 						String content = n.getText().toString().trim();
 						c2v.put(id + "-" + name, content);
-//						logger.info("Extract result: " + name + ":" + content);
+						logger.info("Extract result: " + name + ":" + content);
 					}
 				}
 				id++;

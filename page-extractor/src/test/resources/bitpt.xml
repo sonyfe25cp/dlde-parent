@@ -3,8 +3,8 @@
 	<rule>
 		<type>forum</type>
 		<uri>bitpt</uri>
-		<mainframe>.//*[@id='postlist']</mainframe>
-		<username>.//*[@id='pid2438649']/tbody/tr[1]/td[1]/div[1]/div/a/font</username>
+		<mainframe>.//*[@id='postlist']/div</mainframe>
+		<username>.//table/tbody/tr[1]/td[1]/div[1]/div/a/font</username>
 		<content>.//tr/td/div/div/div/table/tbody/tr/td</content>
 	</rule>
 </rules>

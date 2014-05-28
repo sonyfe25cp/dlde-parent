@@ -1,0 +1,1049 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>点击排行榜</title>
+<link href="1feng_files/basic.css" rel="stylesheet" type="text/css">
+<link href="1feng_files/list.css" rel="stylesheet" type="text/css">
+<style type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+    white-space: normal !important;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.firebugRulerH {
+    top: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 14px !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
+    border-top: 1px solid #BBBBBB !important;
+    border-right: 1px dashed #BBBBBB !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+.firebugRulerV {
+    top: 0 !important;
+    left: -15px !important;
+    width: 14px !important;
+    height: 100% !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
+    border-left: 1px solid #BBBBBB !important;
+    border-right: 1px solid #000000 !important;
+    border-bottom: 1px dashed #BBBBBB !important;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}
+</style><style id="firepath-matching-node-style" type="text/css">.firepath-matching-node {	outline: 2px dashed #00F;}</style></head>
+<body><script src="1feng_files/page.txt" id="script_1390556852154_0"></script>
+<script src="1feng_files/BX.js" type="text/javascript"></script>
+<script src="1feng_files/festival.js"></script>
+<style type="text/css">
+.cWhite,.cWhite a:link,.cWhite a:visited,.cWhite a:hover,.cWhite a:active{color:#fff;}
+.clear{clear:both;height:0;line-height:0;font-size:0;overflow:hidden;}
+.h_infoNav{width:100%;margin:0 auto;background:url(http://res.img.ifeng.com/8cbe73a7378dafdb/2011/0401/n_10.gif) repeat-x bottom;height:32px;position:relative;z-index:800;}
+.h_masthead{height:32px;width:990px;margin:0 auto;padding:0 0 0 10px;background:url(http://res.img.ifeng.com/8cbe73a7378dafdb/2011/0401/n_10.gif) repeat-x bottom; position:relative;}
+.h_masthead p{float:left;padding-top:10px;line-height:normal}
+.h_infoNav .h_s01{background:url(http://res.img.ifeng.com/8cbe73a7378dafdb/2011/0401/n_12.gif) no-repeat left center;padding:0 15px;_padding:2px 15px 0}
+.h_infoNav .h_s02{background:url(http://res.img.ifeng.com/8cbe73a7378dafdb/2011/0401/n_13.gif) no-repeat left center;padding:0 15px 0 12px;_padding:2px 23px 0 12px}
+.h_infoNav .h_s03{background:url(http://y1.ifengimg.com/38716b164e0f5e63/2013/0107/icon_c.gif) no-repeat left center;padding:0 15px 0 12px;_padding:2px 23px 0 12px;}/*130106a*/
+.h_infoNav .h_set{float:right; padding:10px 10px 0 0;}
+.h_set .cGray a{ padding-left:3px;}
+.h_set .cRed{color:#666; padding-left:10px;}
+.cGray2,.cGray2 a:link,.cGray2 a:visited,.cGray2 a:hover,.cGray2 a:active{color:#999;}
+.h_indexLogin{position:absolute; right:0; top:23px;background:url(http://res.img.ifeng.com/tres/images/channel_login.gif) no-repeat left top; width:341px; height:137px; z-index:100;}
+.h_indexLogin .h_close{float:left; width:332px; height:15px; padding:16px 9px 0 0;}
+.h_indexLogin .h_close a{float:right; background:url(http://res.img.ifeng.com/tres/images/icon_close.gif) no-repeat 0 2px; padding-left:9px;}
+.h_indexLogin ul{ float:left; width:161px; padding:7px 0 0 55px;}
+.h_indexLogin li{ height:30px;}
+.h_indexLogin label{ vertical-align:middle;}
+.h_indexLogin .h_text{width:124px;height:14px;font-size:12px;vertical-align:middle; padding:2px 0 0 2px;}
+.h_indexLogin .h_btn04{float:right;width:39px;height:19px;background:url(http://res.img.ifeng.com/tres/images/loginBtn.gif) repeat-x top;border:none;cursor:pointer;margin-right:1px; display:inline;}
+.h_indexReg{float:left; width:60px;padding:21px 0 0 30px; line-height:20px; color:#666;}
+.h_indexReg a{text-decoration:underline;}
+.h_indexReg a,.h_indexReg a:link,.h_indexReg a:visited,.h_indexReg a:hover,.h_indexReg a:active{color:#004276;}
+.h_mainNav{width:980px;height:29px;margin:0 auto;color:#ddd;padding:8px 10px 0; font-family:宋体;}
+.h_mainNav span{float:right; height:13px;background:url(http://res.img.ifeng.com/8cbe73a7378dafdb/2011/0401/n_11.gif) no-repeat 0 0;padding:1px 0 0 19px;}
+.h_mainNav ul{float:left;width:910px; padding-top:2px;}
+.h_mainNav li{float:left; background:url(http://res.img.ifeng.com/8cbe73a7378dafdb/2011/0427/line.gif) no-repeat left center; padding:0 6px 0 9px;}
+.h_mainNav .cRed, .cRed a:link, .cRed a:visited, .cRed a:hover, .cRed a:active {color: #BA2636;}
+  </style>
+  <script src="1feng_files/inice_v1.js"></script><script type="text/javascript" src="1feng_files/region_v1.js"></script><script type="text/javascript" src="1feng_files/get.html"></script>
+  <div class="h_infoNav">
+      <div class="h_masthead">
+        <p><span class="h_s01 cRed"><a href="http://www.ifeng.com/" target="_blank">凤凰网首页</a></span>
+           <span class="h_s02 cRed"><a href="http://3g.ifeng.com/3g/news.html" target="_blank">手机凤凰网</a></span> 
+           <span class="h_s03 cRed"><a href="http://i.ifeng.com/newsapp" target="_blank">新闻客户端</a></span>
+        <span class="cGray" id="h_getDay">2014-01-24 星期五 农历腊月廿四 南方小年(掸尘)</span></p>
+        <div class="h_set">
+          <span class="cGray"><a href="javascript:setHomepage('http://news.ifeng.com/')" id="h_sethomea">设为首页</a> <a href="javascript:AddFavorite('http://news.ifeng.com/','%E5%87%A4%E5%87%B0%E7%BD%91%E8%B5%84%E8%AE%AF');">收藏本站</a> <div id="h_login" style="display:inline;"><a href="http://my.ifeng.com/?_c=register&amp;_a=new-account" target="_blank">注册</a> <a style="cursor:pointer;" onclick="hideloginbox();">登录</a></div></span><div id="h_welcome" style="display:inline;"></div>
+         </div>        
+          <div class="h_indexLogin" id="h_loginbox" style="display:none;">
+            <div class="h_close cGray2"><a onclick="closeloginbox();" style="cursor:pointer;">关闭</a></div>
+            <div class="clear"></div>
+              <form action="http://my.ifeng.com/?_c=index&amp;_a=login" method="post" id="h_form1" name="l_f">
+                <ul>
+                <li><label>账号 </label><input name="uname" class="h_text" id="h_uname" onfocus="javascript:if (value=='') {this.className='h_text'};" onblur="javascript:if (value=='text') {this.className='h_text'};" type="text"></li>
+                <li><label>密码 </label><input name="pass" class="h_text" id="h_pass" onfocus="javascript:if (value=='') {this.className='h_text'};" onblur="javascript:if (value=='text') {this.className='h_text'};" type="password"></li>
+                <li>
+                <input name="Submit" class="h_btn04" value="" onclick="javascript:CheckInfo();" type="button">
+                </li>
+                </ul>
+                <div class="h_indexReg">没有账号？<br>
+                <a href="http://my.ifeng.com/?_c=register&amp;_a=new-account" target="_blank">立即注册</a></div>
+                <input name="backurl" id="h_backurl" value="http://news.ifeng.com/toprank/hour/" type="hidden">
+              </form>
+          </div>
+      </div>
+<script src="1feng_files/cn_date.js"></script>
+<script type="text/javascript">
+document.getElementById("h_getDay").innerHTML=getCnDateTimeStr();
+var bkurl=window.location.href
+document.getElementById("h_backurl").value=bkurl;
+function AddFavorite(sURL, sTitle){
+  try{
+    window.external.addFavorite(sURL, sTitle);
+  }catch (e){
+    try{
+      window.sidebar.addPanel(sTitle, sURL, "");
+    }catch (e){
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+    }
+  }
+}
+function setHomepage(pageURL) {
+  if (document.all) {
+    document.body.style.behavior='url(#default#homepage)';
+    document.body.setHomePage(pageURL);
+  }else {
+    try { //IE
+      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+    } catch (e) {
+      try{ //Firefox
+        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components. interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage',pageURL);         
+      } catch(e) {
+        alert( "您的浏览器不支持该操作，请使用浏览器菜单手动设置." );
+      }
+    }
+  }
+}
+function closeloginbox(){
+  document.getElementById('h_loginbox').style.display='none';
+}
+function hideloginbox() {
+  (document.getElementById("h_loginbox").style.display=="none")?(document.getElementById("h_loginbox").style.display=""):(document.getElementById("h_loginbox").style.display="none");
+}
+function CheckInfo(){
+  var cookieEnabled=(navigator.cookieEnabled)?true:false;
+  if(!cookieEnabled){	alert('请开启浏览器COOKIE功能！');	return false;	}
+  if(document.getElementById('h_uname').value==''||document.getElementById('h_uname').value==null){alert('请输入用户名');	document.getElementById('h_uname').focus();	return false;}
+  if(document.getElementById('h_pass').value==''||document.getElementById('h_pass').value==null){	alert('请输入密码');document.getElementById('h_pass').focus();return false;	}
+  document.getElementById('h_form1').submit();
+  return false;
+}
+function cb_userdetail() {
+  var msg='<span class="cRed"><a href="http://my.ifeng.com/?_c=index&_a=my" target="_blank">'+sso_username+'</a> 欢迎你</span><span class="cGray"><a href="http://my.ifeng.com/?_c=index&_a=logout&backurl='+escape(bkurl)+'" id="btnlogout">退出</a></span>';
+  document.getElementById("h_welcome").innerHTML=msg;
+  document.getElementById("h_login").style.display="none";
+  document.getElementById("h_welcome").style.display="inline";
+}
+function getCookie_comment(name){
+  var arr = document.cookie.match(new RegExp('(^| )'+name+'=([^;]*)(;|$)'));
+  if(arr!=null) return arr[2];
+  return null;
+}
+var sid = getCookie_comment("sid");
+if(sid&&sid.length>32) {
+  sso_username=decodeURIComponent(sid.substr(32));
+  cb_userdetail();
+}
+</script>
+    </div> 
+  <div class="h_mainNav cDGray">
+      <span><a href="http://phtv.ifeng.com/" target="_blank">凤凰卫视</a></span>
+      <ul>
+        <li style="background:none; padding-left:0;"><a href="http://news.ifeng.com/" target="_blank">资讯</a></li>
+        <li><a href="http://finance.ifeng.com/" target="_blank">财经</a></li>
+        <li><a href="http://ent.ifeng.com/" target="_blank">娱乐</a></li>
+        <li><a href="http://news.ifeng.com/sports/" target="_blank">体育</a></li>
+        <li><a href="http://fashion.ifeng.com/" target="_blank">时尚</a></li>
+        <li><a href="http://fashion.ifeng.com/health/" target="_blank">健康</a></li>
+        <li><a href="http://fashion.ifeng.com/baby/" target="_blank">亲子</a></li>
+        <li><a href="http://auto.ifeng.com/" target="_blank">汽车</a></li>
+        <li><a href="http://house.ifeng.com/" target="_blank">房产</a></li>
+        <li><a href="http://home.ifeng.com/" target="_blank">家居</a></li>
+        <li><a href="http://tech.ifeng.com/" target="_blank">科技</a></li>
+        <li><a href="http://fashion.ifeng.com/travel/" target="_blank">旅游</a></li>
+        <li><a href="http://book.ifeng.com/" target="_blank">读书</a></li>
+        <li><a href="http://edu.ifeng.com/" target="_blank">教育</a></li>
+        <li><a href="http://culture.ifeng.com/" target="_blank">文化</a></li>
+        <li><a href="http://news.ifeng.com/history/" target="_blank">历史</a></li>
+        <li><a href="http://news.ifeng.com/mil/" target="_blank">军事</a></li>
+        <li><a href="http://v.ifeng.com/" target="_blank">视频</a></li>
+        <li><a href="http://blog.ifeng.com/" target="_blank">博客</a></li>
+        <li><a href="http://bbs.ifeng.com/" target="_blank">论坛</a></li>
+        <li><a href="http://gongyi.ifeng.com/" target="_blank">公益</a></li>
+        <li><a href="http://fo.ifeng.com/" target="_blank">佛教</a></li>
+        <li><a href="http://astro.ifeng.com/" target="_blank">星座</a></li>
+      </ul>
+  </div>
+<style>
+.ad1000{width:1000px; text-align:center; margin:10px auto; background:#fff;}
+.searchDiv02{width:980px;margin:0 auto;height:38px;padding:10px 10px 0;}
+.searchDiv02 .theLogo{width:620px;}
+.theLogo{float:left;font-size:12px;}
+.theLogo img{float:left;}
+.theLogo span{float:left; height:31px; margin-left:10px; display:inline; border-left:1px solid #ccc; padding:3px 0 0 10px; overflow:hidden;}
+.theCurrent{float:left; padding:7px 0 0 15px;}
+</style>
+<div class="ad1000" style="margin:0 auto;">
+
+<!--s_news_index_ad_banner_top_1000x90 2014.01.24 09:17:30-->
+<script type="text/javascript">try{aptracker.add(536);}catch(e){}</script>
+
+
+<script language="javascript" type="text/javascript">
+window.Ifeng_Sc_RichMedia_Sleep = 15;
+window.Ifeng_Sc_FloatMedia_A_zindex = 2147483647;
+window.Ifeng_Sc_FloatMedia_B_zindex = 2147483640;
+window.Ifeng_Sc_RichMedia_zindex =2147483646;
+</script>
+<div id="Ap536" style="display:none;">
+<!--13841,1281,邢钊,8--><code>
+<!--BOF
+<script>;(function(b, c) {
+    function g() {
+        var a = b.getElementById("cont-tanx-a-" + h);
+        if (5 < i && ("undefined" === typeof c.tanxssp_show)) {
+            try {
+                a.removeChild(b.getElementById("tanx-a-" + h))
+            } catch (d) {}
+            a.innerHTML = j
+        } else "undefined" !== typeof c.tanxssp_show || (i++, setTimeout(g, 100))
+    }
+    var a = b.createElement("script"),
+        d = b.getElementsByTagName("head")[0],
+        j = "\x3Ca href\x3D\x27http\x3A\x2F\x2Fredirect.simba.taobao.com\x2Frd\x3Fc\x3Dun\x26w\x3Dchannel\x26f\x3Dhttp\x253A\x252F\x252Fqin.taobao.com\x252F\x253Frefpid\x253Dmm\x5F12229823\x5F1573806\x5F8666134\x2526unid\x253D\x26k\x3D42fb32372ced8135\x26p\x3Dmm\x5F12229823\x5F1573806\x5F8666134\x27 target\x3D\x5Fblank\x3E\x3Cimg src\x3D\x27http\x3A\x2F\x2Fy1.ifengimg.com\x2F89df2be17e58f8ab\x2F2013\x2F1226\x2Ftaobaopudi\x2F1000x90.gif\x27 border\x3D0 \x2F\x3E\x3C\x2Fa\x3E",
+        i = 0,
+        h = "mm_12229823_1573806_8666134";
+    b.write("<span id='cont-tanx-a-" + h + "'><a style='display:none;' id='tanx-a-" + h + "'></a></span>");
+    (a.src = "http://p.tanx.com/ex?i=" + h, d.insertBefore(a, d.firstChild));
+    setTimeout(g, 3E3)
+})(document, window);</script>
+EOF-->
+</code>
+
+<!--0,0,NULL,fixture--><cite>
+<!--BOF
+<a href="http://dolphin.deliver.ifeng.com/c?z=ifeng&la=0&si=2&cg=1&c=1&ci=2&or=1174&l=7515&bg=7515&b=7510&u=http://renwuku.news.ifeng.com/" target="_blank"><img src="http://y0.ifengimg.com/mappa/2013/12/03/60fa817d8826a9cd1f4a983ff770eaa8.jpg" width="1000" height="90" border="0" /></a>
+EOF-->
+</cite>
+</div>
+<script language="javascript">
+new AdRotator({maxTimes : 2, identifier : 'Ap536'});
+</script>
+
+<a href="http://dolphin.deliver.ifeng.com/c?z=ifeng&amp;la=0&amp;si=2&amp;cg=1&amp;c=1&amp;ci=2&amp;or=1174&amp;l=7515&amp;bg=7515&amp;b=7510&amp;u=http://renwuku.news.ifeng.com/" target="_blank"><img src="1feng_files/60fa817d8826a9cd1f4a983ff770eaa8.jpg" border="0" height="90" width="1000"></a>
+
+
+<!--/s_news_index_ad_banner_top_1000x90-->
+
+</div>
+<div class="searchDiv02">
+    <div class="theLogo"><a href="http://news.ifeng.com/" target="_blank"><img src="1feng_files/news.gif" alt="凤凰网资讯" height="30" width="107"></a><div class="theCurrent cDGray"><a href="http://news.ifeng.com/" target="_blank">资讯</a> &gt; 点击排行</div></div>
+  <style type="text/css">
+.navFind{float:right;width:323px;padding:6px 0 0}
+.navFind span{float:left}
+.navFind .text{width:182px;height:16px;padding:2px 0 0 5px;margin-top:1px !important;*margin-top:0px !important;margin-top:0;margin-right:7px;background:#fff;border:1px solid #819bb4;color:#646464;font-size:12px}
+.navFind .sel{width:55px;height:16px;margin:1px 9px 0 0;padding:2px 0 0 11px;border:1px solid #819bb4;border-right:none;background:#fff url(http://img.ifeng.com/tres/TemplateRes/14705/14705/images/general_head/nav0416_04.gif) no-repeat right center;font-size:12px;color:#646464;cursor:pointer}
+.navFind .button{width:51px;height:20px;padding:1px 0 0 2px;margin:1px 0 0;border:none;background:url(http://img.ifeng.com/tres/TemplateRes/14705/14705/images/general_head/navFind.gif) no-repeat 0 0;color:#000;font-weight:bold;cursor:pointer}
+#searchFormOption{position:relative;float:left;z-index:80}
+#loginFldselectop{position:absolute;border:1px solid #DFDFDF;top:20px;left:0px;width:48px;background:#fff;z-index:99}
+#loginFldselectop li{line-height:20px;height:20px}
+#loginFldselectop li a{line-height:20px;height:20px;text-decoration:none;color:#000000;padding-left:11px}
+	.stockList{position:absolute;top:28px;left:0;width:300px; border:1px solid #195184; background:#fff; z-index:999;}
+	.stockList a,.stockList a:visited{color:#0A5EA6;}
+	.stockList .tab td{border-bottom:1px solid #ECECEC; height:21px!important;*height:20px!important;height:20px; padding-left:12px; text-align:left; color:#333;}
+	.stockList .tab tr.current{background:#194E80;}
+	.stockList .tab tr.current td{color:#fff;background:#194E80;}
+	.stockList .tab tr.current td a{color:#fff;}
+	.stockList .red{color:#f00;}
+</style>
+ <script type="text/javascript" src="1feng_files/keywords.js"></script>
+  <div class="navFind" style="position: relative; z-index: 80;">
+    <form id="search_form" method="get" action="http://search.ifeng.com/sofeng/search.action" target="_blank" onsubmit="return Tourl();">
+      <span>
+        <input id="keyword" name="q" value="吉尔吉斯斯坦击毙武装分子" class="text" autocomplete="off" onclick="header_search.clean_default(this.value)" onblur="header_search.set_default(this.value)" type="text">
+        <input id="param1" name="c" value="1" type="hidden">
+        <input id="param2" name="" value="" disabled="disabled" type="hidden">
+      </span>
+      <div id="searchFormOption">
+        <span id="loginUl" onclick="header_search.show_option()" onmouseout="header_search.out_option()" onmouseover="header_search.over_option()" style="cursor: default;" class="sel">站内</span>
+        <ul id="loginFldselectop" style="display: none;" onmouseout="header_search.out_option()" onmouseover="header_search.over_option()">
+          <li id="ra1" style="cursor: default;" onmouseover="this.style.background='#e7e7e7'" onmouseout="this.style.background='white'"><a onclick="header_search.select_option('站内')" style="width: 100%; display: block; height: 17px;">站内</a></li>
+          <li id="ra2" style="cursor: default;" onmouseover="this.style.background='#e7e7e7'" onmouseout="this.style.background='white'"><a onclick="header_search.select_option('站外')" style="width: 100%; display: block; height: 17px;">站外</a></li>
+          <li id="ra3" style="cursor: default;" onmouseover="this.style.background='#e7e7e7'" onmouseout="this.style.background='white'"><a onclick="header_search.select_option('证券')" style="width: 100%; display: block; height: 17px;">证券</a></li>
+          <li id="ra4" style="cursor: default;" onmouseover="this.style.background='#e7e7e7'" onmouseout="this.style.background='white'"><a onclick="header_search.select_option('汽车')" style="width: 100%; display: block; height: 17px;">汽车</a></li>
+          <li id="ra0" style="cursor: default;" onmouseover="this.style.background='#e7e7e7'" onmouseout="this.style.background='white'"><a onclick="header_search.select_option('视频')" style="width: 100%; display: block; height: 17px;">视频</a></li>
+        </ul>
+      </div>
+      <span><input value="搜索" class="button" style="cursor: pointer;" type="submit"></span>
+      <div class="clear"></div>
+      <div id="suggest_list" class="stockList" style="display: none;" onfocus="finance_suggest.display('inline')" onblur="" onmouseover="finance_suggest.display('inline')" onmouseout="finance_suggest.display('none')"></div>
+      <div class="clear"></div>
+    </form>
+	<script>
+	function Tourl(){
+		var key_v= document.getElementById("loginUl").innerHTML;
+		if(key_v=="视频"){
+			document.forms["search_form"].action = "http://so.v.ifeng.com/video"; 
+		}
+		return true;
+	}
+	</script>
+  </div>
+  <script type="text/javascript" src="1feng_files/nav_search.js"></script>
+</div>
+<div id="mainWrap" style="margin:0 auto;">
+<!--左侧主体框架 -->
+<div class="leftbar">
+<div class="dotline"></div>
+<div class="breadnav2"><span class="b14">点击排行榜</span><font color="#CC0000"><b>一小时</b></font> | <a href="http://news.ifeng.com/toprank/day/" target="_self">24小时</a> | <a href="http://news.ifeng.com/toprank/week/" target="_self">一周</a> </div>
+<div class="dotline mar10"></div>
+
+<!--图片摘要部分 -->
+<div class="listPicBox">
+
+<!--通用版 1 -->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>38662
+<img src="1feng_files/equal_arrow.jpg">
+</span><font class="rankNum">1.</font><a href="http://news.ifeng.com/photo/hdsociety/detail_2014_01/24/33327878_0.shtml" target="_blank" class="sys_url">山东单县公安局局长亲临指挥击毙撞人疯牛</a></h3>
+<div class="padBox">
+
+<!--左侧图片 -->
+	<div class="leftimg"><a href="http://news.ifeng.com/photo/hdsociety/detail_2014_01/24/33327878_0.shtml" target="_blank"><img src="1feng_files/thumb_135x135_rdn_52e1e86dee1d0.jpg" height="135" width="135"></a></div>
+<!--左侧图片 end-->
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p></p>
+			<div class="Function">
+                                <span class="sys_time">0124 12:15</span><!--时间-->
+                                <span class="sys_pic"><a href="http://news.ifeng.com/photo/hdsociety/detail_2014_01/24/33327878_0.shtml"></a></span><!--图片-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>23803
+<img src="1feng_files/equal_arrow.jpg">
+</span><font class="rankNum">2.</font><a href="http://news.ifeng.com/mainland/detail_2014_01/24/33325262_0.shtml" target="_blank" class="sys_url">习近平：中国崛起应避免陷修昔底德陷阱</a></h3>
+<div class="padBox">
+
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>香港《文汇报》1月24日文章 原题：习近平“避免陷入‘修昔底德陷阱’”意义重大 
+习近平指出中国不会陷入中等发达国家停滞不前的沼泽，强调“我们都应该努力避免陷入‘修昔底德陷阱’”，既昭示了中国梦的光明前景，也指出了西方大国应抛
+弃二元对立观，避免在世界制造冲突、隔阂与对抗，导致两败俱伤，而要走和平共荣的道路。西方大国更应反思历史、接纳中国，适当做出调整和让步，若针锋相对
+则难免重蹈历史的覆辙。</p>
+			<div class="Function">
+                                <span class="sys_time">0124 10:39</span><!--时间-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>20176
+<img src="1feng_files/top_arrow.gif">
+</span><font class="rankNum">3.</font><a href="http://news.ifeng.com/world/detail_2014_01/24/33333509_0.shtml" target="_blank" class="sys_url">情侣在飞机上演活春宫 从起飞到降落未间断(图)</a></h3>
+<div class="padBox">
+
+<!--左侧图片 -->
+	<div class="leftimg"><a href="http://news.ifeng.com/world/detail_2014_01/24/33333509_0.shtml" target="_blank"><img src="1feng_files/thumb_135x135_rdn_52e20cf8c1b40.jpg" height="135" width="135"></a></div>
+<!--左侧图片 end-->
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>报道称，史翠柏与马丁一上机就开始上演活春宫，除了在茶点时间稍作休息、补充体力外，直至降落前都没停过。</p>
+			<div class="Function">
+                                <span class="sys_time">0124 14:48</span><!--时间-->
+                                <span class="sys_pic"><a href="http://news.ifeng.com/world/detail_2014_01/24/33333509_0.shtml"></a></span><!--图片-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>19695
+<img src="1feng_files/top_arrow.gif">
+</span><font class="rankNum">4.</font><a href="http://news.ifeng.com/history/vp/detail_2014_01/24/33333127_0.shtml" target="_blank" class="sys_url">1990年春晚：江泽民李鹏与姜昆宋祖英等演员握手</a></h3>
+<div class="padBox">
+
+<!--左侧图片 -->
+	<div class="leftimg"><a href="http://news.ifeng.com/history/vp/detail_2014_01/24/33333127_0.shtml" target="_blank"><img src="1feng_files/thumb_135x135_rdn_52e206c0d9030.jpg" height="135" width="135"></a></div>
+<!--左侧图片 end-->
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p></p>
+			<div class="Function">
+                                <span class="sys_time">0124 14:40</span><!--时间-->
+                                <span class="sys_pic"><a href="http://news.ifeng.com/history/vp/detail_2014_01/24/33333127_0.shtml"></a></span><!--图片-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>19331
+<img src="1feng_files/top_arrow.gif">
+</span><font class="rankNum">5.</font><a href="http://news.ifeng.com/society/1/detail_2014_01/24/33323559_0.shtml" target="_blank" class="sys_url">男子在家嫖宿遇妻夜归 砍伤小姐后阳台上吊自杀</a></h3>
+<div class="padBox">
+
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>孙某生于1968年，现租住在潜山县梅城镇新建西区。1月22日21时许，孙某趁妻子杨某回娘家之际，联系上25岁的按摩小姐张某到租住处嫖
+宿。23日凌晨0时许，杨某回到家中，孙某怕嫖宿的事被妻子发现，便叫张某躲进小房间，等妻子睡着后再离开。凌晨1时许，孙某发现大门钥匙被妻子收起来
+了，张某无法脱身，加上自己也有轻生念头，之前还拖欠十几次的嫖资共3000元，便动了杀机。孙某先在小房间掐住了张某脖子，两人的吵闹声惊醒了杨某，杨
+某便出来制止。见事情败露，孙某又拿出菜刀砍向张某头部、手部，致其多处受伤。杨某发现制止不了</p>
+			<div class="Function">
+                                <span class="sys_time">0124 10:26</span><!--时间-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>19071
+<img src="1feng_files/down_arrow.jpg">
+</span><font class="rankNum">6.</font><a href="http://news.ifeng.com/mainland/renshi/detail_2014_01/23/33294746_0.shtml" target="_blank" class="sys_url">乌兰夫孙女、布赫之女布小林任内蒙古常委(图/简历)</a></h3>
+<div class="padBox">
+
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>(崔小粟)据内蒙古政府网站“自治区领导”栏目显示，布小林日前已任内蒙古自治区党委常委、统战部部长。2003.07--2004.09 内蒙古自治区政府副秘书长、办公厅党组成员，内蒙古自治区政府调查研究室(参事室)主任、党组书记　</p>
+			<div class="Function">
+                                <span class="sys_time">0123 16:50</span><!--时间-->
+                                <span class="sys_pic"><a href="http://news.ifeng.com/mainland/renshi/detail_2014_01/23/33294746_0.shtml"></a></span><!--图片-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>17628
+<img src="1feng_files/top_arrow.gif">
+</span><font class="rankNum">7.</font><a href="http://news.ifeng.com/mil/1/detail_2014_01/24/33319945_0.shtml" target="_blank" class="sys_url">日本记者不满安倍在达沃斯胡言乱语：简直荒谬</a></h3>
+<div class="padBox">
+
+<!--左侧图片 -->
+	<div class="leftimg"><a href="http://news.ifeng.com/mil/1/detail_2014_01/24/33319945_0.shtml" target="_blank"><img src="1feng_files/thumb_135x135_rdn_52e1d6a2857e9.jpg" height="135" width="135"></a></div>
+<!--左侧图片 end-->
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>安倍说他在靖国神社参拜，也包括为全世界所有国家的阵亡战士祈祷。靖国神社里怎么会有别国的亡灵？</p>
+			<div class="Function">
+                                <span class="sys_time">0124 09:34</span><!--时间-->
+                                <span class="sys_pic"><a href="http://news.ifeng.com/mil/1/detail_2014_01/24/33319945_0.shtml"></a></span><!--图片-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>16003
+<img src="1feng_files/top_arrow.gif">
+</span><font class="rankNum">8.</font><a href="http://news.ifeng.com/mainland/detail_2014_01/24/33339679_0.shtml" target="_blank" class="sys_url">外交部：日本领导人最好的马年祝贺应是“马上认错”</a></h3>
+<div class="padBox">
+
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>“我们希望日方以诚实的态度，为两国关系改善作出实实在在的努力，而不是避重就轻，避实就虚，说一套做一套。马年即将到来，日本领导人给华人最好的祝贺、给中日关系最真诚的祝愿莫过于说，‘在历史问题上，我将悬崖勒马，马上认错，马上就改，再也不去参拜靖国神社了’。”</p>
+			<div class="Function">
+                                <span class="sys_time">0124 16:43</span><!--时间-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>15951
+<img src="1feng_files/top_arrow.gif">
+</span><font class="rankNum">9.</font><a href="http://news.ifeng.com/mil/4/detail_2014_01/24/33313276_0.shtml" target="_blank" class="sys_url">外媒：解放军洲际导弹亮相 警告美勿插手中日</a></h3>
+<div class="padBox">
+
+<!--左侧图片 -->
+	<div class="leftimg"><a href="http://news.ifeng.com/mil/4/detail_2014_01/24/33313276_0.shtml" target="_blank"><img src="1feng_files/thumb_135x135_rdn_52e1bed9da55a.jpg" height="135" width="135"></a></div>
+<!--左侧图片 end-->
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>中国军方新近发布能打到美国的洲际导弹照片。这一举动看上去是警告美国不要插手中日有关钓鱼岛的争端。</p>
+			<div class="Function">
+                                <span class="sys_time">0124 08:10</span><!--时间-->
+                                <span class="sys_pic"><a href="http://news.ifeng.com/mil/4/detail_2014_01/24/33313276_0.shtml"></a></span><!--图片-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>14274
+<img src="1feng_files/top_arrow.gif">
+</span><font class="rankNum">10.</font><a href="http://news.ifeng.com/mainland/detail_2014_01/24/33326727_0.shtml" target="_blank" class="sys_url">人社部：延迟退休是必然选择 有助于缓解抚养压力</a></h3>
+<div class="padBox">
+
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>中新网1月24日电 
+人社部新闻发言人李忠今日指出，中国现在的平均预期寿命是75岁，据有关研究机构的专家预测，到2020年老年人口将达到2.55亿，2033年突破4
+亿，2050年达到4.83亿，延迟退休年龄是适应人口预期寿命增长的需要，也是应对人口老龄化的必然选择。</p>
+			<div class="Function">
+                                <span class="sys_time">0124 11:31</span><!--时间-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>13637
+<img src="1feng_files/down_arrow.jpg">
+</span><font class="rankNum">11.</font><a href="http://news.ifeng.com/mainland/detail_2014_01/24/33329765_0.shtml" target="_blank" class="sys_url">北京朝阳8万平方米违建开拆 4000余租户搬离(图)</a></h3>
+<div class="padBox">
+
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>2014年1月23日上午9时许，北京朝阳区崔各庄乡奶东村8万平方米违建开始拆除，4000余位租住在这些“违建群”里的住户搬离。据了
+解，这些全部是个人承包后未经规划部门许可私建的房屋，然后出租给个人，形成了多个集经营、仓储、居住用途于一体的“三合一”大院。为了保证日常生活生
+产，院内还违规使用土煤炉取暖。拆迁前记者看到，周边私接乱拉电线等现象也十分普遍，院内院外到处是电线杆，电线有的已经垂落，存在着严重的安全隐患。图
+片来源：法制晚报林晖/CFP</p>
+			<div class="Function">
+                                <span class="sys_time">0124 13:13</span><!--时间-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>13572
+<img src="1feng_files/equal_arrow.jpg">
+</span><font class="rankNum">12.</font><a href="http://news.ifeng.com/mainland/detail_2014_01/24/33325156_0.shtml" target="_blank" class="sys_url">人社部：今年将启动机关事业单位养老保险制度改革</a></h3>
+<div class="padBox">
+
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>人民网北京1月24日电 （记者 乔雪峰）24日，人力资源和社会保障部召开第四季度新闻发布会，人力资源和社会保障部新任新闻发言人李忠在会上表示，2014年将适时启动机关事业单位养老保险制度改革，研究渐进式延迟退休年龄政策。</p>
+			<div class="Function">
+                                <span class="sys_time">0124 10:52</span><!--时间-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>13364
+<img src="1feng_files/equal_arrow.jpg">
+</span><font class="rankNum">13.</font><a href="http://news.ifeng.com/photo/hdsociety/detail_2014_01/24/33324679_0.shtml" target="_blank" class="sys_url">夏蓉高速轿车起火3人亡 疑为一家三口</a></h3>
+<div class="padBox">
+
+<!--左侧图片 -->
+	<div class="leftimg"><a href="http://news.ifeng.com/photo/hdsociety/detail_2014_01/24/33324679_0.shtml" target="_blank"><img src="1feng_files/thumb_135x135_rdn_52e1d465c84ca.jpg" height="135" width="135"></a></div>
+<!--左侧图片 end-->
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p></p>
+			<div class="Function">
+                                <span class="sys_time">0124 10:52</span><!--时间-->
+                                <span class="sys_pic"><a href="http://news.ifeng.com/photo/hdsociety/detail_2014_01/24/33324679_0.shtml"></a></span><!--图片-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>12168
+<img src="1feng_files/top_arrow.gif">
+</span><font class="rankNum">14.</font><a href="http://news.ifeng.com/photo/hdsociety/detail_2014_01/24/33317323_0.shtml" target="_blank" class="sys_url">浙江渔民捕获特大野生海鲫鱼</a></h3>
+<div class="padBox">
+
+<!--左侧图片 -->
+	<div class="leftimg"><a href="http://news.ifeng.com/photo/hdsociety/detail_2014_01/24/33317323_0.shtml" target="_blank"><img src="1feng_files/thumb_135x135_rdn_52e1bd6ad468c.jpg" height="135" width="135"></a></div>
+<!--左侧图片 end-->
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p></p>
+			<div class="Function">
+                                <span class="sys_time">0124 09:12</span><!--时间-->
+                                <span class="sys_pic"><a href="http://news.ifeng.com/photo/hdsociety/detail_2014_01/24/33317323_0.shtml"></a></span><!--图片-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>11362
+<img src="1feng_files/equal_arrow.jpg">
+</span><font class="rankNum">15.</font><a href="http://news.ifeng.com/society/1/detail_2014_01/24/33328477_0.shtml" target="_blank" class="sys_url">女子为逃避强迫相亲假装落水身亡 被警察识破</a></h3>
+<div class="padBox">
+
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>嘉祥县22岁女子曹某与男友感情很深，但家人一直不同意两人交往。近日，家人准备强迫曹某与另一男子相亲，曹某与家人大吵一架后离开家。</p>
+			<div class="Function">
+                                <span class="sys_time">0124 12:50</span><!--时间-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>9919
+<img src="1feng_files/top_arrow.gif">
+</span><font class="rankNum">16.</font><a href="http://news.ifeng.com/mainland/detail_2014_01/24/33302838_0.shtml" target="_blank" class="sys_url">傅政华暗访派出所假装北漂办护照 称未被认出</a></h3>
+<div class="padBox">
+
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>相关负责人表示，此举是坚持从严治警的有力举措。一方面，北京市公安局绝不容忍个别民警酒后的不当行为影响群众对首都公安机关的信任度，影响
+党和政府形象。另外一方面，民警长期值班加班，处于高强度状态，身体素质堪忧，出台“禁酒令”本身也是爱警的措施。此外，“禁酒令”并不是搞一刀切，民警
+在家可以饮酒，因特殊原因，经过报告审批，可以饮酒。</p>
+			<div class="Function">
+                                <span class="sys_time">0124 02:41</span><!--时间-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>9503
+<img src="1feng_files/top_arrow.gif">
+</span><font class="rankNum">17.</font><a href="http://news.ifeng.com/history/zhongguoxiandaishi/detail_2014_01/24/33315635_0.shtml" target="_blank" class="sys_url">1955年授衔本设11元帅谁最后出局？并非粟裕</a></h3>
+<div class="padBox">
+
+<!--左侧图片 -->
+	<div class="leftimg"><a href="http://news.ifeng.com/history/zhongguoxiandaishi/detail_2014_01/24/33315635_0.shtml" target="_blank"><img src="1feng_files/thumb_135x135_rdn_52e1b79e545e1.jpg" height="135" width="135"></a></div>
+<!--左侧图片 end-->
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>全文如下：“关于授予中华人民共和国元帅军衔问题，中央已决定现任军委委员之朱德、彭德怀、林彪、刘伯承、贺龙、陈毅、邓小平、罗荣桓、徐向前、聂荣臻、叶剑英等十一同志均授予中华人民共和国元帅军衔。</p>
+			<div class="Function">
+                                <span class="sys_time">0124 08:46</span><!--时间-->
+                                <span class="sys_pic"><a href="http://news.ifeng.com/history/zhongguoxiandaishi/detail_2014_01/24/33315635_0.shtml"></a></span><!--图片-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>9217
+<img src="1feng_files/equal_arrow.jpg">
+</span><font class="rankNum">18.</font><a href="http://news.ifeng.com/world/detail_2014_01/24/33323528_0.shtml" target="_blank" class="sys_url">外媒：瓦莱丽知奥朗德偷情后在爱丽舍宫乱摔东西(图)</a></h3>
+<div class="padBox">
+
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>据英国《每日邮报》网站1月23日报道，法国总统奥朗德的女友瓦莱丽在听闻男友与女演员加耶有染后勃然大怒，在爱丽舍宫乱摔乱砸东西发泄怒气，结果造成了约250万英镑的损失。</p>
+			<div class="Function">
+                                <span class="sys_time">0124 10:28</span><!--时间-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>9035
+<img src="1feng_files/top_arrow.gif">
+</span><font class="rankNum">19.</font><a href="http://news.ifeng.com/photo/hdsociety/detail_2014_01/24/33313538_0.shtml" target="_blank" class="sys_url">沈阳机场火辣“快闪”</a></h3>
+<div class="padBox">
+
+<!--左侧图片 -->
+	<div class="leftimg"><a href="http://news.ifeng.com/photo/hdsociety/detail_2014_01/24/33313538_0.shtml" target="_blank"><img src="1feng_files/thumb_135x135_rdn_52e1e72f1b666.jpg" height="135" width="135"></a></div>
+<!--左侧图片 end-->
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p></p>
+			<div class="Function">
+                                <span class="sys_time">0124 08:17</span><!--时间-->
+                                <span class="sys_pic"><a href="http://news.ifeng.com/photo/hdsociety/detail_2014_01/24/33313538_0.shtml"></a></span><!--图片-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+<div class="listPublic firepath-matching-node">
+<h3 class="noHavebg"><span>8918
+<img src="1feng_files/down_arrow.jpg">
+</span><font class="rankNum">20.</font><a href="http://news.ifeng.com/taiwan/2/detail_2014_01/24/33333161_0.shtml" target="_blank" class="sys_url">男子性侵女儿4年共200多次 女儿：我愿意原谅他</a></h3>
+<div class="padBox">
+
+<!--右侧文字 -->
+	<div>
+	<div class="summaryBox">
+			<p>彰化一名男子离婚后为逞其兽欲，竟从2000年至2004年间，在其女儿国小5年级起至国中的3年级期间，性侵女儿多达200多次，平均一个星期性侵女儿两次。
+全案直到被害女子婚后因不愿回娘家，其丈夫查觉有</p>
+			<div class="Function">
+                                <span class="sys_time">0124 14:40</span><!--时间-->
+              </div>
+		  </div>
+	
+	</div>
+<!--右侧文字 end-->
+<div class="clear"></div>
+</div>
+</div>
+<!--通用版 1 end-->
+
+</div>
+<!--图片摘要部分 end-->
+<div class="clear"></div>
+
+</div>
+<!--左侧主体框架 end-->
+<!--右侧主体框架 -->
+<div class="rightbar">
+	<!--漂浮层 -->
+<div id="guideLayerBox" style="position:absolute;">
+	<div align="center"><img src="1feng_files/list_icon05.gif"></div>
+	<!--layer comment -->
+<div id="guideLayer">
+<div class="layerbox">
+	<div class="guide_on2"><span>点击排行榜<img src="1feng_files/list_icon03.gif"></span></div>
+	<div class="guide_off2"><span><a href="http://news.ifeng.com/comment/hour/">评论排行榜<img src="1feng_files/list_icon03.gif"></a></span></div>
+	<div class="guide_off2" style="border-bottom:none;">
+	<span>表情排行榜<img src="1feng_files/list_icon03.gif"></span>
+		<ul class="guideUl2">
+		<li><a href="http://news.ifeng.com/mood/day/1" target="_self">感动<img src="1feng_files/md1.gif"></a></li>
+		<li><a href="http://news.ifeng.com/mood/day/2" target="_self">同情<img src="1feng_files/md2.gif"></a></li>
+		<li><a href="http://news.ifeng.com/mood/day/3" target="_self">无聊<img src="1feng_files/md3.gif"></a></li>
+		<li><a href="http://news.ifeng.com/mood/day/4" target="_self">愤怒<img src="1feng_files/md4.gif"></a></li>
+		<li><a href="http://news.ifeng.com/mood/day/5" target="_self">搞笑<img src="1feng_files/md5.gif"></a></li>
+		<li><a href="http://news.ifeng.com/mood/day/6" target="_self">难过<img src="1feng_files/md6.gif"></a></li>
+		<li><a href="http://news.ifeng.com/mood/day/7" target="_self">高兴<img src="1feng_files/md7.gif"></a></li>
+		<li><a href="http://news.ifeng.com/mood/day/8" target="_self">路过<img src="1feng_files/md8.gif"></a></li>
+	</ul>
+	
+	</div>
+</div>
+</div>
+	<!--layer comment end-->
+	<div align="center"><img src="1feng_files/list_icon05a.gif"></div>
+</div>
+
+	<!--漂浮层 end -->
+</div>
+<div style="float:left; width:100%; position:relative;">
+			<div class="mar15" style="position:absolute; top:-95px; left:900px;" align="center"><a href="#"><img src="1feng_files/list_img01.gif"></a></div>
+		</div>
+<!--右侧主体框架 end-->
+<div class="clear"></div>
+<div class="ad1000">
+
+<!--s_news_index_ad_banner_bottom_1000x90 2014.01.24 09:17:30-->
+<script type="text/javascript">try{aptracker.add(544);}catch(e){}</script>
+
+
+
+<!--0,0,NULL,fixture--><iframe src="1feng_files/s_all_index_ad_banner_bottom.html" style="width:1000px; height:90px; border:0px;background-color=transparent;" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+<img src="1feng_files/c.gif" height="1" width="1">
+<!--/s_news_index_ad_banner_bottom_1000x90-->
+
+</div>
+<script type="text/javascript" src="1feng_files/channelnewslevelindexlocation99siteifengtyperichmedia.html"></script>
+<script type="text/javascript" src="1feng_files/channelnewslevelindexlocation1siteifengtypeiconturn2.html"></script>
+<!--s_news_index_ad_bottom pub_id:873 2010.11.11 09:46:18-->
+</div>
+
+<style>
+.clear { clear: both; }
+.chaFotNav ul, .chaFotNav li { margin: 0px; padding: 0px; }
+.chaFotNav li { list-style: none; }
+.chaFotNav { width: 998px; border: 1px #d9d9d9 solid; margin: 0 auto; font-family: simsun, Arial; font-size: 12px; clear: both; background: #fff; }
+.chaFotNav .endNList { width: 772px; float: left; padding: 8px 0px; }
+.chaFotNav .endNList li { padding: 0px 4px 0px 5px; background: url(http://y3.ifengimg.com/9db17ab793eef980/2013/0403/zxicon_26.gif) right center no-repeat; float: left; }
+.chaFotNav .endNList li a { color: #2b2b2b; text-decoration: none; }
+.chaFotNav .endNList li a:hover { text-decoration: underline; }
+.chaFotNav .navFocus { width: 200px; padding: 5px 0 0 0px; margin: 0 0px 0 0; color: #ba2636; line-height: 18px; float: right; }
+.chaFotNav .navFocus a { line-height: 18px; text-decoration: none; }
+.chaFotNav .navFocus a:hover { text-decoration: underline; }
+.chaFotNav .navV a, .chaFotNav .navVIP a, .chaFotNav .ifengPlay a, .chaFotNav .tvPlay a, .chaFotNav .navWap a, .chaFotNav .navTmp a { color: #ba2636; }
+.chaFotNav .navV { width: 37px; background: url(http://y1.ifengimg.com/38716b164e0f5e63/2013/0716/nav0416_14.gif) no-repeat 1px 4px; padding: 0 0 0 17px; float: left; }
+.chaFotNav .navTmp { width: 37px; float: left; }
+.chaFotNav .ifengPlay { width: 37px; float: left; }
+.chaFotNav .tvPlay { width: 55px; background: url(http://y3.ifengimg.com/9db17ab793eef980/2013/0403/nav0416_17.gif) no-repeat 0px 3px; padding: 0 0 0 15px; float: left; }
+.chaFotNav .navWap { width: 30px; background: url(http://y3.ifengimg.com/9db17ab793eef980/2013/0403/nav0416_06.gif) no-repeat 0px 2px; padding: 0 0 0 11px; float: left; }
+.chaFotNav .nextTop { width: 40px; height: 20px; padding: 7px 0 0 3px; border-left: 1px #d9d9d9 solid; float: left; }
+.chaFotNav02 { width: 1000px; height: 21px; margin: 0 auto; background: #fff url(http://y3.ifengimg.com/9db17ab793eef980/2013/0403/icon02_04.gif) repeat-x bottom; font-size: 0px; line-height: 0px; clear: both; }
+.chaFooter { color: #000; width: 1000px; height: 72px; margin: 0 auto; clear: both; text-align: center; line-height: 24px; font-family: Arial, simsun; font-size: 12px; background: #fff; padding-top: 8px; }
+.chaFooter a { color: #000; text-decoration: none; }
+.chaFooter a:hover { color: #000; text-decoration: underline; }
+.chaFooter .footLink { line-height: 22px; }
+.chaFooter .footLink a { padding: 0px 8px; }
+.chaFooter .copyright { color: #000; line-height: 22px; }
+</style>
+<div class="chaFotNav">
+  <ul class="endNList">
+    <li><a href="http://www.ifeng.com/" target="_blank">首页</a></li>
+    <li><a href="http://news.ifeng.com/" target="_blank">资讯</a></li>
+    <li><a href="http://news.ifeng.com/taiwan/" target="_blank">台湾</a></li>
+    <li><a href="http://opinion.ifeng.com/" target="_blank">评论</a></li>
+    <li><a href="http://finance.ifeng.com/" target="_blank">财经</a></li>
+    <li><a href="http://auto.ifeng.com/" target="_blank">汽车</a></li>
+    <li><a href="http://tech.ifeng.com/" target="_blank">科技</a></li>
+    <li><a href="http://house.ifeng.com/" target="_blank">房产</a></li>
+    <li><a href="http://home.ifeng.com/" target="_blank">家居</a></li>
+    <li><a href="http://fashion.ifeng.com/travel/" target="_blank">旅游</a></li>
+    <li><a href="http://ent.ifeng.com/" target="_blank">娱乐</a></li>
+    <li><a href="http://fashion.ifeng.com/" target="_blank">时尚</a></li>
+    <li><a href="http://news.ifeng.com/sports/" target="_blank">体育</a></li>
+    <li><a href="http://news.ifeng.com/mil/" target="_blank">军事</a></li>
+    <li><a href="http://news.ifeng.com/history/" target="_blank">历史</a></li>
+    <li><a href="http://book.ifeng.com/" target="_blank">读书</a></li>
+    <li><a href="http://edu.ifeng.com/" target="_blank">教育</a></li>
+    <li><a href="http://fashion.ifeng.com/health/" target="_blank">健康</a></li>
+    <li><a href="http://fashion.ifeng.com/baby/" target="_blank">亲子</a></li>
+    <li><a href="http://games.ifeng.com/" target="_blank">游戏</a></li>
+    <li><a href="http://city.ifeng.com/" target="_blank">城市</a></li>
+    <li><a href="http://bbs.ifeng.com/" target="_blank">论坛</a></li>
+    <li class="end"><a href="http://blog.ifeng.com/" target="_blank">博报</a></li>
+  </ul>
+  <div class="navFocus">
+    <div class="navV"><a href="http://v.ifeng.com/" target="_blank">视频</a>·</div>
+    <div class="navTmp"><a href="http://v.ifeng.com/documentary/index.shtml" target="_blank">纪实</a>·</div>
+    <div class="ifengPlay"><a href="http://v.ifeng.com/live/" target="_blank">直播</a></div>
+    <div class="tvPlay"><a href="http://phtv.ifeng.com/" target="_blank">凤凰卫视</a></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="chaFotNav02"></div>
+<div class="chaFooter">
+  <div class="footLink"><a href="http://www.ifeng.com/corp/about/intro/" target="_blank">凤凰新媒体介绍</a>|<a href="http://ir.ifeng.com/" target="_blank">投资者关系 Investor Relations</a>|<a href="http://www.ifeng.com/corp/ad/" target="_blank">广告服务</a>|<a href="http://career.ifeng.com/" target="_blank">诚征英才</a>|<a href="http://www.ifeng.com/corp/privacy/" target="_blank">保护隐私权</a>|<a href="http://www.ifeng.com/corp/exemption/" target="_blank">免责条款</a>|<a href="http://www.ifeng.com/corp/feedback/" target="_blank">意见反馈</a>|<a href="http://phtv.ifeng.com/intro/" target="_blank">凤凰卫视介绍</a></div>
+  <div class="copyright">
+    凤凰新媒体 版权所有<br>
+    Copyright © 2013 Phoenix New Media Limited All Rights Reserved.
+  </div>
+</div>
+  <script>
+    var sta_collection_time = new Date().getTime();
+  </script>
+<script src="1feng_files/sta_collection.js" id="sta_collection_new"></script>
+<div id="ifeng_da_le" style="width: 1px; height: 1px;">
+  <script src="1feng_files/120331-iImpression.js"></script>
+</div>
+<!-- START WRating v1.0 -->
+<script type="text/javascript" src="1feng_files/wrating.js">
+</script>
+<script type="text/javascript">
+var vjAcc="860010-2063990101";
+var wrUrl="http://ifeng.wrating.com/";
+vjTrack("");
+</script><div style="display:none"><img src="1feng_files/a.gif" id="wrTagImage" height="1" width="1"></div>
+<noscript><img src="http://ifeng.wrating.com/a.gif?a=&c=860010-2063990101" width="1" height="1"/></noscript>
+<!-- END WRating v1.0 -->
+<!--[if !IE]>footer.130710<![endif]-->
+
+<!--s_news_index_ad_floatmedia 2014.01.24 09:17:47-->
+<script type="text/javascript">try{aptracker.add(942);}catch(e){}</script>
+
+
+
+<!--0,0,NULL,fixture-->
+
+<!--/s_news_index_ad_floatmedia-->
+
+
+</body></html>
