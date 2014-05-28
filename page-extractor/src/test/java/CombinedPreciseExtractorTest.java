@@ -64,7 +64,7 @@ public class CombinedPreciseExtractorTest extends TestCase {
 		File xml6 = new File("src/test/resources/gn-news-qq-new.xml");
 		cpe.configWith(xml6);
 		cpe.setResource(new FileReader(new File(
-				"src/test/resources/012732.html")), "gn-news-qq");
+				"src/test/resources/003700.html")), "gn-news-qq");
 //		cpe.extract();
 		System.out.println(cpe.extract());
 	}

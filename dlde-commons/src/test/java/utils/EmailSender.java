@@ -70,7 +70,7 @@ public class EmailSender {
 			this.mail_from ="40711087@bit.edu.cn";
 		}else if(server.equals("noprinter")){
 			this.username = "admin@noprinter.cn";
-			this.password = "85136984";
+			this.password = "85136894";
 			this.host = "smtp.noprinter.cn";
 			this.mail_from = "admin@noprinter.cn";
 		}else if(server.equals("qq")){
@@ -103,7 +103,6 @@ public class EmailSender {
 	
 	}
 	public static void groupSend() throws Exception{
-		EmailSender sendmail = new EmailSender("qq");
 		File folder = new File(folderPath);
 		File[] files = folder.listFiles();
 		for(File file : files){
@@ -112,18 +111,28 @@ public class EmailSender {
 				continue;
 			}
 			List<String> emails = getEmails(file);
+			int index = 1;
+			int breakNum = 847;
 			for(String email : emails){
+				index ++;
+				if(index < breakNum){
+					continue;
+				}
+				EmailSender sendmail = null;
+				sendmail = new EmailSender("126");
 				System.out.println(email);
 				String mail_title = "NoPrinter在北理工有实体店啦！！职消超市2楼C6！！";
 				String mail_body = makeContent();
 				sendmail.sendEmail(email, mail_title, mail_body);
-//				Thread.sleep(500);
+				
+				long delay = (long) (Math.random() * 30000);
+				Thread.sleep(delay);
 			}
 		}
 	}
 	
 	public static void testEmail(){
-		EmailSender sendmail = new EmailSender("qq");
+		EmailSender sendmail = new EmailSender("126");
 		try {
 //			String mail_to = "sonyfe25cp@gmail.com";
 			String mail_to = "284198757@qq.com";
