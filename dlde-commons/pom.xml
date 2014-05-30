@@ -45,5 +45,16 @@
 			<artifactId>mail</artifactId>
 			<version>1.4.1</version>
 		</dependency>
+		 <dependency>
+            <groupId>org.ansj</groupId>
+            <artifactId>ansj_seg</artifactId>
+            <version>0.9</version>
+        </dependency>
 	</dependencies>
+	<repositories>
+        <repository>
+            <id>mvn-repo</id>
+            <url>http://ansjsun.github.io/mvn-repo/</url>
+        </repository>
+    </repositories>
 </project>

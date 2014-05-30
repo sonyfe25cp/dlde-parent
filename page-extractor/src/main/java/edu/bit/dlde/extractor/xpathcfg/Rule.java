@@ -15,6 +15,8 @@ import java.util.regex.Pattern;
 public class Rule {
 	static final List<String> unExpr = Arrays.asList(new String[] { "type",
 			"uri" });
+	static final List<String> specialAttributes =Arrays.asList(new String[] { "anti"});
+	
 	public String _siteType;
 	public String _uriRegex;
 	public boolean _enabled=true;//默认启用
@@ -33,12 +35,19 @@ public class Rule {
 		return Pattern.matches(_uriRegex, uri);
 	}
 
+	public void addExpr(String name, String expr, String anti) {
+		_exprs.add(new Expression(name, expr, anti));
+	}
 	public void addExpr(String name, String expr) {
 		_exprs.add(new Expression(name, expr));
 	}
 
 	public String getExprValue(int i) {
 		return _exprs.get(i).expression;
+	}
+	
+	public String getAnti(int i){
+		return _exprs.get(i).anti;
 	}
 
 	public String getExprName(int i) {
@@ -68,10 +77,11 @@ public class Rule {
 			_uriRegex = str[1];
 		}
 	}
-
+	
 	class Expression {
 		protected String expression;
 		protected String name;
+		protected String anti;
 
 		/**
 		 * Constructor.
@@ -82,10 +92,16 @@ public class Rule {
 		 * @param expression
 		 *            string of xpath expression.
 		 */
+		public Expression(String name, String expression, String anti) {
+			this.expression = expression;
+			this.name = name;
+			this.anti = anti;
+		}
 		public Expression(String name, String expression) {
 			this.expression = expression;
 			this.name = name;
 		}
+
 
 		public Expression() {
 		}
@@ -125,6 +141,14 @@ public class Rule {
 		 */
 		public void setExpression(String expression) {
 			this.expression = expression;
+		}
+
+		public String getAnti() {
+			return anti;
+		}
+
+		public void setAnti(String anti) {
+			this.anti = anti;
 		}
 
 	}

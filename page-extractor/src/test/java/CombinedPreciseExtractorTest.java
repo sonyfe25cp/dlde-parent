@@ -47,14 +47,15 @@ public class CombinedPreciseExtractorTest extends TestCase {
 //				"src/test/resources/gn-news-qq.html")), "gn-news-qq");
 //		System.out.println(cpe.extract());
 		
-		/*
-		 * case 5
+		
+		/**
+		 * case 5 
 		 */
-//		File xml5 = new File("src/test/resources/zh1.xml");
-//		cpe.configWith(xml5);
-//		cpe.setResource(new FileReader(new File(
-//				"src/test/resources/zh1.html")), "zh1");
-//		System.out.println(cpe.extract());
+		//File xml5 = new File("src/test/resources/zh1.xml");
+		//cpe.configWith(xml5);
+		//cpe.setResource(new FileReader(new File(
+		//		"src/test/resources/zh1.html")), "zh1");
+		//System.out.println(cpe.extract());
 		
 		
 		/*
