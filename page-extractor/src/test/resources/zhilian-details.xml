@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+	<rule>
+		<type>news</type>
+		<uri>zhilian</uri>
+		<jobTitle>html/body/div[3]/div[1]/div[1]/div[1]/table[1]/tbody/tr[1]/td/h1</jobTitle>
+		<company>html/body/div[3]/div[1]/div[1]/div[1]/table[1]/tbody/tr[2]/td/h2/a</company>
+		<publishDate>.//*[@id='span4freshdate']</publishDate>
+		<details>html/body/div[3]/div[1]/div[1]/div[1]/table[2]/tbody</details>
+	</rule> 
+</rules>

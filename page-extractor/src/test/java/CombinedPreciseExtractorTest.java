@@ -50,11 +50,11 @@ public class CombinedPreciseExtractorTest extends TestCase {
 		/*
 		 * case 5
 		 */
-		File xml5 = new File("src/test/resources/zh1.xml");
-		cpe.configWith(xml5);
-		cpe.setResource(new FileReader(new File(
-				"src/test/resources/zh1.html")), "zh1");
-		System.out.println(cpe.extract());
+//		File xml5 = new File("src/test/resources/zh1.xml");
+//		cpe.configWith(xml5);
+//		cpe.setResource(new FileReader(new File(
+//				"src/test/resources/zh1.html")), "zh1");
+//		System.out.println(cpe.extract());
 		
 		
 		/*
@@ -87,10 +87,19 @@ public class CombinedPreciseExtractorTest extends TestCase {
 		/*
 		 * case 9
 		 */
-		File xml9 = new File("src/test/resources/1feng.xml");
-		cpe.configWith(xml9);
+//		File xml9 = new File("src/test/resources/1feng.xml");
+//		cpe.configWith(xml9);
+//		cpe.setResource(new FileReader(new File(
+//				"src/test/resources/1feng.html")), "1feng");
+//		System.out.println(cpe.extract());
+		
+		/*
+		 * case 10
+		 */
+		File xml10 = new File("src/test/resources/zhilian-details.xml");
+		cpe.configWith(xml10);
 		cpe.setResource(new FileReader(new File(
-				"src/test/resources/1feng.html")), "1feng");
+				"src/test/resources/zhilian-details.html")), "zhilian");
 		System.out.println(cpe.extract());
 	}
 
