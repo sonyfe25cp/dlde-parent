@@ -3,8 +3,8 @@ package edu.bit.dlde.extractor.utils;
 import java.util.Arrays;
 import java.util.List;
 
-import org.jdom.Element;
-import org.jdom.Text;
+import org.jdom2.Element;
+import org.jdom2.Text;
 
 public class TreeEditDistance {
 	private List<String> blk = Arrays.asList("div", "center", "p", "pre",

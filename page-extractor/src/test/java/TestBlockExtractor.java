@@ -19,4 +19,13 @@ public class TestBlockExtractor extends TestCase {
 		System.out.println(be.getTitle());
 		System.out.println(be.getContent());
 	}
+	@Test
+    public void testChinahr001() throws FileNotFoundException {
+        BlockExtractor be = new BlockExtractor();
+        String filePath = "src/test/resources/chinahr001.html";
+        be.setReader(new FileReader(new File(filePath)));
+        be.extract();
+        System.out.println(be.getTitle());
+        System.out.println(be.getContent());
+    }
 }

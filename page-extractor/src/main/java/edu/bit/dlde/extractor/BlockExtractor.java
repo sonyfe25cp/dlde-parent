@@ -10,10 +10,10 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 
-import org.jdom.Content;
-import org.jdom.Element;
-import org.jdom.Text;
+import org.jdom2.Content;
 import org.jdom2.Document;
+import org.jdom2.Element;
+import org.jdom2.Text;
 
 import edu.bit.dlde.extractor.skeleton.ImpreciseExtractor;
 import edu.bit.dlde.extractor.skeleton.PageExtractor;
