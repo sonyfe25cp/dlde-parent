@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTabbedPane;
 import javax.swing.UIManager;
 
-import panel.AnalyzerPanel;
+//import panel.AnalyzerPanel;
 import panel.FileParserPanel;
 import panel.WKSFileReaderTools;
 
@@ -23,7 +23,7 @@ public class DLDETool extends JFrame{
 
 		JTabbedPane tool = new JTabbedPane();
 		tool.addTab("网页正文抽取工具", null, new FileParserPanel(), "parser");
-		tool.addTab("分词工具", null, new AnalyzerPanel(), "analyzer");
+//		tool.addTab("分词工具", null, new AnalyzerPanel(), "analyzer");
 		tool.addTab("爬虫文件解析工具", null, new WKSFileReaderTools(), "wksreader");
 		add(tool);
 	}
